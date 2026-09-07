@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const NEWSLETTER_ENDPOINT = '';
+  const NEWSLETTER_ENDPOINT = 'https://gta6-community-submissions.keen-olive-1713.chatgpt.site/submit';
   const qs = (selector, root = document) => root.querySelector(selector);
   const qsa = (selector, root = document) => [...root.querySelectorAll(selector)];
 
@@ -335,6 +335,7 @@
     document.body.classList.remove('modal-open');
     if (remember) { try { localStorage.setItem(DISMISSED_KEY, '1'); } catch (_) {} }
   };
+  qsa('[data-open-newsletter]').forEach(button => button.addEventListener('click', openNewsletter));
   qsa('[data-close-newsletter]').forEach(button => button.addEventListener('click', () => closeNewsletter(true)));
 
   try {
@@ -347,42 +348,49 @@
     newsletterMessage.className = 'form-message';
     newsletterMessage.textContent = '';
     const email = newsletterEmail.value.trim();
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    const newsletter = newsletterConsent.checked;
+    const gamertag = qs('#playerGamertag').value.trim();
+    const platform = qs('#playerPlatform').value;
+    const fail = (message, element) => {
       newsletterMessage.classList.add('error');
-      newsletterMessage.textContent = 'Please enter a valid email address.';
-      newsletterEmail.focus();
+      newsletterMessage.textContent = message;
+      element?.focus();
+    };
+    if (!newsletter && !gamertag && !platform) {
+      fail('Choose email updates or enter your gamertag and platform, or close this box to keep browsing.', newsletterConsent);
       return;
     }
-    if (!newsletterConsent.checked) {
-      newsletterMessage.classList.add('error');
-      newsletterMessage.textContent = 'Please check the consent box if you want email updates.';
-      newsletterConsent.focus();
+    if (newsletter && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      fail('Enter a valid email address for email updates.', newsletterEmail);
+      return;
+    }
+    if ((gamertag && !platform) || (platform && !gamertag)) {
+      fail('Enter both your gamertag and platform to save your player details.', qs(gamertag ? '#playerPlatform' : '#playerGamertag'));
       return;
     }
     if (!NEWSLETTER_ENDPOINT) {
-      newsletterMessage.classList.add('notice');
-      newsletterMessage.textContent = 'The signup box is ready, but the mailing-list connection has not been activated yet. Your email was not sent or stored.';
+      fail('Submissions are not available yet. Nothing has been sent or saved. Please try again later.');
       return;
     }
     const submitButton = newsletterForm.querySelector('button[type="submit"]');
     const oldText = submitButton?.textContent;
-    if (submitButton) { submitButton.disabled = true; submitButton.textContent = 'Joining…'; }
+    if (submitButton) { submitButton.disabled = true; submitButton.textContent = 'Saving…'; }
     try {
       const response = await fetch(NEWSLETTER_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, source: 'Everything GTA VI website' })
+        body: JSON.stringify({ email: newsletter ? email : '', newsletter, gamertag, platform, website: qs('#submissionWebsite').value })
       });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       newsletterMessage.classList.add('success');
-      newsletterMessage.textContent = 'You’re on the list. Thanks!';
-      try { localStorage.setItem(SUBSCRIBED_KEY, '1'); localStorage.removeItem(DISMISSED_KEY); } catch (_) {}
+      newsletterMessage.textContent = newsletter ? (gamertag ? 'Your player details and email signup request are saved. Thanks!' : 'Your email signup request is saved. Thanks!') : 'Your player details are saved for later. Thanks!';
+      try { localStorage.setItem(DISMISSED_KEY, '1'); if (newsletter) localStorage.setItem(SUBSCRIBED_KEY, '1'); } catch (_) {}
       newsletterForm.reset();
       window.setTimeout(() => closeNewsletter(false), 1200);
     } catch (error) {
       console.error('Newsletter signup failed:', error);
       newsletterMessage.classList.add('error');
-      newsletterMessage.textContent = 'Signup could not be completed. Please try again later.';
+      newsletterMessage.textContent = 'Your choices could not be saved. Please try again later.';
     } finally {
       if (submitButton) { submitButton.disabled = false; submitButton.textContent = oldText || 'Keep Me Updated'; }
     }
