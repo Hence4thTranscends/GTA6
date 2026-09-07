@@ -193,3 +193,14 @@ linear-gradient(145deg,#1b1322,#111119);box-shadow:0 35px 120px rgba(0,0,0,.6)}.
 #database .systems-grid article:nth-child(16){background-image:linear-gradient(90deg,rgba(25,13,30,.95),rgba(84,36,81,.66),rgba(25,13,30,.36)),url('https://www.rockstargames.com/VI/_next/static/media/Vice_City_Postcard_landscape.0v2njmlk2n-qm.jpg?akim=1&imdensity=1&imwidth=3840')}
 #database .systems-grid article[style*="background-image"],#database .systems-grid article:nth-child(1),#database .systems-grid article:nth-child(2),#database .systems-grid article:nth-child(6),#database .systems-grid article:nth-child(7),#database .systems-grid article:nth-child(8),#database .systems-grid article:nth-child(11),#database .systems-grid article:nth-child(12),#database .systems-grid article:nth-child(16){text-shadow:0 2px 15px rgba(0,0,0,.86)}
 #database .systems-grid article p{color:#ddd8e2}
+
+/* Optional player details extend the existing newsletter palette. */
+.newsletter-modal{max-height:calc(100dvh - 32px);overflow-y:auto}
+.player-details{margin:22px 0;padding:18px;border:1px solid var(--line);border-radius:18px;min-width:0}
+.player-details legend{padding:0 6px;color:#ff9bb9;font-weight:800;font-size:.9rem}
+.player-details p{margin:0 0 16px;color:var(--muted);font-size:.875rem}
+.player-details input,.player-details select{display:block;width:100%;min-width:0;padding:12px 14px;margin-bottom:14px;background:#0d0d13;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:12px;font:inherit}
+.player-details input:focus,.player-details select:focus{outline:2px solid var(--pink);outline-offset:2px}
+.newsletter-modal label:not(.consent-line),.consent-line,.form-message{font-size:.875rem}
+.submission-honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.newsletter-modal button:disabled{opacity:.6;cursor:wait}

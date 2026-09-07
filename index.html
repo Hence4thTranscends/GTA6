@@ -343,19 +343,35 @@
     <div><span class="brand-small">EVERYTHING</span><span class="brand-main">GTA <b>VI</b></span></div>
     <p>Unofficial fan project. Not affiliated with or endorsed by Rockstar Games or Take-Two Interactive. Grand Theft Auto, GTA VI, Rockstar Games, related trademarks, and official media belong to their respective owners.</p>
     <div class="footer-links"><a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener">Official GTA VI</a><a href="https://www.rockstargames.com/VI/media" target="_blank" rel="noopener">Official Media</a><a href="#home">Back to top ↑</a></div>
+    <button class="btn ghost" type="button" data-open-newsletter>Email updates / player details</button>
   </footer>
 
   <div class="newsletter-overlay" id="newsletterOverlay" aria-hidden="true">
     <div class="newsletter-backdrop" data-close-newsletter></div>
     <div class="newsletter-modal" role="dialog" aria-modal="true" aria-labelledby="newsletterTitle">
       <button class="newsletter-close" type="button" aria-label="Close newsletter signup" data-close-newsletter>×</button>
-      <span class="mini-label">OPTIONAL EMAIL UPDATES</span>
+      <span class="mini-label">OPTIONAL UPDATES & PLAYER DETAILS</span>
       <h2 id="newsletterTitle">Stay in the loop on <span>GTA VI</span></h2>
       <p>Want an email when meaningful GTA VI news drops? Join the list for confirmed Rockstar announcements, trailers, map updates, vehicles, music, Online news, and more.</p>
       <form id="newsletterForm" novalidate>
-        <label for="newsletterEmail">Email address</label>
-        <div class="newsletter-row"><input id="newsletterEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><button class="btn primary" type="submit">Keep Me Updated</button></div>
-        <label class="consent-line"><input type="checkbox" id="newsletterConsent" required><span>I want optional GTA VI email updates and can unsubscribe later.</span></label>
+        <label for="newsletterEmail">Email address (optional)</label>
+        <div class="newsletter-row"><input id="newsletterEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254"></div>
+        <label class="consent-line"><input type="checkbox" id="newsletterConsent"><span>I want GTA VI email updates and can unsubscribe later.</span></label>
+        <fieldset class="player-details">
+          <legend>Share your player details (optional)</legend>
+          <p>Leave your gamertag and platform so I can add you when I have a console. Your details will be saved privately for later. No email signup needed.</p>
+          <label for="playerGamertag">Gamertag / online ID</label>
+          <input id="playerGamertag" name="gamertag" type="text" maxlength="64" autocomplete="off" placeholder="Your player name">
+          <label for="playerPlatform">Platform</label>
+          <select id="playerPlatform" name="platform">
+            <option value="">Choose a platform</option>
+            <option value="PlayStation">PlayStation</option>
+            <option value="Xbox">Xbox</option>
+            <option value="PC">PC</option>
+          </select>
+        </fieldset>
+        <div class="submission-honeypot" aria-hidden="true"><label>Leave blank<input name="website" id="submissionWebsite" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn primary" type="submit">Save My Choices</button>
         <p class="form-message" id="newsletterMessage" aria-live="polite"></p>
       </form>
       <button class="maybe-later" type="button" data-close-newsletter>No thanks / maybe later</button>
