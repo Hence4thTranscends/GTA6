@@ -2,6 +2,7 @@
   'use strict';
 
   const NEWSLETTER_ENDPOINT = 'https://gta6-community-submissions.keen-olive-1713.chatgpt.site/submit';
+  const MAILERLITE_SYNC_ENDPOINT = 'https://hook.us2.make.com/at87994kk8ctq97bxfjh85jovzkeol7h';
   const qs = (selector, root = document) => root.querySelector(selector);
   const qsa = (selector, root = document) => [...root.querySelectorAll(selector)];
 
@@ -382,6 +383,21 @@
         body: JSON.stringify({ email: newsletter ? email : '', newsletter, gamertag, platform, website: qs('#submissionWebsite').value })
       });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+      // Keep the existing submission log as the source of truth, then mirror newsletter opt-ins to MailerLite.
+      if (newsletter && MAILERLITE_SYNC_ENDPOINT) {
+        try {
+          const syncResponse = await fetch(MAILERLITE_SYNC_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, newsletter: true, gamertag, platform, website: qs('#submissionWebsite').value })
+          });
+          if (!syncResponse.ok) console.warn(`MailerLite sync returned HTTP ${syncResponse.status}`);
+        } catch (syncError) {
+          console.warn('MailerLite sync failed; the original submission is still saved:', syncError);
+        }
+      }
+
       newsletterMessage.classList.add('success');
       newsletterMessage.textContent = newsletter ? (gamertag ? 'Your player details and email signup request are saved. Thanks!' : 'Your email signup request is saved. Thanks!') : 'Your player details are saved for later. Thanks!';
       try { localStorage.setItem(DISMISSED_KEY, '1'); if (newsletter) localStorage.setItem(SUBSCRIBED_KEY, '1'); } catch (_) {}
