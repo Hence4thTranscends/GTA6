@@ -28,6 +28,31 @@
     luciaArt.style.backgroundRepeat = 'no-repeat';
   }
 
+  // Story cards: Jason uses cooler teal/blue-green tones, Lucia warmer magenta/coral tones.
+  // Rockstar does not formally name these as character "signature colors"; this mirrors their recurring official visual palette.
+  const storyCards = qsa('#story .story-grid .feature-card');
+  if (storyCards.length >= 4) {
+    const [setupCard, luciaCard, jasonCard, missionCard] = storyCards;
+
+    setupCard.style.background = 'linear-gradient(135deg, rgba(24,108,119,.72) 0%, rgba(74,55,112,.68) 42%, rgba(198,61,112,.60) 72%, rgba(236,125,75,.48) 100%), #12131a';
+    setupCard.style.borderColor = 'rgba(184,111,180,.38)';
+    setupCard.style.boxShadow = '0 18px 55px rgba(125,62,132,.18)';
+
+    luciaCard.style.background = 'radial-gradient(circle at 92% 0%, rgba(255,111,97,.24), transparent 34%), linear-gradient(145deg, rgba(117,27,75,.66), rgba(54,21,45,.92) 56%, #121119 100%)';
+    luciaCard.style.borderColor = 'rgba(255,93,149,.34)';
+    luciaCard.style.boxShadow = '0 18px 52px rgba(205,55,116,.14)';
+    luciaCard.querySelector('h3')?.style.setProperty('color', '#ffc0d6');
+
+    jasonCard.style.background = 'radial-gradient(circle at 8% 0%, rgba(69,216,220,.20), transparent 34%), linear-gradient(145deg, rgba(21,91,103,.68), rgba(15,44,57,.94) 58%, #101118 100%)';
+    jasonCard.style.borderColor = 'rgba(69,216,220,.32)';
+    jasonCard.style.boxShadow = '0 18px 52px rgba(45,154,165,.13)';
+    jasonCard.querySelector('h3')?.style.setProperty('color', '#b9f3f1');
+
+    missionCard.style.background = 'radial-gradient(circle at 92% 0%, rgba(255,209,102,.10), transparent 34%), linear-gradient(145deg, rgba(91,68,31,.34), rgba(31,29,25,.96) 58%, #111116 100%)';
+    missionCard.style.borderColor = 'rgba(255,209,102,.20)';
+    missionCard.style.boxShadow = '0 16px 46px rgba(0,0,0,.18)';
+  }
+
   // Supporting character cards — official Rockstar character artwork.
   const supportingCharacterArt = {
     'CAL HAMPTON': 'https://www.rockstargames.com/VI/_next/static/media/Cal_Hampton_landscape.17k7bnt3myg.2.jpg?akim=1&imdensity=1&imwidth=3840',
