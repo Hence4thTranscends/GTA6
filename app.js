@@ -19,6 +19,18 @@
     heroOverlay.style.background = 'linear-gradient(90deg, rgba(8,8,13,.94) 0%, rgba(8,8,13,.78) 34%, rgba(8,8,13,.55) 58%, rgba(8,8,13,.28) 100%)';
   }
 
+  // Official preorder shortcut beside Explore and Watch.
+  const heroActions = qs('.hero-actions');
+  if (heroActions && !qs('.hero-actions .preorder-btn')) {
+    const preorderLink = document.createElement('a');
+    preorderLink.href = 'https://www.rockstargames.com/VI/editions';
+    preorderLink.target = '_blank';
+    preorderLink.rel = 'noopener';
+    preorderLink.className = 'btn ghost preorder-btn';
+    preorderLink.textContent = 'Pre-Order GTA VI';
+    heroActions.appendChild(preorderLink);
+  }
+
   // Add the broader Everything GTA VI database section.
   const onlineSection = qs('#online');
   if (onlineSection && !qs('#database')) {
