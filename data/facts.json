@@ -1,0 +1,16 @@
+{
+  "lastReviewed": "2026-09-06",
+  "facts": [
+    {"topic":"Release date","status":"confirmed","value":"November 19, 2026"},
+    {"topic":"PlayStation 5","status":"confirmed","value":"Launch platform"},
+    {"topic":"Xbox Series X|S","status":"confirmed","value":"Launch platform"},
+    {"topic":"PC version","status":"not-announced","value":null},
+    {"topic":"Jason and Lucia","status":"confirmed","value":"Central protagonists"},
+    {"topic":"Vice City","status":"confirmed","value":"Major Leonida setting"},
+    {"topic":"Complete official map","status":"not-released","value":null},
+    {"topic":"Complete vehicle roster","status":"not-released","value":null},
+    {"topic":"Complete soundtrack","status":"not-released","value":null},
+    {"topic":"GTA VI Online / multiplayer","status":"not-announced","value":null},
+    {"topic":"Cross-play","status":"not-announced","value":null}
+  ]
+}
