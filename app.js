@@ -19,6 +19,15 @@
     heroOverlay.style.background = 'linear-gradient(90deg, rgba(8,8,13,.94) 0%, rgba(8,8,13,.78) 34%, rgba(8,8,13,.55) 58%, rgba(8,8,13,.28) 100%)';
   }
 
+  // Lucia character card — official Rockstar glam/nightlife image.
+  const luciaArt = qs('.person-art.lucia');
+  if (luciaArt) {
+    luciaArt.style.backgroundImage = 'linear-gradient(0deg, rgba(15,14,22,.16), rgba(15,14,22,0)), url("https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_Video_Clip.729fd223.jpg")';
+    luciaArt.style.backgroundSize = 'cover';
+    luciaArt.style.backgroundPosition = 'center 36%';
+    luciaArt.style.backgroundRepeat = 'no-repeat';
+  }
+
   // Official preorder shortcut beside Explore and Watch.
   const heroActions = qs('.hero-actions');
   if (heroActions && !qs('.hero-actions .preorder-btn')) {
