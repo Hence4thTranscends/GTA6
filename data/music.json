@@ -1,0 +1,13 @@
+{
+  "lastReviewed": "2026-09-06",
+  "trailerMusic": [
+    {"title":"Love Is a Long Road","artist":"Tom Petty","context":"Trailer 1","status":"confirmed"},
+    {"title":"Hot Together","artist":"The Pointer Sisters","context":"Trailer 2","status":"confirmed"}
+  ],
+  "worldMusic": [
+    {"name":"Only Raw Records","type":"record label","status":"confirmed","people":["Boobie Ike","Dre'Quan Priest","Real Dimez"]}
+  ],
+  "radioStations": {"status":"not-announced","items":[]},
+  "completeInGameSoundtrack": {"status":"not-announced","items":[]},
+  "originalScoreCredits": {"status":"not-announced","items":[]}
+}
