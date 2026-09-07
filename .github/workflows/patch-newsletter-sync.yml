@@ -1,4 +1,4 @@
-name: Patch newsletter sync
+name: Patch homepage requested updates
 
 on:
   push:
@@ -15,46 +15,52 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Verify Make webhook and MailerLite sync
-        run: |
-          curl --fail --silent --show-error \
-            -X POST 'https://hook.us2.make.com/at87994kk8ctq97bxfjh85jovzkeol7h' \
-            -H 'Content-Type: application/json' \
-            --data '{"email":"4n0n87+gta6test@gmail.com","newsletter":true,"gamertag":"SchemaTest","platform":"PS5","website":""}'
-
-      - name: Patch app.js
+      - name: Apply requested homepage updates
         run: |
           python3 - <<'PY'
           from pathlib import Path
 
-          path = Path('app.js')
-          text = path.read_text()
+          index = Path('index.html')
+          text = index.read_text()
 
-          old_constant = "  const NEWSLETTER_ENDPOINT = 'https://gta6-community-submissions.keen-olive-1713.chatgpt.site/submit';"
-          new_constants = old_constant + "\n  const MAILERLITE_SYNC_ENDPOINT = 'https://hook.us2.make.com/at87994kk8ctq97bxfjh85jovzkeol7h';"
-          if 'MAILERLITE_SYNC_ENDPOINT' not in text:
-              if old_constant not in text:
-                  raise SystemExit('Newsletter endpoint constant not found')
-              text = text.replace(old_constant, new_constants, 1)
+          replacements = [
+              (
+                  '<a class="btn primary" href="#story">Explore GTA VI</a>',
+                  '<button class="btn primary" type="button" data-open-newsletter>Subscribe for GTA VI Updates</button>'
+              ),
+              (
+                  '<p>Jason and Lucia know the odds are stacked against them. After an easy score goes wrong, they are pulled into a criminal conspiracy stretching across Leonida and have to depend on each other to survive.</p>',
+                  '''<p class="story-pitch">\n            <span>Leonida looks like paradise, but Jason and Lucia are headed straight for its darkest side.</span>\n            <span>Jason wants an easier life; Lucia is fresh out of prison and determined to change her odds.</span>\n            <span>Then an easy score goes wrong.</span>\n            <span>What should have been quick money pulls them into a criminal conspiracy stretching across the state.</span>\n            <span>Rockstar has not fully defined what they are to each other — only that their futures become tightly connected.</span>\n            <span>With the pressure closing in, surviving Leonida means relying on each other more than ever.</span>\n          </p>'''
+              ),
+              (
+                  '<div class="media-note glass"><b>Also tracked:</b> Rockstar’s official media page currently lists 9 short clips, including character clips for Jason, Lucia, Cal, Boobie Ike, Dre’Quan, Real Dimez, Raul, and Brian, plus the cover-art animation.</div>',
+                  '<!-- Also tracked: Rockstar’s official media page currently lists 9 short clips, including character clips for Jason, Lucia, Cal, Boobie Ike, Dre’Quan, Real Dimez, Raul, and Brian, plus the cover-art animation. -->'
+              ),
+          ]
 
-          old_block = """      if (!response.ok) throw new Error(`HTTP ${response.status}`);\n      newsletterMessage.classList.add('success');"""
-          new_block = """      if (!response.ok) throw new Error(`HTTP ${response.status}`);\n\n      // Keep the existing submission log as the source of truth, then mirror newsletter opt-ins to MailerLite.\n      if (newsletter && MAILERLITE_SYNC_ENDPOINT) {\n        try {\n          const syncResponse = await fetch(MAILERLITE_SYNC_ENDPOINT, {\n            method: 'POST',\n            headers: { 'Content-Type': 'application/json' },\n            body: JSON.stringify({ email, newsletter: true, gamertag, platform, website: qs('#submissionWebsite').value })\n          });\n          if (!syncResponse.ok) console.warn(`MailerLite sync returned HTTP ${syncResponse.status}`);\n        } catch (syncError) {\n          console.warn('MailerLite sync failed; the original submission is still saved:', syncError);\n        }\n      }\n\n      newsletterMessage.classList.add('success');"""
-          if 'MailerLite sync failed; the original submission is still saved:' not in text:
-              if old_block not in text:
-                  raise SystemExit('Newsletter success block not found')
-              text = text.replace(old_block, new_block, 1)
+          for old, new in replacements:
+              if old not in text:
+                  raise SystemExit(f'Expected index.html text not found: {old[:80]}')
+              text = text.replace(old, new, 1)
 
-          path.write_text(text)
+          index.write_text(text)
+
+          styles = Path('styles.css')
+          css = styles.read_text()
+          marker = '/* Requested homepage copy + speculation navigation refinements */'
+          if marker not in css:
+              css += '''\n\n/* Requested homepage copy + speculation navigation refinements */\n.story-pitch{display:grid;gap:10px}\n.story-pitch span{display:block}\n.main-nav .speculation-nav-link{color:var(--pink);text-shadow:0 0 18px rgba(255,76,166,.28)}\n.main-nav .speculation-nav-link:hover{color:var(--orange);text-shadow:0 0 22px rgba(255,155,84,.42)}\n'''
+          styles.write_text(css)
           PY
 
-      - name: Commit website patch
+      - name: Commit requested site updates
         run: |
-          if git diff --quiet -- app.js; then
-            echo 'No app.js changes needed.'
+          if git diff --quiet -- index.html styles.css; then
+            echo 'No changes needed.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add app.js
-          git commit -m 'Sync newsletter opt-ins to MailerLite'
+          git add index.html styles.css
+          git commit -m 'Refine homepage story and navigation'
           git push
