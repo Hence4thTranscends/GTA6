@@ -1,7 +1,6 @@
 (() => {
   'use strict';
 
-  // Connect this only after the public MailerLite signup endpoint is ready.
   const NEWSLETTER_ENDPOINT = '';
   const qs = (selector, root = document) => root.querySelector(selector);
   const qsa = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -28,12 +27,10 @@
     luciaArt.style.backgroundRepeat = 'no-repeat';
   }
 
-  // Story cards: Jason uses cooler teal/blue-green tones, Lucia warmer magenta/coral tones.
-  // Rockstar does not formally name these as character "signature colors"; this mirrors their recurring official visual palette.
+  // Story color identities.
   const storyCards = qsa('#story .story-grid .feature-card');
   if (storyCards.length >= 4) {
     const [setupCard, luciaCard, jasonCard, missionCard] = storyCards;
-
     setupCard.style.background = 'linear-gradient(135deg, rgba(24,108,119,.72) 0%, rgba(74,55,112,.68) 42%, rgba(198,61,112,.60) 72%, rgba(236,125,75,.48) 100%), #12131a';
     setupCard.style.borderColor = 'rgba(184,111,180,.38)';
     setupCard.style.boxShadow = '0 18px 55px rgba(125,62,132,.18)';
@@ -50,7 +47,6 @@
 
     missionCard.style.background = 'radial-gradient(circle at 92% 0%, rgba(255,209,102,.10), transparent 34%), linear-gradient(145deg, rgba(91,68,31,.34), rgba(31,29,25,.96) 58%, #111116 100%)';
     missionCard.style.borderColor = 'rgba(255,209,102,.20)';
-    missionCard.style.boxShadow = '0 16px 46px rgba(0,0,0,.18)';
   }
 
   // Supporting character cards — official Rockstar character artwork.
@@ -63,12 +59,10 @@
     'RAUL BAUTISTA': 'https://www.rockstargames.com/VI/_next/static/media/Raul_Bautista_landscape.11_3hd0fr69~j.jpg?akim=1&imdensity=1&imwidth=3840',
     'BRIAN HEDER': 'https://www.rockstargames.com/VI/_next/static/media/Brian_Heder_landscape.0a-egj5b8yo1q.jpg?akim=1&imdensity=1&imwidth=3840'
   };
-
   qsa('.card-grid.characters .person-card:not(.hero-person)').forEach(card => {
     const name = card.querySelector('h3')?.textContent?.trim().toUpperCase();
     const imageUrl = supportingCharacterArt[name];
     if (!imageUrl || card.querySelector('.supporting-character-art')) return;
-
     const art = document.createElement('div');
     art.className = 'supporting-character-art';
     art.setAttribute('aria-hidden', 'true');
@@ -77,12 +71,122 @@
     art.style.backgroundPosition = 'center 28%';
     art.style.backgroundRepeat = 'no-repeat';
     art.style.minHeight = '190px';
-
     card.style.display = 'grid';
     card.style.gridTemplateRows = '190px 1fr';
     card.style.minHeight = '410px';
     card.prepend(art);
   });
+
+  // Extra styling for countdown and vehicle imagery.
+  if (!qs('#gta6-enhancement-styles')) {
+    const style = document.createElement('style');
+    style.id = 'gta6-enhancement-styles';
+    style.textContent = `
+      .release-countdown-section{position:relative;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.10);background:radial-gradient(circle at 82% 10%,rgba(255,76,166,.18),transparent 28%),radial-gradient(circle at 14% 90%,rgba(69,216,220,.14),transparent 30%),linear-gradient(135deg,#11121a,#17101c 55%,#0f1118)}
+      .release-countdown-section:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.20;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:58px 58px}
+      .release-countdown-inner{position:relative;z-index:1;max-width:1240px;margin:0 auto;text-align:center}
+      .release-countdown-inner h2{margin:6px 0 12px;font-family:Oswald,sans-serif;text-transform:uppercase;line-height:.94;font-size:clamp(2.7rem,6vw,5.4rem)}
+      .release-countdown-inner h2 span{background:linear-gradient(90deg,#45d8dc,#ff4ca6 48%,#ff9b54);-webkit-background-clip:text;background-clip:text;color:transparent}
+      .countdown-subcopy{max-width:760px;margin:0 auto 28px;color:#aaa4b4}
+      .countdown-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:900px;margin:0 auto}
+      .countdown-unit{padding:24px 14px;border:1px solid rgba(255,255,255,.12);border-radius:22px;background:rgba(12,12,18,.62);backdrop-filter:blur(14px)}
+      .countdown-value{display:block;font-family:Oswald,sans-serif;font-weight:700;line-height:1;font-size:clamp(2.6rem,7vw,5.2rem)}
+      .countdown-label{display:block;margin-top:7px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#aaa4b4;font-weight:800}
+      .countdown-note{display:block;margin-top:18px;color:#77717e;font-size:.72rem}
+      .countdown-live-message{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:clamp(2.4rem,7vw,5rem);color:#ffd166}
+      .vehicle-card.has-official-art{padding:0;min-height:360px;display:flex;flex-direction:column}
+      .vehicle-art{height:178px;flex:0 0 178px;background-size:cover;background-position:center;background-repeat:no-repeat;border-bottom:1px solid rgba(255,255,255,.10);position:relative}
+      .vehicle-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 52%,rgba(12,12,18,.36))}
+      .vehicle-copy{padding:19px 20px 21px;display:flex;flex-direction:column;align-items:flex-start;flex:1}
+      .vehicle-copy .vehicle-year{font-size:1.75rem;line-height:1}
+      .vehicle-copy h3{margin:12px 0 4px}.vehicle-copy p{margin:0 0 13px}.vehicle-copy .status{margin-top:auto}
+      .vehicle-image-note{margin:18px 0 0;color:#77717e;font-size:.72rem}
+      @media(max-width:820px){.countdown-grid{grid-template-columns:repeat(2,1fr)}}
+    `;
+    document.head.appendChild(style);
+  }
+
+  // GTA VI release-day countdown. Rockstar has confirmed the date, not one universal exact unlock time.
+  const quickStrip = qs('.quick-strip');
+  if (quickStrip && !qs('#release-countdown')) {
+    const countdownSection = document.createElement('section');
+    countdownSection.id = 'release-countdown';
+    countdownSection.className = 'release-countdown-section section-pad';
+    countdownSection.innerHTML = `
+      <div class="release-countdown-inner">
+        <p class="kicker">THE CLOCK IS TICKING</p>
+        <h2>Countdown to <span>GTA VI Release Day</span></h2>
+        <p class="countdown-subcopy">Grand Theft Auto VI launches November 19, 2026 on PlayStation 5 and Xbox Series X|S.</p>
+        <div class="countdown-grid" aria-live="polite">
+          <div class="countdown-unit"><span class="countdown-value" data-countdown="days">--</span><span class="countdown-label">Days</span></div>
+          <div class="countdown-unit"><span class="countdown-value" data-countdown="hours">--</span><span class="countdown-label">Hours</span></div>
+          <div class="countdown-unit"><span class="countdown-value" data-countdown="minutes">--</span><span class="countdown-label">Minutes</span></div>
+          <div class="countdown-unit"><span class="countdown-value" data-countdown="seconds">--</span><span class="countdown-label">Seconds</span></div>
+        </div>
+        <small class="countdown-note">Countdown reaches midnight at the start of November 19 in your local time. Exact platform and regional unlock times may differ.</small>
+      </div>`;
+    quickStrip.insertAdjacentElement('afterend', countdownSection);
+    const target = new Date(2026, 10, 19, 0, 0, 0, 0);
+    const values = {
+      days: qs('[data-countdown="days"]', countdownSection),
+      hours: qs('[data-countdown="hours"]', countdownSection),
+      minutes: qs('[data-countdown="minutes"]', countdownSection),
+      seconds: qs('[data-countdown="seconds"]', countdownSection)
+    };
+    let intervalId;
+    const renderCountdown = () => {
+      const remaining = target.getTime() - Date.now();
+      if (remaining <= 0) {
+        if (intervalId) clearInterval(intervalId);
+        const grid = qs('.countdown-grid', countdownSection);
+        if (grid) grid.innerHTML = '<div class="countdown-live-message" style="grid-column:1/-1">GTA VI RELEASE DAY IS HERE</div>';
+        return;
+      }
+      const totalSeconds = Math.floor(remaining / 1000);
+      values.days.textContent = String(Math.floor(totalSeconds / 86400));
+      values.hours.textContent = String(Math.floor((totalSeconds % 86400) / 3600)).padStart(2, '0');
+      values.minutes.textContent = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+      values.seconds.textContent = String(totalSeconds % 60).padStart(2, '0');
+    };
+    renderCountdown();
+    intervalId = window.setInterval(renderCountdown, 1000);
+  }
+
+  // Official Rockstar vehicle imagery.
+  const officialVehicleArt = {
+    'GROTTI CHEETAH': 'https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_GROTTI_CHEETAH_01.0a.wy3s_ogjey.jpg?akim=1&imdensity=1&imwidth=3840',
+    'VAPID DOMINATOR BUGGY': 'https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_VAPID_BUGGY_01.0jxfiql~371ik.jpg?akim=1&imdensity=1&imwidth=3840',
+    'VAPID STANIER SEDAN': 'https://www.rockstargames.com/VI/_next/static/media/VINTAGE_VICE_CITY_PACK_VAPID_STANIER_01.004m_8d1~qngy.jpg?akim=1&imdensity=1&imwidth=3840',
+    'SHITZU SQUALO': 'https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SQUALO_01.0cim7hj58ypb1.jpg?akim=1&imdensity=1&imwidth=3840',
+    'GANADO RETRO BUILD': 'https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_VAPID_GANADO_RETRO_BUILD_01.062dgvkwdynw5.jpg?akim=1&imdensity=1&imwidth=3840',
+    'JASON’S SAFEHOUSE VEHICLES': 'https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_01.0wv6pw3t-mky3.jpg?akim=1&imdensity=1&imwidth=3840',
+    "JASON'S SAFEHOUSE VEHICLES": 'https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_01.0wv6pw3t-mky3.jpg?akim=1&imdensity=1&imwidth=3840',
+    'CLASSIC CAR COLLECTION': 'https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_01.0swhrm__iu~6b.jpg?akim=1&imdensity=1&imwidth=3840'
+  };
+  qsa('#vehicles .vehicle-card:not(.unknown-vehicle)').forEach(card => {
+    if (card.classList.contains('has-official-art')) return;
+    const name = card.querySelector('h3')?.textContent?.trim().toUpperCase();
+    const imageUrl = officialVehicleArt[name];
+    if (!imageUrl) return;
+    const art = document.createElement('div');
+    art.className = 'vehicle-art';
+    art.setAttribute('role', 'img');
+    art.setAttribute('aria-label', `Official Rockstar image of ${card.querySelector('h3')?.textContent?.trim() || 'GTA VI vehicle'}`);
+    art.style.backgroundImage = `url("${imageUrl}")`;
+    const copy = document.createElement('div');
+    copy.className = 'vehicle-copy';
+    while (card.firstChild) copy.appendChild(card.firstChild);
+    card.appendChild(art);
+    card.appendChild(copy);
+    card.classList.add('has-official-art');
+  });
+  const vehicleGrid = qs('#vehicles .vehicle-grid');
+  if (vehicleGrid && !qs('.vehicle-image-note', vehicleGrid.parentElement)) {
+    const note = document.createElement('p');
+    note.className = 'vehicle-image-note';
+    note.textContent = 'Vehicle imagery shown here comes from Rockstar Games’ official GTA VI media library.';
+    vehicleGrid.insertAdjacentElement('afterend', note);
+  }
 
   // Official preorder shortcut beside Explore and Watch.
   const heroActions = qs('.hero-actions');
@@ -208,7 +312,7 @@
   qs('.lightbox-close')?.addEventListener('click', closeLightbox);
   lightbox?.addEventListener('click', event => { if (event.target === lightbox) closeLightbox(); });
 
-  // Newsletter overlay: optional, dismissible, and remembered locally.
+  // Newsletter overlay.
   const newsletterOverlay = qs('#newsletterOverlay');
   const newsletterForm = qs('#newsletterForm');
   const newsletterEmail = qs('#newsletterEmail');
@@ -244,25 +348,41 @@
     newsletterMessage.textContent = '';
     const email = newsletterEmail.value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      newsletterMessage.classList.add('error'); newsletterMessage.textContent = 'Please enter a valid email address.'; newsletterEmail.focus(); return;
+      newsletterMessage.classList.add('error');
+      newsletterMessage.textContent = 'Please enter a valid email address.';
+      newsletterEmail.focus();
+      return;
     }
     if (!newsletterConsent.checked) {
-      newsletterMessage.classList.add('error'); newsletterMessage.textContent = 'Please check the consent box if you want email updates.'; newsletterConsent.focus(); return;
+      newsletterMessage.classList.add('error');
+      newsletterMessage.textContent = 'Please check the consent box if you want email updates.';
+      newsletterConsent.focus();
+      return;
     }
     if (!NEWSLETTER_ENDPOINT) {
-      newsletterMessage.classList.add('notice'); newsletterMessage.textContent = 'The signup box is ready, but the mailing-list connection has not been activated yet. Your email was not sent or stored.'; return;
+      newsletterMessage.classList.add('notice');
+      newsletterMessage.textContent = 'The signup box is ready, but the mailing-list connection has not been activated yet. Your email was not sent or stored.';
+      return;
     }
     const submitButton = newsletterForm.querySelector('button[type="submit"]');
     const oldText = submitButton?.textContent;
     if (submitButton) { submitButton.disabled = true; submitButton.textContent = 'Joining…'; }
     try {
-      const response = await fetch(NEWSLETTER_ENDPOINT, { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({email,source:'Everything GTA VI website'}) });
+      const response = await fetch(NEWSLETTER_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, source: 'Everything GTA VI website' })
+      });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      newsletterMessage.classList.add('success'); newsletterMessage.textContent = 'You’re on the list. Thanks!';
-      try { localStorage.setItem(SUBSCRIBED_KEY,'1'); localStorage.removeItem(DISMISSED_KEY); } catch (_) {}
-      newsletterForm.reset(); window.setTimeout(() => closeNewsletter(false), 1200);
+      newsletterMessage.classList.add('success');
+      newsletterMessage.textContent = 'You’re on the list. Thanks!';
+      try { localStorage.setItem(SUBSCRIBED_KEY, '1'); localStorage.removeItem(DISMISSED_KEY); } catch (_) {}
+      newsletterForm.reset();
+      window.setTimeout(() => closeNewsletter(false), 1200);
     } catch (error) {
-      console.error('Newsletter signup failed:', error); newsletterMessage.classList.add('error'); newsletterMessage.textContent = 'Signup could not be completed. Please try again later.';
+      console.error('Newsletter signup failed:', error);
+      newsletterMessage.classList.add('error');
+      newsletterMessage.textContent = 'Signup could not be completed. Please try again later.';
     } finally {
       if (submitButton) { submitButton.disabled = false; submitButton.textContent = oldText || 'Keep Me Updated'; }
     }
@@ -280,11 +400,11 @@
   const sections = qsa('main section[id]').filter(section => linkById.has(section.id));
   if ('IntersectionObserver' in window && sections.length) {
     const observer = new IntersectionObserver(entries => {
-      const visible = entries.filter(entry => entry.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+      const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
       if (!visible) return;
       sectionLinks.forEach(link => link.removeAttribute('aria-current'));
-      linkById.get(visible.target.id)?.setAttribute('aria-current','page');
-    }, { rootMargin:'-25% 0px -60% 0px', threshold:[0.05,0.2,0.5] });
+      linkById.get(visible.target.id)?.setAttribute('aria-current', 'page');
+    }, { rootMargin: '-25% 0px -60% 0px', threshold: [0.05, 0.2, 0.5] });
     sections.forEach(section => observer.observe(section));
   }
 })();
