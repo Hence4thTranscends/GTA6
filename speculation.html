@@ -3,101 +3,499 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="GTA VI creator speculation, theories, reactions, and community hype — clearly separated from confirmed Rockstar information." />
-  <title>GTA VI Speculation & Creator Buzz | Everything GTA VI</title>
+  <meta name="description" content="GTA VI creator speculation, theories, reactions, playlists, and community hype — clearly separated from confirmed Rockstar information." />
+  <title>GTA VI Creator Watch & Speculation | Everything GTA VI</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    :root{--spec-pink:#ff4fa3;--spec-orange:#ff8a4c;--spec-purple:#7e47ff;--spec-cyan:#38d6d9;--spec-ink:#0a0911;--spec-panel:#15131f}
-    body{background:radial-gradient(circle at 85% 5%,rgba(126,71,255,.18),transparent 32%),radial-gradient(circle at 15% 20%,rgba(255,79,163,.12),transparent 26%),#0a0911;color:#f7f4fb}
-    .spec-topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px clamp(18px,4vw,64px);background:rgba(8,7,14,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}
-    .spec-topbar .brand{text-decoration:none;color:#fff}.spec-nav{display:flex;gap:10px;flex-wrap:wrap}.spec-nav a{color:#ddd;text-decoration:none;padding:9px 12px;border-radius:999px;border:1px solid transparent}.spec-nav a:hover{color:#fff;border-color:rgba(255,255,255,.16);background:rgba(255,255,255,.04)}
+    :root{
+      --spec-pink:#ff4fa3;
+      --spec-orange:#ff8a4c;
+      --spec-purple:#7e47ff;
+      --spec-cyan:#38d6d9;
+      --spec-green:#69e79b;
+      --spec-yellow:#ffd163;
+      --spec-ink:#0a0911;
+      --spec-panel:#15131f;
+    }
+    html{scroll-behavior:smooth}
+    body{
+      background:
+        radial-gradient(circle at 85% 5%,rgba(126,71,255,.18),transparent 32%),
+        radial-gradient(circle at 15% 20%,rgba(255,79,163,.12),transparent 26%),
+        #0a0911;
+      color:#f7f4fb;
+    }
+    .spec-topbar{
+      position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:20px;
+      padding:14px clamp(18px,4vw,64px);background:rgba(8,7,14,.92);backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(255,255,255,.08)
+    }
+    .spec-topbar .brand{text-decoration:none;color:#fff}
+    .spec-nav{display:flex;gap:10px;flex-wrap:wrap}
+    .spec-nav a{
+      color:#ddd;text-decoration:none;padding:9px 12px;border-radius:999px;border:1px solid transparent;
+      transition:.18s ease
+    }
+    .spec-nav a:hover{color:#fff;border-color:rgba(255,255,255,.16);background:rgba(255,255,255,.04)}
+    .spec-nav a.creator-watch-link{color:#ff7ab9;border-color:rgba(255,79,163,.28);background:rgba(255,79,163,.07)}
     .spec-hero{min-height:72vh;display:grid;align-items:center;padding:90px clamp(20px,6vw,90px);position:relative;overflow:hidden}
-    .spec-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(8,7,14,.92) 10%,rgba(8,7,14,.58) 58%,rgba(8,7,14,.85)),radial-gradient(circle at 70% 35%,rgba(255,107,78,.3),transparent 25%),radial-gradient(circle at 82% 42%,rgba(255,79,163,.22),transparent 32%)}
-    .spec-sun{position:absolute;width:380px;height:380px;border-radius:50%;right:8%;top:18%;background:linear-gradient(#ffb15b,#ff5e89 55%,#8a4cff);filter:blur(.2px);opacity:.84;box-shadow:0 0 120px rgba(255,86,134,.3)}
-    .spec-gridlines{position:absolute;inset:auto 0 0;height:48%;opacity:.18;background-image:linear-gradient(rgba(255,255,255,.18) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.18) 1px,transparent 1px);background-size:55px 55px;transform:perspective(500px) rotateX(61deg);transform-origin:bottom}
-    .spec-hero-content{position:relative;z-index:2;max-width:850px}.spec-kicker{font-weight:900;letter-spacing:.16em;color:#ff9f69;font-size:.82rem}.spec-hero h1{font-size:clamp(3.8rem,11vw,9rem);line-height:.78;margin:18px 0 28px;letter-spacing:-.06em}.spec-hero h1 span{background:linear-gradient(90deg,#ffad63,#ff4fa3 50%,#8d5cff);-webkit-background-clip:text;background-clip:text;color:transparent}.spec-hero p{max-width:720px;font-size:clamp(1rem,2vw,1.25rem);line-height:1.65;color:#d6d2df}
-    .warning-banner{display:flex;gap:15px;align-items:flex-start;margin-top:28px;padding:18px;border:1px solid rgba(255,152,92,.3);background:rgba(255,125,84,.08);border-radius:18px;max-width:760px}.warning-banner b{display:block;margin-bottom:4px}.warning-icon{font-size:1.4rem}
-    .spec-section{padding:78px clamp(20px,6vw,90px)}.spec-section.alt{background:rgba(255,255,255,.018);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
-    .spec-heading{max-width:800px;margin-bottom:34px}.spec-heading .eyebrow{color:#42dfe2;font-weight:900;letter-spacing:.14em;font-size:.78rem}.spec-heading h2{font-size:clamp(2.2rem,5vw,4.8rem);margin:8px 0 12px;line-height:.95}.spec-heading p{color:#bdb8c8;line-height:1.7}
-    .buzz-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.buzz-card{grid-column:span 4;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09);border-radius:22px;padding:22px;min-height:210px;position:relative;overflow:hidden}.buzz-card:after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;right:-55px;top:-55px;background:var(--glow,#ff4fa3);filter:blur(38px);opacity:.16}.buzz-card h3{font-size:1.25rem;margin:14px 0 9px}.buzz-card p{color:#bdb8c8;line-height:1.55}.buzz-card small{color:#918b9e;display:block;margin-top:12px}.tag{display:inline-flex;align-items:center;padding:7px 10px;border-radius:999px;font-size:.7rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.tag.theory{background:rgba(255,79,163,.13);color:#ff85bd;border:1px solid rgba(255,79,163,.24)}.tag.analysis{background:rgba(56,214,217,.11);color:#67e3e5;border:1px solid rgba(56,214,217,.22)}.tag.unconfirmed{background:rgba(255,163,78,.11);color:#ffb878;border:1px solid rgba(255,163,78,.22)}.tag.preview{background:rgba(111,235,148,.11);color:#85ef9f;border:1px solid rgba(111,235,148,.22)}
-    .creator-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.creator-card{background:#11101a;border:1px solid rgba(255,255,255,.09);border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.22)}.creator-video{position:relative;aspect-ratio:16/9;background:#050508}.creator-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.creator-copy{padding:22px}.creator-line{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:11px}.creator-name{font-size:.78rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#65e3e5}.creator-date{font-size:.78rem;color:#888291}.creator-copy h3{font-size:1.45rem;margin:0 0 10px}.creator-copy p{color:#b9b4c4;line-height:1.6;margin:0}.creator-copy .watch-link{display:inline-block;margin-top:15px;color:#fff;text-decoration:none;font-weight:800}.creator-copy .watch-link:hover{color:#ff73b3}
-    .policy-box{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:24px;border-radius:22px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(120deg,rgba(126,71,255,.12),rgba(255,79,163,.07))}.policy-box strong{font-size:2rem}.policy-box h3{margin:0 0 8px}.policy-box p{margin:0;color:#c4becd;line-height:1.6}
-    .creator-spotlights{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px}.spotlight{padding:20px;border-radius:18px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.035)}.spotlight b{display:block;font-size:1.05rem;margin-bottom:6px}.spotlight span{color:#a7a1b1;font-size:.9rem;line-height:1.45;display:block}
-    .spec-footer{padding:44px clamp(20px,6vw,90px);border-top:1px solid rgba(255,255,255,.08);background:#07070b;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.spec-footer p{color:#8f8997;max-width:740px;line-height:1.5}.back-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 18px;border-radius:999px;background:linear-gradient(90deg,#ff7b56,#ff4fa3);color:#fff;text-decoration:none;font-weight:900}
-    @media(max-width:900px){.buzz-card{grid-column:span 6}.creator-grid{grid-template-columns:1fr}.creator-spotlights{grid-template-columns:repeat(2,1fr)}.spec-topbar{align-items:flex-start}.spec-nav{justify-content:flex-end}.spec-sun{right:-120px;width:330px;height:330px}}
-    @media(max-width:620px){.spec-topbar{position:relative;display:block}.spec-nav{margin-top:12px;justify-content:flex-start}.spec-nav a{padding:7px 9px;font-size:.86rem}.spec-hero{min-height:68vh;padding-top:60px}.spec-sun{opacity:.45;top:12%}.buzz-card{grid-column:1/-1}.creator-spotlights{grid-template-columns:1fr}.spec-footer{grid-template-columns:1fr}.creator-copy{padding:18px}}
+    .spec-hero:before{
+      content:"";position:absolute;inset:0;
+      background:
+        linear-gradient(115deg,rgba(8,7,14,.92) 10%,rgba(8,7,14,.58) 58%,rgba(8,7,14,.85)),
+        radial-gradient(circle at 70% 35%,rgba(255,107,78,.3),transparent 25%),
+        radial-gradient(circle at 82% 42%,rgba(255,79,163,.22),transparent 32%)
+    }
+    .spec-sun{
+      position:absolute;width:380px;height:380px;border-radius:50%;right:8%;top:18%;
+      background:linear-gradient(#ffb15b,#ff5e89 55%,#8a4cff);filter:blur(.2px);opacity:.84;
+      box-shadow:0 0 120px rgba(255,86,134,.3)
+    }
+    .spec-gridlines{
+      position:absolute;inset:auto 0 0;height:48%;opacity:.18;
+      background-image:linear-gradient(rgba(255,255,255,.18) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.18) 1px,transparent 1px);
+      background-size:55px 55px;transform:perspective(500px) rotateX(61deg);transform-origin:bottom
+    }
+    .spec-hero-content{position:relative;z-index:2;max-width:850px}
+    .spec-kicker{font-weight:900;letter-spacing:.16em;color:#ff9f69;font-size:.82rem}
+    .spec-hero h1{font-size:clamp(3.8rem,11vw,9rem);line-height:.78;margin:18px 0 28px;letter-spacing:-.06em}
+    .spec-hero h1 span{
+      background:linear-gradient(90deg,#ffad63,#ff4fa3 50%,#8d5cff);
+      -webkit-background-clip:text;background-clip:text;color:transparent
+    }
+    .spec-hero p{max-width:720px;font-size:clamp(1rem,2vw,1.25rem);line-height:1.65;color:#d6d2df}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+    .hero-actions a{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 17px;border-radius:999px;
+      text-decoration:none;font-weight:900;color:#fff;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05)
+    }
+    .hero-actions a.primary{border:0;background:linear-gradient(90deg,#ff7b56,#ff4fa3)}
+    .warning-banner{
+      display:flex;gap:15px;align-items:flex-start;margin-top:28px;padding:18px;border:1px solid rgba(255,152,92,.3);
+      background:rgba(255,125,84,.08);border-radius:18px;max-width:760px
+    }
+    .warning-banner b{display:block;margin-bottom:4px}.warning-icon{font-size:1.4rem}
+    .spec-section{padding:78px clamp(20px,6vw,90px)}
+    .spec-section.alt{background:rgba(255,255,255,.018);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+    .spec-heading{max-width:860px;margin-bottom:34px}
+    .spec-heading .eyebrow{color:#42dfe2;font-weight:900;letter-spacing:.14em;font-size:.78rem}
+    .spec-heading h2{font-size:clamp(2.2rem,5vw,4.8rem);margin:8px 0 12px;line-height:.95}
+    .spec-heading p{color:#bdb8c8;line-height:1.7}
+    .curated-stamp{
+      display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:8px 11px;border-radius:999px;
+      border:1px solid rgba(56,214,217,.18);background:rgba(56,214,217,.06);color:#8beaec;font-size:.76rem;font-weight:800
+    }
+
+    .watch-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .watch-card{
+      grid-column:span 4;position:relative;overflow:hidden;min-height:300px;padding:24px;border-radius:24px;
+      border:1px solid rgba(255,255,255,.1);background:linear-gradient(155deg,rgba(255,255,255,.075),rgba(255,255,255,.022));
+      display:flex;flex-direction:column
+    }
+    .watch-card:after{
+      content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-80px;top:-75px;
+      background:var(--creator-glow,#ff4fa3);filter:blur(45px);opacity:.16;pointer-events:none
+    }
+    .watch-label{display:flex;justify-content:space-between;gap:12px;align-items:center;position:relative;z-index:1}
+    .watch-label .rank{
+      display:inline-flex;align-items:center;padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.09);color:#d9d5df;font-size:.69rem;font-weight:900;text-transform:uppercase;letter-spacing:.07em
+    }
+    .watch-label .focus{font-size:.73rem;color:#9c96a8}
+    .watch-card h3{position:relative;z-index:1;font-size:1.55rem;margin:22px 0 8px}
+    .watch-card p{position:relative;z-index:1;color:#bdb8c8;line-height:1.55;margin:0 0 18px}
+    .watch-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;position:relative;z-index:1}
+    .microtag{
+      padding:6px 8px;border-radius:999px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);
+      color:#bcb6c8;font-size:.68rem;font-weight:800
+    }
+    .watch-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;position:relative;z-index:1}
+    .watch-actions a{
+      display:inline-flex;padding:10px 12px;border-radius:12px;text-decoration:none;font-weight:850;font-size:.82rem;
+      color:#fff;border:1px solid rgba(255,255,255,.11);background:rgba(255,255,255,.045)
+    }
+    .watch-actions a.playlist{background:linear-gradient(90deg,rgba(255,79,163,.22),rgba(126,71,255,.22));border-color:rgba(255,79,163,.25)}
+    .watch-actions a:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.25)}
+
+    .playlist-vault{
+      margin-top:28px;padding:22px;border-radius:24px;border:1px solid rgba(255,255,255,.09);
+      background:linear-gradient(115deg,rgba(126,71,255,.09),rgba(255,79,163,.06),rgba(56,214,217,.04))
+    }
+    .playlist-vault-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:16px}
+    .playlist-vault-head h3{font-size:1.45rem;margin:0}.playlist-vault-head p{color:#aaa4b4;margin:0;max-width:620px;line-height:1.5}
+    .playlist-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .playlist-link{
+      min-height:112px;padding:16px;border-radius:16px;border:1px solid rgba(255,255,255,.08);background:rgba(9,8,15,.55);
+      color:#fff;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between;transition:.18s ease
+    }
+    .playlist-link:hover{border-color:rgba(255,79,163,.35);transform:translateY(-2px)}
+    .playlist-link b{font-size:1rem}.playlist-link span{font-size:.8rem;color:#9f99aa;line-height:1.45}
+    .playlist-link em{font-style:normal;color:#ff7fbb;font-weight:900;font-size:.78rem;margin-top:9px}
+
+    .filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}
+    .filter-btn{
+      appearance:none;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035);color:#c9c4d0;
+      padding:9px 12px;border-radius:999px;font:inherit;font-size:.78rem;font-weight:850;cursor:pointer
+    }
+    .filter-btn:hover,.filter-btn.active{color:#fff;border-color:rgba(255,79,163,.35);background:rgba(255,79,163,.12)}
+    .creator-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+    .creator-card{
+      background:#11101a;border:1px solid rgba(255,255,255,.09);border-radius:24px;overflow:hidden;
+      box-shadow:0 20px 50px rgba(0,0,0,.22)
+    }
+    .creator-card[hidden]{display:none!important}
+    .creator-video{position:relative;aspect-ratio:16/9;background:#050508}
+    .creator-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .creator-copy{padding:22px}
+    .creator-line{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:11px}
+    .creator-name{font-size:.78rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#65e3e5}
+    .creator-date{font-size:.78rem;color:#888291}
+    .creator-copy h3{font-size:1.45rem;margin:0 0 10px}
+    .creator-copy p{color:#b9b4c4;line-height:1.6;margin:0}
+    .video-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+    .video-tags span{
+      padding:6px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.035);
+      color:#aaa4b4;font-size:.67rem;font-weight:850;text-transform:uppercase;letter-spacing:.04em
+    }
+    .creator-copy .watch-link{display:inline-block;margin-top:15px;color:#fff;text-decoration:none;font-weight:800}
+    .creator-copy .watch-link:hover{color:#ff73b3}
+
+    .buzz-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .buzz-card{
+      grid-column:span 4;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.025));
+      border:1px solid rgba(255,255,255,.09);border-radius:22px;padding:22px;min-height:210px;position:relative;overflow:hidden
+    }
+    .buzz-card:after{
+      content:"";position:absolute;width:130px;height:130px;border-radius:50%;right:-55px;top:-55px;
+      background:var(--glow,#ff4fa3);filter:blur(38px);opacity:.16
+    }
+    .buzz-card h3{font-size:1.25rem;margin:14px 0 9px}.buzz-card p{color:#bdb8c8;line-height:1.55}
+    .buzz-card small{color:#918b9e;display:block;margin-top:12px}
+    .tag{
+      display:inline-flex;align-items:center;padding:7px 10px;border-radius:999px;font-size:.7rem;font-weight:900;
+      letter-spacing:.06em;text-transform:uppercase
+    }
+    .tag.theory{background:rgba(255,79,163,.13);color:#ff85bd;border:1px solid rgba(255,79,163,.24)}
+    .tag.analysis{background:rgba(56,214,217,.11);color:#67e3e5;border:1px solid rgba(56,214,217,.22)}
+    .tag.unconfirmed{background:rgba(255,163,78,.11);color:#ffb878;border:1px solid rgba(255,163,78,.22)}
+    .tag.preview{background:rgba(111,235,148,.11);color:#85ef9f;border:1px solid rgba(111,235,148,.22)}
+
+    .source-rule{
+      margin-top:28px;display:grid;grid-template-columns:auto 1fr;gap:18px;padding:22px;border-radius:20px;
+      border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.028)
+    }
+    .source-rule strong{font-size:1.7rem}.source-rule h3{margin:0 0 6px}.source-rule p{margin:0;color:#aaa4b4;line-height:1.55}
+    .spec-footer{
+      padding:44px clamp(20px,6vw,90px);border-top:1px solid rgba(255,255,255,.08);background:#07070b;
+      display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center
+    }
+    .spec-footer p{color:#8f8997;max-width:740px;line-height:1.5}
+    .back-btn{
+      display:inline-flex;align-items:center;gap:8px;padding:13px 18px;border-radius:999px;
+      background:linear-gradient(90deg,#ff7b56,#ff4fa3);color:#fff;text-decoration:none;font-weight:900
+    }
+
+    @media(max-width:1050px){
+      .watch-card{grid-column:span 6}.playlist-row{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:900px){
+      .buzz-card{grid-column:span 6}.creator-grid{grid-template-columns:1fr}.spec-topbar{align-items:flex-start}
+      .spec-nav{justify-content:flex-end}.spec-sun{right:-120px;width:330px;height:330px}
+    }
+    @media(max-width:620px){
+      .spec-topbar{position:relative;display:block}.spec-nav{margin-top:12px;justify-content:flex-start}
+      .spec-nav a{padding:7px 9px;font-size:.84rem}.spec-hero{min-height:68vh;padding-top:60px}
+      .spec-sun{opacity:.45;top:12%}.watch-card,.buzz-card{grid-column:1/-1}.playlist-row{grid-template-columns:1fr}
+      .playlist-vault-head{display:block}.playlist-vault-head p{margin-top:8px}.spec-footer{grid-template-columns:1fr}
+      .creator-copy{padding:18px}.hero-actions a{width:100%}
+    }
   </style>
 </head>
 <body>
   <header class="spec-topbar">
-    <a class="brand" href="index.html" aria-label="Everything GTA VI home"><span class="brand-small">EVERYTHING</span><span class="brand-main">GTA <b>VI</b></span></a>
+    <a class="brand" href="index.html" aria-label="Everything GTA VI home">
+      <span class="brand-small">EVERYTHING</span><span class="brand-main">GTA <b>VI</b></span>
+    </a>
     <nav class="spec-nav" aria-label="Speculation navigation">
+      <a class="creator-watch-link" href="#watch">Creator Watch</a>
+      <a href="#featured">Featured Videos</a>
       <a href="#buzz">Latest Buzz</a>
-      <a href="#creators">Creator Videos</a>
       <a href="index.html#facts">Confirmed Facts</a>
     </nav>
   </header>
 
   <main>
     <section class="spec-hero">
-      <div class="spec-sun" aria-hidden="true"></div><div class="spec-gridlines" aria-hidden="true"></div>
+      <div class="spec-sun" aria-hidden="true"></div>
+      <div class="spec-gridlines" aria-hidden="true"></div>
       <div class="spec-hero-content">
         <div class="spec-kicker">THEORIES · CREATOR TAKES · COMMUNITY HYPE</div>
-        <h1>GTA VI<br><span>SPECULATION</span></h1>
-        <p>The fun side of waiting for GTA VI: creator breakdowns, theories, reactions, predictions, and the questions Rockstar has not answered yet.</p>
-        <div class="warning-banner"><div class="warning-icon">⚠</div><div><b>This page is intentionally separate from confirmed GTA VI information.</b><span>Creator commentary can include predictions, interpretation, rumors, or claims Rockstar has not verified. Treat it as entertainment and discussion unless the main site marks the information Confirmed.</span></div></div>
+        <h1>GTA VI<br><span>CREATOR WATCH</span></h1>
+        <p>A living watchlist for GTA VI analysis, reactions, theories, playlists, and creator coverage — built to make the best community videos easier to find without mixing speculation into the confirmed side of the site.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#watch">Browse Creator Watch ↓</a>
+          <a href="#featured">Watch Featured Videos</a>
+        </div>
+        <div class="warning-banner">
+          <div class="warning-icon">⚠</div>
+          <div>
+            <b>Creator coverage is not Rockstar confirmation.</b>
+            <span>Videos on this page can include opinion, interpretation, prediction, rumors, leaks, or claims Rockstar has not verified. Confirmed information stays on the main Everything GTA VI site.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="watch" class="spec-section alt">
+      <div class="spec-heading">
+        <div class="eyebrow">THE CHANNELS WORTH CHECKING AGAIN</div>
+        <h2>Creator Watch</h2>
+        <p>These channels have enough GTA VI-focused material to be useful as recurring sources instead of one-off embeds. The playlist buttons are the fastest way to dig through a creator's GTA VI backlog.</p>
+        <div class="curated-stamp">Curated September 7, 2026 · Rotates as stronger GTA VI coverage appears</div>
+      </div>
+
+      <div class="watch-grid">
+        <article class="watch-card" style="--creator-glow:#ff4fa3">
+          <div class="watch-label"><span class="rank">Priority Watch</span><span class="focus">Dedicated GTA VI show</span></div>
+          <h3>GTA VI O’Clock</h3>
+          <p>A recurring GTA VI series built around news, rumors, analysis, trailer discussion, hidden details, and long-form conversation. This is one of the cleanest matches for the purpose of this page.</p>
+          <div class="watch-tags"><span class="microtag">News</span><span class="microtag">Rumors</span><span class="microtag">Analysis</span><span class="microtag">Long-form</span></div>
+          <div class="watch-actions">
+            <a class="playlist" href="https://www.youtube.com/playlist?list=PLL7-7TcGDvLjmiURqK1uDU3itW2_eJbCe" target="_blank" rel="noopener">GTA VI Playlist ↗</a>
+            <a href="https://www.youtube.com/@GTAVI-oclock" target="_blank" rel="noopener">Channel ↗</a>
+          </div>
+        </article>
+
+        <article class="watch-card" style="--creator-glow:#38d6d9">
+          <div class="watch-label"><span class="rank">Priority Watch</span><span class="focus">High-engagement GTA coverage</span></div>
+          <h3>TGG</h3>
+          <p>Heavy GTA and Rockstar coverage with fast reactions, Q&As, preview discussion, screenshots, pre-order news, breakdowns, and speculation. Especially useful around major Rockstar drops.</p>
+          <div class="watch-tags"><span class="microtag">Reactions</span><span class="microtag">Breakdowns</span><span class="microtag">Q&A</span><span class="microtag">Rockstar</span></div>
+          <div class="watch-actions">
+            <a class="playlist" href="https://www.youtube.com/playlist?list=PLmsb_p-bcqRIzIy0g1aN8wwB9Rp80FXYK" target="_blank" rel="noopener">Hopium Streams ↗</a>
+            <a href="https://www.youtube.com/@TGG_" target="_blank" rel="noopener">Channel ↗</a>
+          </div>
+        </article>
+
+        <article class="watch-card" style="--creator-glow:#ff9c55">
+          <div class="watch-label"><span class="rank">Archive Goldmine</span><span class="focus">Large GTA 6 backlog</span></div>
+          <h3>JeffTutorials</h3>
+          <p>A deep archive of GTA 6 news and speculation covering map theories, Online, development talk, trailer predictions, release discussion, and recurring updates. Best used as a speculation library, not a confirmation source.</p>
+          <div class="watch-tags"><span class="microtag">Map</span><span class="microtag">Online</span><span class="microtag">News</span><span class="microtag">Rumors</span></div>
+          <div class="watch-actions">
+            <a class="playlist" href="https://www.youtube.com/playlist?list=PLJ2nczFjKh7F886Vjh8_F1-w2WwuRxgr2" target="_blank" rel="noopener">GTA 6 News Playlist ↗</a>
+            <a href="https://www.youtube.com/@jefftutorials" target="_blank" rel="noopener">Channel ↗</a>
+          </div>
+        </article>
+
+        <article class="watch-card" style="--creator-glow:#8d5cff">
+          <div class="watch-label"><span class="rank">Analysis Watch</span><span class="focus">News + skeptical takes</span></div>
+          <h3>LegacyKillaHD</h3>
+          <p>Gaming news and analysis with substantial GTA VI coverage. Useful when you want a creator who mixes excitement with criticism and questions instead of treating every rumor like a certainty.</p>
+          <div class="watch-tags"><span class="microtag">News</span><span class="microtag">Analysis</span><span class="microtag">Industry</span><span class="microtag">Rumors</span></div>
+          <div class="watch-actions">
+            <a class="playlist" href="https://www.youtube.com/playlist?list=PL5F6bW10TbH6Om_TuFMNXyyTeLn6MUYS2" target="_blank" rel="noopener">Grand Theft Auto 6 Playlist ↗</a>
+            <a href="https://www.youtube.com/@LegacyKillaHD" target="_blank" rel="noopener">Channel ↗</a>
+          </div>
+        </article>
+
+        <article class="watch-card" style="--creator-glow:#69e79b">
+          <div class="watch-label"><span class="rank">Commentary Watch</span><span class="focus">Long-form GTA creator</span></div>
+          <h3>DarkViperAU</h3>
+          <p>A long-time GTA creator whose reactions and commentary are useful for detailed observations, franchise context, and community discussion. Featured videos can rotate in when GTA VI becomes the focus.</p>
+          <div class="watch-tags"><span class="microtag">Reaction</span><span class="microtag">Commentary</span><span class="microtag">GTA History</span><span class="microtag">Long-form</span></div>
+          <div class="watch-actions">
+            <a href="https://www.youtube.com/@DarkViperAU" target="_blank" rel="noopener">Channel ↗</a>
+          </div>
+        </article>
+
+        <article class="watch-card" style="--creator-glow:#ffd163">
+          <div class="watch-label"><span class="rank">Smaller Watch</span><span class="focus">Focused GTA VI playlist</span></div>
+          <h3>Kenny Bomb</h3>
+          <p>A smaller creator watch with a dedicated GTA VI playlist covering Rockstar changes, gameplay and release details, trailer waiting, and community reaction. Useful for adding more voices beyond the biggest channels.</p>
+          <div class="watch-tags"><span class="microtag">News</span><span class="microtag">Reaction</span><span class="microtag">Release</span><span class="microtag">Gameplay</span></div>
+          <div class="watch-actions">
+            <a class="playlist" href="https://www.youtube.com/playlist?list=PLPM00fWUxykk" target="_blank" rel="noopener">GTA VI Playlist ↗</a>
+            <a href="https://www.youtube.com/@kennybomb" target="_blank" rel="noopener">Channel ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="playlist-vault">
+        <div class="playlist-vault-head">
+          <h3>Playlist Vault</h3>
+          <p>Quick-entry collections for when you want to mine a topic or creator backlog instead of opening one video at a time.</p>
+        </div>
+        <div class="playlist-row">
+          <a class="playlist-link" href="https://www.youtube.com/playlist?list=PLL7-7TcGDvLjmiURqK1uDU3itW2_eJbCe" target="_blank" rel="noopener">
+            <b>GTA VI O’Clock</b><span>Recurring GTA VI episodes covering news, rumors, analysis, reactions, and deep dives.</span><em>Open playlist ↗</em>
+          </a>
+          <a class="playlist-link" href="https://www.youtube.com/playlist?list=PLmsb_p-bcqRIzIy0g1aN8wwB9Rp80FXYK" target="_blank" rel="noopener">
+            <b>TGG · Hopium Streams</b><span>Long-form GTA VI discussion, reactions, Q&As, preview coverage, and hype streams.</span><em>Open playlist ↗</em>
+          </a>
+          <a class="playlist-link" href="https://www.youtube.com/playlist?list=PLJ2nczFjKh7F886Vjh8_F1-w2WwuRxgr2" target="_blank" rel="noopener">
+            <b>JeffTutorials · GTA 6 News</b><span>A very large backlog spanning maps, Online, trailers, development rumors, and release talk.</span><em>Open playlist ↗</em>
+          </a>
+          <a class="playlist-link" href="https://www.youtube.com/playlist?list=PL5F6bW10TbH6Om_TuFMNXyyTeLn6MUYS2" target="_blank" rel="noopener">
+            <b>LegacyKillaHD · Grand Theft Auto 6</b><span>Long-running GTA VI news and analysis from one of the creators already featured here.</span><em>Open playlist ↗</em>
+          </a>
+          <a class="playlist-link" href="https://www.youtube.com/playlist?list=PLPM00fWUxykk" target="_blank" rel="noopener">
+            <b>Kenny Bomb · GTA VI</b><span>A smaller focused playlist for release, gameplay, trailer, and Rockstar discussion.</span><em>Open playlist ↗</em>
+          </a>
+          <a class="playlist-link" href="https://www.youtube.com/playlist?list=PLraFbwCoisJDd74rocoHCk8Inw67A3pqR" target="_blank" rel="noopener">
+            <b>IGN · GTA 6 Reference Library</b><span>Not a fan creator, but a useful secondary reference pool for previews, breakdowns, trailers, and feature analysis.</span><em>Open playlist ↗</em>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="spec-section">
+      <div class="spec-heading">
+        <div class="eyebrow">WATCH WITHOUT LEAVING THE SITE</div>
+        <h2>Featured Creator Videos</h2>
+        <p>A rotating set of useful GTA VI videos from the Creator Watch list. Use the filters to narrow the page by the kind of discussion you want.</p>
+      </div>
+
+      <div class="filter-bar" aria-label="Filter creator videos">
+        <button class="filter-btn active" type="button" data-filter="all">All</button>
+        <button class="filter-btn" type="button" data-filter="reaction">Reactions</button>
+        <button class="filter-btn" type="button" data-filter="analysis">Analysis</button>
+        <button class="filter-btn" type="button" data-filter="news">News</button>
+        <button class="filter-btn" type="button" data-filter="rumor">Rumors</button>
+        <button class="filter-btn" type="button" data-filter="map">Map</button>
+      </div>
+
+      <div class="creator-grid" id="creatorGrid">
+        <article class="creator-card" data-topics="analysis news">
+          <div class="creator-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/L9gS2vGDkzI" title="GTA VI O'Clock - 10 Ways GTA 6 Will Change Gaming Forever" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="creator-copy">
+            <div class="creator-line"><span class="creator-name">GTA VI O’Clock</span><span class="creator-date">Recent</span></div>
+            <h3>10 Ways GTA 6 Will Change Gaming Forever</h3>
+            <p>A long-form episode built around what GTA VI could change or influence. Treat the forward-looking parts as creator analysis and prediction.</p>
+            <div class="video-tags"><span>Analysis</span><span>Long-form</span></div>
+            <a class="watch-link" href="https://www.youtube.com/watch?v=L9gS2vGDkzI" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+          </div>
+        </article>
+
+        <article class="creator-card" data-topics="reaction analysis">
+          <div class="creator-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/ls__BqL09QM" title="GTA VI O'Clock live reaction to GTA 6 preview" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="creator-copy">
+            <div class="creator-line"><span class="creator-name">GTA VI O’Clock</span><span class="creator-date">Recent</span></div>
+            <h3>Live Reaction to the GTA VI Preview</h3>
+            <p>A reaction-driven episode that is useful for observations and discussion immediately around a major GTA VI media drop.</p>
+            <div class="video-tags"><span>Reaction</span><span>Preview</span></div>
+            <a class="watch-link" href="https://www.youtube.com/watch?v=ls__BqL09QM" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+          </div>
+        </article>
+
+        <article class="creator-card" data-topics="reaction analysis news">
+          <div class="creator-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/BTfzszKgRKc" title="TGG GTA 6 Extended Look live reaction and breakdown" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="creator-copy">
+            <div class="creator-line"><span class="creator-name">TGG</span><span class="creator-date">Recent</span></div>
+            <h3>Extended Look — Live Reaction & Breakdown</h3>
+            <p>A high-energy watch-along and breakdown from a creator with heavy GTA coverage. Useful for spotting discussion points that can later be checked against official information.</p>
+            <div class="video-tags"><span>Reaction</span><span>Breakdown</span><span>Rockstar</span></div>
+            <a class="watch-link" href="https://www.youtube.com/watch?v=BTfzszKgRKc" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+          </div>
+        </article>
+
+        <article class="creator-card" data-topics="news analysis">
+          <div class="creator-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/5Jz-Y0AB4CU" title="TGG GTA 6 new screenshots interviews and more" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="creator-copy">
+            <div class="creator-line"><span class="creator-name">TGG</span><span class="creator-date">Recent</span></div>
+            <h3>New Screenshots, Interviews & More</h3>
+            <p>A useful roundup format for scanning newly released material and creator observations without adding those observations directly to the confirmed database.</p>
+            <div class="video-tags"><span>News</span><span>Screenshots</span></div>
+            <a class="watch-link" href="https://www.youtube.com/watch?v=5Jz-Y0AB4CU" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+          </div>
+        </article>
+
+        <article class="creator-card" data-topics="news rumor">
+          <div class="creator-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/2vQNoeNmQ84" title="JeffTutorials Rockstar might drop GTA 6 trailer 3 soon" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="creator-copy">
+            <div class="creator-line"><span class="creator-name">JeffTutorials</span><span class="creator-date">Archive</span></div>
+            <h3>Trailer 3 Speculation — What We Know</h3>
+            <p>A clean example of the kind of creator prediction that belongs here rather than on the confirmed side of the site.</p>
+            <div class="video-tags"><span>Rumor</span><span>Trailer</span></div>
+            <a class="watch-link" href="https://www.youtube.com/watch?v=2vQNoeNmQ84" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+          </div>
+        </article>
+
+        <article class="creator-card" data-topics="map analysis rumor">
+          <div class="creator-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/LeyVOq_XtJQ" title="JeffTutorials detailed look at the map of Leonida GTA 6" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="creator-copy">
+            <div class="creator-line"><span class="creator-name">JeffTutorials</span><span class="creator-date">Archive</span></div>
+            <h3>A Detailed Look at the Map of Leonida</h3>
+            <p>Map reconstruction and interpretation can be useful for finding areas to investigate, but fan map work stays clearly separated from Rockstar's official map information.</p>
+            <div class="video-tags"><span>Map</span><span>Analysis</span><span>Speculation</span></div>
+            <a class="watch-link" href="https://www.youtube.com/watch?v=LeyVOq_XtJQ" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+          </div>
+        </article>
+
+        <article class="creator-card" data-topics="analysis news">
+          <div class="creator-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/BiJl8CWIPkw" title="LegacyKillaHD skeptical look at GTA 6" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="creator-copy">
+            <div class="creator-line"><span class="creator-name">LegacyKillaHD</span><span class="creator-date">Featured</span></div>
+            <h3>A Skeptical Look at GTA 6</h3>
+            <p>A post-reveal analysis that mixes excitement with criticism and questions about the risks Rockstar may be taking with GTA VI.</p>
+            <div class="video-tags"><span>Analysis</span><span>Industry</span></div>
+            <a class="watch-link" href="https://www.youtube.com/watch?v=BiJl8CWIPkw" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+          </div>
+        </article>
+
+        <article class="creator-card" data-topics="reaction analysis">
+          <div class="creator-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/pYuak_DhidU" title="DarkViperAU GTA 6 Extended Look reaction" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="creator-copy">
+            <div class="creator-line"><span class="creator-name">DarkViperAU</span><span class="creator-date">Featured</span></div>
+            <h3>GTA 6 Extended Look Initial Reaction</h3>
+            <p>A long-time GTA creator's immediate reaction — useful for hype, observations, and discussion rather than official confirmation.</p>
+            <div class="video-tags"><span>Reaction</span><span>Commentary</span></div>
+            <a class="watch-link" href="https://www.youtube.com/watch?v=pYuak_DhidU" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="source-rule">
+        <strong>↔</strong>
+        <div>
+          <h3>The wall between creator content and confirmed facts stays intact.</h3>
+          <p>If a creator points out something interesting, it can become a lead to investigate. It only moves to Story, Map, Vehicles, Music, Gameplay, Online, or Facts after the underlying information is independently confirmed.</p>
+        </div>
       </div>
     </section>
 
     <section id="buzz" class="spec-section alt">
-      <div class="spec-heading"><div class="eyebrow">WHAT PEOPLE ARE TALKING ABOUT</div><h2>Current Hype Board</h2><p>Topics worth following after Rockstar's August 27 Extended Look. The labels below are the important part: they show where confirmed information stops and prediction begins.</p></div>
+      <div class="spec-heading">
+        <div class="eyebrow">WHAT PEOPLE ARE TALKING ABOUT</div>
+        <h2>Current Hype Board</h2>
+        <p>Topics worth following after Rockstar's August 27 Extended Look. The labels below show where confirmed information stops and prediction begins.</p>
+      </div>
       <div class="buzz-grid">
         <article class="buzz-card" style="--glow:#ff4fa3"><span class="tag unconfirmed">Not Announced</span><h3>GTA VI Online</h3><p>How Rockstar might transition GTA Online players, whether progress carries over, and when a new multiplayer experience could arrive remain major discussion points.</p><small>Rockstar has not announced GTA VI Online details.</small></article>
         <article class="buzz-card" style="--glow:#38d6d9"><span class="tag theory">Creator Theory</span><h3>Cross-play</h3><p>PS5 and Xbox Series X|S players naturally want cross-platform multiplayer, but there is still no official GTA VI cross-play announcement.</p><small>Keep this in the speculation column until Rockstar says otherwise.</small></article>
         <article class="buzz-card" style="--glow:#ff934f"><span class="tag theory">Prediction</span><h3>Trailer 3 / Next Marketing Drop</h3><p>Creators continue to predict what Rockstar will show next: story details, expanded gameplay systems, music, vehicles, or multiplayer.</p><small>No official Trailer 3 date is listed here.</small></article>
-        <article class="buzz-card" style="--glow:#8c5dff"><span class="tag analysis">Analysis</span><h3>Jason & Lucia's Story</h3><p>The Extended Look gives creators much more material to interpret: their relationship, criminal partnership, personalities, and how much player choice may shape the story.</p><small>Interpretation is not the same thing as plot confirmation.</small></article>
-        <article class="buzz-card" style="--glow:#62e79c"><span class="tag preview">Preview Discussion</span><h3>Immersion & Vehicle Systems</h3><p>Recent preview coverage has sparked conversation around Rockstar's push toward deeper immersion, including vehicle-related systems and how much realism players actually want.</p><small>Individual mechanics should move to the main database only when reliably confirmed.</small></article>
+        <article class="buzz-card" style="--glow:#8c5dff"><span class="tag analysis">Analysis</span><h3>Jason & Lucia's Story</h3><p>Official footage gives creators more material to interpret: their personalities, criminal partnership, and how much player choice may shape the story.</p><small>Interpretation is not the same thing as plot confirmation.</small></article>
+        <article class="buzz-card" style="--glow:#62e79c"><span class="tag preview">Preview Discussion</span><h3>Immersion & Vehicle Systems</h3><p>Preview coverage has sparked conversation around Rockstar's push toward deeper immersion, including vehicle-related systems and how much realism players actually want.</p><small>Individual mechanics should move to the main database only when reliably confirmed.</small></article>
         <article class="buzz-card" style="--glow:#ffcf59"><span class="tag unconfirmed">Not Released</span><h3>Full Map & Hidden POIs</h3><p>Fans are still studying official footage for businesses, roads, neighborhoods, gas stations, restaurants, and landmarks while waiting for a complete official map.</p><small>Fan reconstruction ≠ official map.</small></article>
         <article class="buzz-card" style="--glow:#4cc7ff"><span class="tag unconfirmed">Not Announced</span><h3>PC Version</h3><p>PC timing, specifications, graphics features, and a PC release window remain natural prediction topics because Rockstar's current launch information names consoles.</p><small>No PC launch date on the confirmed side of the site.</small></article>
         <article class="buzz-card" style="--glow:#ff6a80"><span class="tag theory">Fan Prediction</span><h3>Radio & Soundtrack</h3><p>Official trailer songs are known, but fans continue predicting radio stations, DJs, artists, genres, and how Leonida's music scene connects to Only Raw Records.</p><small>Full radio and soundtrack lists remain unreleased.</small></article>
         <article class="buzz-card" style="--glow:#ba78ff"><span class="tag analysis">Breakdown Zone</span><h3>Details Hidden in Footage</h3><p>Signs, storefronts, license plates, background characters, UI hints, vehicles, wildlife, and environmental details make every official video a frame-by-frame treasure hunt.</p><small>Visual identification can still be uncertain — label it accordingly.</small></article>
-      </div>
-    </section>
-
-    <section id="creators" class="spec-section">
-      <div class="spec-heading"><div class="eyebrow">WATCH WITHOUT LEAVING THE SITE</div><h2>Creator Videos</h2><p>A rotating selection of GTA-focused creators reacting to, analyzing, or speculating about GTA VI. These embeds stay separate from Rockstar's official-video section.</p></div>
-      <div class="creator-grid">
-        <article class="creator-card">
-          <div class="creator-video"><iframe src="https://www.youtube-nocookie.com/embed/pYuak_DhidU" title="DarkViperAU GTA 6 Extended Look reaction" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-          <div class="creator-copy"><div class="creator-line"><span class="creator-name">DarkViperAU</span><span class="creator-date">Aug. 27, 2026</span></div><h3>GTA 6 Extended Look Initial Reaction</h3><p>A long-time GTA creator's immediate reaction to Rockstar's new Extended Look — useful for hype, observations, and discussion rather than official confirmation.</p><a class="watch-link" href="https://www.youtube.com/watch?v=pYuak_DhidU" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
-        </article>
-
-        <article class="creator-card">
-          <div class="creator-video"><iframe src="https://www.youtube-nocookie.com/embed/BiJl8CWIPkw" title="LegacyKillaHD skeptical look at GTA 6" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-          <div class="creator-copy"><div class="creator-line"><span class="creator-name">LegacyKillaHD</span><span class="creator-date">Aug. 28, 2026</span></div><h3>A Skeptical Look at GTA 6...</h3><p>A post-reveal analysis that mixes excitement with criticism and questions about the risks Rockstar may be taking with GTA VI.</p><a class="watch-link" href="https://www.youtube.com/watch?v=BiJl8CWIPkw" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
-        </article>
-
-        <article class="creator-card">
-          <div class="creator-video"><iframe src="https://www.youtube-nocookie.com/embed/vM330k0oIqY" title="TGG GTA 6 Extended Look announcement reaction" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-          <div class="creator-copy"><div class="creator-line"><span class="creator-name">TGG</span><span class="creator-date">Aug. 6, 2026</span></div><h3>Extended Look Announcement Reaction</h3><p>TGG covers GTA heavily and has been part of the recent GTA VI preview conversation. This reaction captures the build-up before the Extended Look itself.</p><a class="watch-link" href="https://www.youtube.com/watch?v=vM330k0oIqY" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
-        </article>
-
-        <article class="creator-card">
-          <div class="creator-video"><iframe src="https://www.youtube-nocookie.com/embed/nq0EOaHIrZc" title="Grid GTA 6 most anticipated features" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-          <div class="creator-copy"><div class="creator-line"><span class="creator-name">Grid</span><span class="creator-date">Jul. 5, 2026</span></div><h3>GTA 6 Most Anticipated Features</h3><p>A community-focused wishlist covering possible Story Mode and Online systems. Perfect for the speculation page because the ideas are explicitly expectations, not promises.</p><a class="watch-link" href="https://www.youtube.com/watch?v=nq0EOaHIrZc" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
-        </article>
-
-        <article class="creator-card">
-          <div class="creator-video"><iframe src="https://www.youtube-nocookie.com/embed/X4DiGYjiU1A" title="Tony Plus GTA 6 Online speculation" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-          <div class="creator-copy"><div class="creator-line"><span class="creator-name">Tony +</span><span class="creator-date">Apr. 13, 2026</span></div><h3>GTA 6 Online Release / UGC Speculation</h3><p>Online-focused rumor and creator-mode discussion. This is deliberately labeled speculation because Rockstar has not announced GTA VI Online details.</p><a class="watch-link" href="https://www.youtube.com/watch?v=X4DiGYjiU1A" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
-        </article>
-      </div>
-
-      <div class="creator-spotlights">
-        <div class="spotlight"><b>DarkViperAU</b><span>Long-form GTA reactions, commentary, challenge content, and detailed discussion.</span></div>
-        <div class="spotlight"><b>TGG</b><span>GTA news, previews, community discussion, updates, and Rockstar-focused coverage.</span></div>
-        <div class="spotlight"><b>LegacyKillaHD</b><span>Gaming news and analysis with substantial GTA VI coverage and theory discussion.</span></div>
-        <div class="spotlight"><b>Rotating creators</b><span>This page can keep changing as better, newer GTA VI analysis and speculation videos appear.</span></div>
       </div>
     </section>
 
@@ -118,9 +516,37 @@
 
     4. The creator lineup can stay fresh.
     As new GTA VI analysis appears, older embeds can rotate out while especially useful evergreen breakdowns remain available.
+
+    5. Playlist links are discovery tools.
+    A playlist can contain old, superseded, speculative, or inaccurate videos. It is a source pool, not a verification source.
     -->
   </main>
 
-  <footer class="spec-footer"><div><div class="brand-small">EVERYTHING</div><div class="brand-main">GTA <b>VI</b></div><p>Unofficial fan project. Creator videos belong to their respective channels. GTA VI, Grand Theft Auto, Rockstar Games, and official media belong to their respective owners.</p></div><a class="back-btn" href="index.html">← Back to Confirmed GTA VI</a></footer>
+  <footer class="spec-footer">
+    <div>
+      <div class="brand-small">EVERYTHING</div>
+      <div class="brand-main">GTA <b>VI</b></div>
+      <p>Unofficial fan project. Creator videos belong to their respective channels. GTA VI, Grand Theft Auto, Rockstar Games, and official media belong to their respective owners.</p>
+    </div>
+    <a class="back-btn" href="index.html">← Back to Confirmed GTA VI</a>
+  </footer>
+
+  <script>
+    (() => {
+      const buttons = [...document.querySelectorAll('.filter-btn')];
+      const cards = [...document.querySelectorAll('#creatorGrid .creator-card')];
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filter = button.dataset.filter;
+          buttons.forEach(item => item.classList.toggle('active', item === button));
+          cards.forEach(card => {
+            const topics = (card.dataset.topics || '').split(/\s+/);
+            card.hidden = filter !== 'all' && !topics.includes(filter);
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
