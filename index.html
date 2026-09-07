@@ -63,6 +63,53 @@
       <div><span>SCREENSHOTS</span><b>99 on Rockstar’s media page</b></div>
     </section>
 
+    <style>
+      .creator-preview-section{position:relative;overflow:hidden;background:radial-gradient(circle at 88% 14%,rgba(255,76,166,.16),transparent 28%),radial-gradient(circle at 10% 82%,rgba(69,216,220,.11),transparent 30%),linear-gradient(180deg,#0c0b12,#100d17)}
+      .creator-preview-section:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,black,transparent 88%)}
+      .creator-preview-shell{position:relative;z-index:1}
+      .creator-preview-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:28px}
+      .creator-preview-head>div{max-width:760px}.creator-preview-head h2{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:clamp(2.5rem,5vw,4.8rem);line-height:.92;letter-spacing:-.035em;margin:0 0 12px}.creator-preview-head h2 span{background:linear-gradient(90deg,var(--pink),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent}.creator-preview-head p{margin:0;color:var(--muted)}
+      .creator-preview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+      .creator-preview-card{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:linear-gradient(150deg,#181520,#100f16);box-shadow:0 18px 45px rgba(0,0,0,.24);transition:transform .2s,border-color .2s}.creator-preview-card:hover{transform:translateY(-4px);border-color:rgba(255,76,166,.35)}
+      .creator-preview-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:#09090d}.creator-preview-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .3s}.creator-preview-card:hover .creator-preview-thumb img{transform:scale(1.035)}.creator-preview-thumb:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,9,15,.58),transparent 58%)}
+      .creator-preview-badge{position:absolute;left:14px;bottom:12px;z-index:2;display:inline-flex;padding:6px 9px;border-radius:999px;font-size:.65rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;background:rgba(10,9,15,.82);border:1px solid rgba(255,255,255,.15);color:#fff;backdrop-filter:blur(8px)}
+      .creator-preview-body{padding:19px}.creator-preview-name{display:block;color:var(--cyan);font-size:.68rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-bottom:7px}.creator-preview-body h3{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:1.45rem;line-height:1.08;margin:0 0 8px}.creator-preview-body p{color:#bdb7c5;font-size:.88rem;line-height:1.55;margin:0 0 14px}.creator-preview-link{display:inline-flex;align-items:center;gap:6px;color:#ff9cba;font-size:.8rem;font-weight:900}.creator-preview-link:hover{text-decoration:underline}
+      .creator-preview-note{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:22px;padding:17px 18px;border:1px solid rgba(255,155,84,.22);border-radius:18px;background:rgba(255,155,84,.055)}.creator-preview-note p{margin:0;color:#c7c1ce;font-size:.88rem}.creator-preview-note strong{color:#ffb07d}.creator-preview-note .btn{flex:0 0 auto}
+      @media(max-width:900px){.creator-preview-head{align-items:flex-start;flex-direction:column}.creator-preview-grid{grid-template-columns:1fr}.creator-preview-note{align-items:flex-start;flex-direction:column}}
+    </style>
+
+    <section id="creator-buzz-preview" class="creator-preview-section section-pad" aria-labelledby="creatorBuzzTitle">
+      <div class="creator-preview-shell">
+        <div class="creator-preview-head">
+          <div>
+            <p class="kicker">CREATOR WATCH · SPECULATION</p>
+            <h2 id="creatorBuzzTitle">Latest <span>Creator Buzz</span></h2>
+            <p>Fresh GTA VI reactions, analysis, map discussion, and theories from creators worth following. Creator commentary stays separate from confirmed Rockstar information.</p>
+          </div>
+          <a class="btn ghost" href="speculation.html#featured">Open Creator Watch →</a>
+        </div>
+
+        <div class="creator-preview-grid">
+          <article class="creator-preview-card">
+            <div class="creator-preview-thumb"><img src="https://i.ytimg.com/vi/L9gS2vGDkzI/hqdefault.jpg" alt="GTA VI O’Clock creator video thumbnail" loading="lazy"><span class="creator-preview-badge">Analysis</span></div>
+            <div class="creator-preview-body"><span class="creator-preview-name">GTA VI O’Clock</span><h3>10 Ways GTA 6 Could Change Gaming</h3><p>Long-form discussion about the systems, design choices, and wider impact GTA VI could have.</p><a class="creator-preview-link" href="speculation.html#featured">See on Creator Watch ↗</a></div>
+          </article>
+
+          <article class="creator-preview-card">
+            <div class="creator-preview-thumb"><img src="https://i.ytimg.com/vi/BTfzszKgRKc/hqdefault.jpg" alt="TGG GTA VI Extended Look reaction thumbnail" loading="lazy"><span class="creator-preview-badge">Reaction + Breakdown</span></div>
+            <div class="creator-preview-body"><span class="creator-preview-name">TGG</span><h3>Extended Look — Live Reaction & Breakdown</h3><p>A high-energy deep dive into Rockstar’s latest showcase with observations and community discussion.</p><a class="creator-preview-link" href="speculation.html#featured">See on Creator Watch ↗</a></div>
+          </article>
+
+          <article class="creator-preview-card">
+            <div class="creator-preview-thumb"><img src="https://i.ytimg.com/vi/LeyVOq_XtJQ/hqdefault.jpg" alt="JeffTutorials GTA VI Leonida map analysis thumbnail" loading="lazy"><span class="creator-preview-badge">Map Speculation</span></div>
+            <div class="creator-preview-body"><span class="creator-preview-name">JeffTutorials</span><h3>A Detailed Look at the Map of Leonida</h3><p>Fan reconstruction and map analysis for finding ideas worth investigating — clearly treated as speculation.</p><a class="creator-preview-link" href="speculation.html#featured">See on Creator Watch ↗</a></div>
+          </article>
+        </div>
+
+        <div class="creator-preview-note"><p><strong>Speculation stays speculation.</strong> These videos are here for theories, reactions, and leads. Confirmed facts still live on the main GTA VI database.</p><a class="btn primary" href="speculation.html">Explore all creators & playlists</a></div>
+      </div>
+    </section>
+
     <section id="story" class="content-section section-pad">
       <div class="section-heading">
         <p class="kicker">THE MAIN STORY</p>
