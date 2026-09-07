@@ -1,0 +1,14 @@
+{
+  "lastReviewed": "2026-09-06",
+  "source": "https://www.rockstargames.com/VI/editions",
+  "fullRosterReleased": false,
+  "vehicles": [
+    {"name":"Grotti Cheetah","year":"1995","type":"car","status":"confirmed","context":"Official edition content"},
+    {"name":"Vapid Dominator Buggy","year":"1967","type":"buggy","status":"confirmed","context":"Official edition content"},
+    {"name":"Vapid Stanier Sedan","year":"1955","type":"sedan","status":"confirmed","context":"Vintage Vice City Pack"},
+    {"name":"Shitzu Squalo","year":null,"type":"boat","status":"confirmed","context":"Official edition content"},
+    {"name":"Ganado Retro Build","year":null,"type":"custom build","status":"confirmed","context":"Official edition content"},
+    {"name":"Jason's Safehouse Vehicles","year":null,"type":"vehicle group","status":"confirmed","context":"Official edition content"},
+    {"name":"Classic Car Collection","year":null,"type":"vehicle group","status":"confirmed","context":"Official edition content"}
+  ]
+}
