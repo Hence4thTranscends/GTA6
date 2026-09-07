@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="GTA VI creator speculation, theories, reactions, and community hype — clearly separated from confirmed Rockstar information." />
+  <title>GTA VI Speculation & Creator Buzz | Everything GTA VI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root{--spec-pink:#ff4fa3;--spec-orange:#ff8a4c;--spec-purple:#7e47ff;--spec-cyan:#38d6d9;--spec-ink:#0a0911;--spec-panel:#15131f}
+    body{background:radial-gradient(circle at 85% 5%,rgba(126,71,255,.18),transparent 32%),radial-gradient(circle at 15% 20%,rgba(255,79,163,.12),transparent 26%),#0a0911;color:#f7f4fb}
+    .spec-topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px clamp(18px,4vw,64px);background:rgba(8,7,14,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .spec-topbar .brand{text-decoration:none;color:#fff}.spec-nav{display:flex;gap:10px;flex-wrap:wrap}.spec-nav a{color:#ddd;text-decoration:none;padding:9px 12px;border-radius:999px;border:1px solid transparent}.spec-nav a:hover{color:#fff;border-color:rgba(255,255,255,.16);background:rgba(255,255,255,.04)}
+    .spec-hero{min-height:72vh;display:grid;align-items:center;padding:90px clamp(20px,6vw,90px);position:relative;overflow:hidden}
+    .spec-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(8,7,14,.92) 10%,rgba(8,7,14,.58) 58%,rgba(8,7,14,.85)),radial-gradient(circle at 70% 35%,rgba(255,107,78,.3),transparent 25%),radial-gradient(circle at 82% 42%,rgba(255,79,163,.22),transparent 32%)}
+    .spec-sun{position:absolute;width:380px;height:380px;border-radius:50%;right:8%;top:18%;background:linear-gradient(#ffb15b,#ff5e89 55%,#8a4cff);filter:blur(.2px);opacity:.84;box-shadow:0 0 120px rgba(255,86,134,.3)}
+    .spec-gridlines{position:absolute;inset:auto 0 0;height:48%;opacity:.18;background-image:linear-gradient(rgba(255,255,255,.18) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.18) 1px,transparent 1px);background-size:55px 55px;transform:perspective(500px) rotateX(61deg);transform-origin:bottom}
+    .spec-hero-content{position:relative;z-index:2;max-width:850px}.spec-kicker{font-weight:900;letter-spacing:.16em;color:#ff9f69;font-size:.82rem}.spec-hero h1{font-size:clamp(3.8rem,11vw,9rem);line-height:.78;margin:18px 0 28px;letter-spacing:-.06em}.spec-hero h1 span{background:linear-gradient(90deg,#ffad63,#ff4fa3 50%,#8d5cff);-webkit-background-clip:text;background-clip:text;color:transparent}.spec-hero p{max-width:720px;font-size:clamp(1rem,2vw,1.25rem);line-height:1.65;color:#d6d2df}
+    .warning-banner{display:flex;gap:15px;align-items:flex-start;margin-top:28px;padding:18px;border:1px solid rgba(255,152,92,.3);background:rgba(255,125,84,.08);border-radius:18px;max-width:760px}.warning-banner b{display:block;margin-bottom:4px}.warning-icon{font-size:1.4rem}
+    .spec-section{padding:78px clamp(20px,6vw,90px)}.spec-section.alt{background:rgba(255,255,255,.018);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+    .spec-heading{max-width:800px;margin-bottom:34px}.spec-heading .eyebrow{color:#42dfe2;font-weight:900;letter-spacing:.14em;font-size:.78rem}.spec-heading h2{font-size:clamp(2.2rem,5vw,4.8rem);margin:8px 0 12px;line-height:.95}.spec-heading p{color:#bdb8c8;line-height:1.7}
+    .buzz-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.buzz-card{grid-column:span 4;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.09);border-radius:22px;padding:22px;min-height:210px;position:relative;overflow:hidden}.buzz-card:after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;right:-55px;top:-55px;background:var(--glow,#ff4fa3);filter:blur(38px);opacity:.16}.buzz-card h3{font-size:1.25rem;margin:14px 0 9px}.buzz-card p{color:#bdb8c8;line-height:1.55}.buzz-card small{color:#918b9e;display:block;margin-top:12px}.tag{display:inline-flex;align-items:center;padding:7px 10px;border-radius:999px;font-size:.7rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.tag.theory{background:rgba(255,79,163,.13);color:#ff85bd;border:1px solid rgba(255,79,163,.24)}.tag.analysis{background:rgba(56,214,217,.11);color:#67e3e5;border:1px solid rgba(56,214,217,.22)}.tag.unconfirmed{background:rgba(255,163,78,.11);color:#ffb878;border:1px solid rgba(255,163,78,.22)}.tag.preview{background:rgba(111,235,148,.11);color:#85ef9f;border:1px solid rgba(111,235,148,.22)}
+    .creator-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.creator-card{background:#11101a;border:1px solid rgba(255,255,255,.09);border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.22)}.creator-video{position:relative;aspect-ratio:16/9;background:#050508}.creator-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.creator-copy{padding:22px}.creator-line{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:11px}.creator-name{font-size:.78rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#65e3e5}.creator-date{font-size:.78rem;color:#888291}.creator-copy h3{font-size:1.45rem;margin:0 0 10px}.creator-copy p{color:#b9b4c4;line-height:1.6;margin:0}.creator-copy .watch-link{display:inline-block;margin-top:15px;color:#fff;text-decoration:none;font-weight:800}.creator-copy .watch-link:hover{color:#ff73b3}
+    .policy-box{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:24px;border-radius:22px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(120deg,rgba(126,71,255,.12),rgba(255,79,163,.07))}.policy-box strong{font-size:2rem}.policy-box h3{margin:0 0 8px}.policy-box p{margin:0;color:#c4becd;line-height:1.6}
+    .creator-spotlights{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px}.spotlight{padding:20px;border-radius:18px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.035)}.spotlight b{display:block;font-size:1.05rem;margin-bottom:6px}.spotlight span{color:#a7a1b1;font-size:.9rem;line-height:1.45;display:block}
+    .spec-footer{padding:44px clamp(20px,6vw,90px);border-top:1px solid rgba(255,255,255,.08);background:#07070b;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.spec-footer p{color:#8f8997;max-width:740px;line-height:1.5}.back-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 18px;border-radius:999px;background:linear-gradient(90deg,#ff7b56,#ff4fa3);color:#fff;text-decoration:none;font-weight:900}
+    @media(max-width:900px){.buzz-card{grid-column:span 6}.creator-grid{grid-template-columns:1fr}.creator-spotlights{grid-template-columns:repeat(2,1fr)}.spec-topbar{align-items:flex-start}.spec-nav{justify-content:flex-end}.spec-sun{right:-120px;width:330px;height:330px}}
+    @media(max-width:620px){.spec-topbar{position:relative;display:block}.spec-nav{margin-top:12px;justify-content:flex-start}.spec-nav a{padding:7px 9px;font-size:.86rem}.spec-hero{min-height:68vh;padding-top:60px}.spec-sun{opacity:.45;top:12%}.buzz-card{grid-column:1/-1}.creator-spotlights{grid-template-columns:1fr}.spec-footer{grid-template-columns:1fr}.creator-copy{padding:18px}}
+  </style>
+</head>
+<body>
+  <header class="spec-topbar">
+    <a class="brand" href="index.html" aria-label="Everything GTA VI home"><span class="brand-small">EVERYTHING</span><span class="brand-main">GTA <b>VI</b></span></a>
+    <nav class="spec-nav" aria-label="Speculation navigation">
+      <a href="#buzz">Latest Buzz</a>
+      <a href="#creators">Creator Videos</a>
+      <a href="#rules">What Counts as Speculation?</a>
+      <a href="index.html#facts">Confirmed Facts</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="spec-hero">
+      <div class="spec-sun" aria-hidden="true"></div><div class="spec-gridlines" aria-hidden="true"></div>
+      <div class="spec-hero-content">
+        <div class="spec-kicker">THEORIES · CREATOR TAKES · COMMUNITY HYPE</div>
+        <h1>GTA VI<br><span>SPECULATION</span></h1>
+        <p>The fun side of waiting for GTA VI: creator breakdowns, theories, reactions, predictions, and the questions Rockstar has not answered yet.</p>
+        <div class="warning-banner"><div class="warning-icon">⚠</div><div><b>This page is intentionally separate from confirmed GTA VI information.</b><span>Creator commentary can include predictions, interpretation, rumors, or claims Rockstar has not verified. Treat it as entertainment and discussion unless the main site marks the information Confirmed.</span></div></div>
+      </div>
+    </section>
+
+    <section id="buzz" class="spec-section alt">
+      <div class="spec-heading"><div class="eyebrow">WHAT PEOPLE ARE TALKING ABOUT</div><h2>Current Hype Board</h2><p>Topics worth following after Rockstar's August 27 Extended Look. The labels below are the important part: they show where confirmed information stops and prediction begins.</p></div>
+      <div class="buzz-grid">
+        <article class="buzz-card" style="--glow:#ff4fa3"><span class="tag unconfirmed">Not Announced</span><h3>GTA VI Online</h3><p>How Rockstar might transition GTA Online players, whether progress carries over, and when a new multiplayer experience could arrive remain major discussion points.</p><small>Rockstar has not announced GTA VI Online details.</small></article>
+        <article class="buzz-card" style="--glow:#38d6d9"><span class="tag theory">Creator Theory</span><h3>Cross-play</h3><p>PS5 and Xbox Series X|S players naturally want cross-platform multiplayer, but there is still no official GTA VI cross-play announcement.</p><small>Keep this in the speculation column until Rockstar says otherwise.</small></article>
+        <article class="buzz-card" style="--glow:#ff934f"><span class="tag theory">Prediction</span><h3>Trailer 3 / Next Marketing Drop</h3><p>Creators continue to predict what Rockstar will show next: story details, expanded gameplay systems, music, vehicles, or multiplayer.</p><small>No official Trailer 3 date is listed here.</small></article>
+        <article class="buzz-card" style="--glow:#8c5dff"><span class="tag analysis">Analysis</span><h3>Jason & Lucia's Story</h3><p>The Extended Look gives creators much more material to interpret: their relationship, criminal partnership, personalities, and how much player choice may shape the story.</p><small>Interpretation is not the same thing as plot confirmation.</small></article>
+        <article class="buzz-card" style="--glow:#62e79c"><span class="tag preview">Preview Discussion</span><h3>Immersion & Vehicle Systems</h3><p>Recent preview coverage has sparked conversation around Rockstar's push toward deeper immersion, including vehicle-related systems and how much realism players actually want.</p><small>Individual mechanics should move to the main database only when reliably confirmed.</small></article>
+        <article class="buzz-card" style="--glow:#ffcf59"><span class="tag unconfirmed">Not Released</span><h3>Full Map & Hidden POIs</h3><p>Fans are still studying official footage for businesses, roads, neighborhoods, gas stations, restaurants, and landmarks while waiting for a complete official map.</p><small>Fan reconstruction ≠ official map.</small></article>
+        <article class="buzz-card" style="--glow:#4cc7ff"><span class="tag unconfirmed">Not Announced</span><h3>PC Version</h3><p>PC timing, specifications, graphics features, and a PC release window remain natural prediction topics because Rockstar's current launch information names consoles.</p><small>No PC launch date on the confirmed side of the site.</small></article>
+        <article class="buzz-card" style="--glow:#ff6a80"><span class="tag theory">Fan Prediction</span><h3>Radio & Soundtrack</h3><p>Official trailer songs are known, but fans continue predicting radio stations, DJs, artists, genres, and how Leonida's music scene connects to Only Raw Records.</p><small>Full radio and soundtrack lists remain unreleased.</small></article>
+        <article class="buzz-card" style="--glow:#ba78ff"><span class="tag analysis">Breakdown Zone</span><h3>Details Hidden in Footage</h3><p>Signs, storefronts, license plates, background characters, UI hints, vehicles, wildlife, and environmental details make every official video a frame-by-frame treasure hunt.</p><small>Visual identification can still be uncertain — label it accordingly.</small></article>
+      </div>
+    </section>
+
+    <section id="creators" class="spec-section">
+      <div class="spec-heading"><div class="eyebrow">WATCH WITHOUT LEAVING THE SITE</div><h2>Creator Videos</h2><p>A rotating selection of GTA-focused creators reacting to, analyzing, or speculating about GTA VI. These embeds stay separate from Rockstar's official-video section.</p></div>
+      <div class="creator-grid">
+        <article class="creator-card">
+          <div class="creator-video"><iframe src="https://www.youtube-nocookie.com/embed/pYuak_DhidU" title="DarkViperAU GTA 6 Extended Look reaction" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <div class="creator-copy"><div class="creator-line"><span class="creator-name">DarkViperAU</span><span class="creator-date">Aug. 27, 2026</span></div><h3>GTA 6 Extended Look Initial Reaction</h3><p>A long-time GTA creator's immediate reaction to Rockstar's new Extended Look — useful for hype, observations, and discussion rather than official confirmation.</p><a class="watch-link" href="https://www.youtube.com/watch?v=pYuak_DhidU" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
+        </article>
+
+        <article class="creator-card">
+          <div class="creator-video"><iframe src="https://www.youtube-nocookie.com/embed/BiJl8CWIPkw" title="LegacyKillaHD skeptical look at GTA 6" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <div class="creator-copy"><div class="creator-line"><span class="creator-name">LegacyKillaHD</span><span class="creator-date">Aug. 28, 2026</span></div><h3>A Skeptical Look at GTA 6...</h3><p>A post-reveal analysis that mixes excitement with criticism and questions about the risks Rockstar may be taking with GTA VI.</p><a class="watch-link" href="https://www.youtube.com/watch?v=BiJl8CWIPkw" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
+        </article>
+
+        <article class="creator-card">
+          <div class="creator-video"><iframe src="https://www.youtube-nocookie.com/embed/vM330k0oIqY" title="TGG GTA 6 Extended Look announcement reaction" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <div class="creator-copy"><div class="creator-line"><span class="creator-name">TGG</span><span class="creator-date">Aug. 6, 2026</span></div><h3>Extended Look Announcement Reaction</h3><p>TGG covers GTA heavily and has been part of the recent GTA VI preview conversation. This reaction captures the build-up before the Extended Look itself.</p><a class="watch-link" href="https://www.youtube.com/watch?v=vM330k0oIqY" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
+        </article>
+
+        <article class="creator-card">
+          <div class="creator-video"><iframe src="https://www.youtube-nocookie.com/embed/nq0EOaHIrZc" title="Grid GTA 6 most anticipated features" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <div class="creator-copy"><div class="creator-line"><span class="creator-name">Grid</span><span class="creator-date">Jul. 5, 2026</span></div><h3>GTA 6 Most Anticipated Features</h3><p>A community-focused wishlist covering possible Story Mode and Online systems. Perfect for the speculation page because the ideas are explicitly expectations, not promises.</p><a class="watch-link" href="https://www.youtube.com/watch?v=nq0EOaHIrZc" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
+        </article>
+
+        <article class="creator-card">
+          <div class="creator-video"><iframe src="https://www.youtube-nocookie.com/embed/X4DiGYjiU1A" title="Tony Plus GTA 6 Online speculation" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <div class="creator-copy"><div class="creator-line"><span class="creator-name">Tony +</span><span class="creator-date">Apr. 13, 2026</span></div><h3>GTA 6 Online Release / UGC Speculation</h3><p>Online-focused rumor and creator-mode discussion. This is deliberately labeled speculation because Rockstar has not announced GTA VI Online details.</p><a class="watch-link" href="https://www.youtube.com/watch?v=X4DiGYjiU1A" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
+        </article>
+      </div>
+
+      <div class="creator-spotlights">
+        <div class="spotlight"><b>DarkViperAU</b><span>Long-form GTA reactions, commentary, challenge content, and detailed discussion.</span></div>
+        <div class="spotlight"><b>TGG</b><span>GTA news, previews, community discussion, updates, and Rockstar-focused coverage.</span></div>
+        <div class="spotlight"><b>LegacyKillaHD</b><span>Gaming news and analysis with substantial GTA VI coverage and theory discussion.</span></div>
+        <div class="spotlight"><b>Rotating creators</b><span>This page can keep changing as better, newer GTA VI analysis and speculation videos appear.</span></div>
+      </div>
+    </section>
+
+    <section id="rules" class="spec-section alt">
+      <div class="spec-heading"><div class="eyebrow">KEEPING THE SITE TRUSTWORTHY</div><h2>How This Page Works</h2></div>
+      <div class="policy-box"><strong>1</strong><div><h3>Rockstar confirmation stays on the main site.</h3><p>If Rockstar explicitly announces something, it belongs in the confirmed database and can graduate out of speculation.</p></div></div>
+      <div class="policy-box" style="margin-top:14px"><strong>2</strong><div><h3>Creator analysis is attributed to the creator.</h3><p>Videos are presented as opinions, breakdowns, reactions, theories, or rumors. An embedded creator title does not become a factual claim by this site.</p></div></div>
+      <div class="policy-box" style="margin-top:14px"><strong>3</strong><div><h3>Leaks and rumors get obvious labels.</h3><p>No rumor should quietly appear in Story, Map, Vehicles, Music, or Online as though Rockstar confirmed it.</p></div></div>
+      <div class="policy-box" style="margin-top:14px"><strong>4</strong><div><h3>The creator lineup can stay fresh.</h3><p>As new GTA VI analysis appears, older embeds can rotate out while especially useful evergreen breakdowns remain available.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="spec-footer"><div><div class="brand-small">EVERYTHING</div><div class="brand-main">GTA <b>VI</b></div><p>Unofficial fan project. Creator videos belong to their respective channels. GTA VI, Grand Theft Auto, Rockstar Games, and official media belong to their respective owners.</p></div><a class="back-btn" href="index.html">← Back to Confirmed GTA VI</a></footer>
+</body>
+</html>
