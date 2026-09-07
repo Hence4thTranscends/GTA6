@@ -1,0 +1,60 @@
+name: Patch newsletter sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/patch-newsletter-sync.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Teach Make webhook payload shape
+        run: |
+          curl --fail --silent --show-error \
+            -X POST 'https://hook.us2.make.com/at87994kk8ctq97bxfjh85jovzkeol7h' \
+            -H 'Content-Type: application/json' \
+            --data '{"email":"make-schema-test@example.invalid","newsletter":true,"gamertag":"SchemaTest","platform":"PS5","website":""}'
+
+      - name: Patch app.js
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          path = Path('app.js')
+          text = path.read_text()
+
+          old_constant = "  const NEWSLETTER_ENDPOINT = 'https://gta6-community-submissions.keen-olive-1713.chatgpt.site/submit';"
+          new_constants = old_constant + "\n  const MAILERLITE_SYNC_ENDPOINT = 'https://hook.us2.make.com/at87994kk8ctq97bxfjh85jovzkeol7h';"
+          if 'MAILERLITE_SYNC_ENDPOINT' not in text:
+              if old_constant not in text:
+                  raise SystemExit('Newsletter endpoint constant not found')
+              text = text.replace(old_constant, new_constants, 1)
+
+          old_block = """      if (!response.ok) throw new Error(`HTTP ${response.status}`);\n      newsletterMessage.classList.add('success');"""
+          new_block = """      if (!response.ok) throw new Error(`HTTP ${response.status}`);\n\n      // Keep the existing submission log as the source of truth, then mirror newsletter opt-ins to MailerLite.\n      if (newsletter && MAILERLITE_SYNC_ENDPOINT) {\n        try {\n          const syncResponse = await fetch(MAILERLITE_SYNC_ENDPOINT, {\n            method: 'POST',\n            headers: { 'Content-Type': 'application/json' },\n            body: JSON.stringify({ email, newsletter: true, gamertag, platform, website: qs('#submissionWebsite').value })\n          });\n          if (!syncResponse.ok) console.warn(`MailerLite sync returned HTTP ${syncResponse.status}`);\n        } catch (syncError) {\n          console.warn('MailerLite sync failed; the original submission is still saved:', syncError);\n        }\n      }\n\n      newsletterMessage.classList.add('success');"""
+          if 'MailerLite sync failed; the original submission is still saved:' not in text:
+              if old_block not in text:
+                  raise SystemExit('Newsletter success block not found')
+              text = text.replace(old_block, new_block, 1)
+
+          path.write_text(text)
+          PY
+
+      - name: Commit website patch
+        run: |
+          if git diff --quiet -- app.js; then
+            echo 'No app.js changes needed.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add app.js
+          git commit -m 'Sync newsletter opt-ins to MailerLite'
+          git push
