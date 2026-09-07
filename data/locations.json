@@ -1,0 +1,23 @@
+{
+  "lastReviewed": "2026-09-06",
+  "source": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialMapReleased": false,
+  "regions": [
+    {"name":"Vice City","status":"confirmed","type":"city","coordinates":null},
+    {"name":"Leonida Keys","status":"confirmed","type":"region","coordinates":null},
+    {"name":"Grassrivers","status":"confirmed","type":"region","coordinates":null},
+    {"name":"Port Gellhorn","status":"confirmed","type":"region","coordinates":null},
+    {"name":"Ambrosia","status":"confirmed","type":"region","coordinates":null},
+    {"name":"Mount Kalaga National Park","status":"confirmed","type":"national park","coordinates":null}
+  ],
+  "poiLayers": [
+    {"name":"Gas Stations","status":"awaiting-reliable-official-pins"},
+    {"name":"Food & Drink","status":"awaiting-reliable-official-pins"},
+    {"name":"Hotels & Motels","status":"awaiting-reliable-official-pins"},
+    {"name":"Auto Shops","status":"partial"},
+    {"name":"Clubs & Entertainment","status":"partial"},
+    {"name":"Stores","status":"partial"},
+    {"name":"Police & Government","status":"awaiting-reliable-official-pins"},
+    {"name":"Landmarks","status":"partial"}
+  ]
+}
