@@ -123,3 +123,73 @@ linear-gradient(145deg,#1b1322,#111119);box-shadow:0 35px 120px rgba(0,0,0,.6)}.
 }
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Visual fill pass: only previously plain/blank card surfaces. Official Rockstar art where directly related, GTA VI color treatments elsewhere. */
+
+/* Story tracker chips were plain dark boxes. */
+#story .tracker-grid>div:nth-child(-n+3){background:linear-gradient(145deg,rgba(27,103,98,.48),rgba(17,37,43,.96));border:1px solid rgba(89,214,157,.18)}
+#story .tracker-grid>div:nth-child(n+4){background:linear-gradient(145deg,rgba(105,76,30,.34),rgba(33,27,20,.96));border:1px solid rgba(255,209,102,.14)}
+
+/* Confirmed Leonida regions: Rockstar's official location postcard artwork. */
+#world .region-grid article{min-height:290px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background-size:cover;background-position:center;text-shadow:0 2px 18px rgba(0,0,0,.95);box-shadow:0 18px 45px rgba(0,0,0,.22)}
+#world .region-grid article p{color:#ece8ef}
+#world .region-grid article:nth-child(1){background-image:linear-gradient(180deg,rgba(7,8,14,.12) 0%,rgba(7,8,14,.44) 44%,rgba(7,8,14,.96) 100%),url('https://www.rockstargames.com/VI/_next/static/media/Vice_City_Postcard_landscape.0v2njmlk2n-qm.jpg?akim=1&imdensity=1&imwidth=3840')}
+#world .region-grid article:nth-child(2){background-image:linear-gradient(180deg,rgba(7,8,14,.10) 0%,rgba(7,8,14,.42) 44%,rgba(7,8,14,.96) 100%),url('https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_Postcard_landscape.05oezf2h--~ed.jpg?akim=1&imdensity=1&imwidth=3840')}
+#world .region-grid article:nth-child(3){background-image:linear-gradient(180deg,rgba(7,8,14,.10) 0%,rgba(7,8,14,.44) 44%,rgba(7,8,14,.96) 100%),url('https://www.rockstargames.com/VI/_next/static/media/Grassrivers_Postcard_landscape.15-10i39nhex2.jpg?akim=1&imdensity=1&imwidth=3840')}
+#world .region-grid article:nth-child(4){background-image:linear-gradient(180deg,rgba(7,8,14,.10) 0%,rgba(7,8,14,.44) 44%,rgba(7,8,14,.96) 100%),url('https://www.rockstargames.com/VI/_next/static/media/Port_Gellhorn_Postcard_landscape.176c2o75nmcr8.jpg?akim=1&imdensity=1&imwidth=3840')}
+#world .region-grid article:nth-child(5){background-image:linear-gradient(180deg,rgba(7,8,14,.10) 0%,rgba(7,8,14,.44) 44%,rgba(7,8,14,.96) 100%),url('https://www.rockstargames.com/VI/_next/static/media/Ambrosia_Postcard_landscape.0gd~9a41ia-rt.jpg?akim=1&imdensity=1&imwidth=3840')}
+#world .region-grid article:nth-child(6){background-image:linear-gradient(180deg,rgba(7,8,14,.10) 0%,rgba(7,8,14,.44) 44%,rgba(7,8,14,.96) 100%),url('https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_Postcard_landscape.0c1cb4ocq16n3.jpg?akim=1&imdensity=1&imwidth=3840')}
+
+/* Business rows: compact color coding works better than squeezing photographs into these short rows. */
+#world .poi-list>div:nth-child(1){background:linear-gradient(110deg,rgba(108,38,132,.62),rgba(180,45,105,.28),#14131b)}
+#world .poi-list>div:nth-child(2),#world .poi-list>div:nth-child(3){background:linear-gradient(110deg,rgba(20,101,115,.58),rgba(35,73,104,.26),#14131b)}
+#world .poi-list>div:nth-child(4){background:linear-gradient(110deg,rgba(179,57,102,.52),rgba(99,42,103,.28),#14131b)}
+#world .poi-list>div:nth-child(5){background:linear-gradient(110deg,rgba(102,62,160,.56),rgba(57,43,105,.26),#14131b)}
+#world .poi-list>div:nth-child(6){background:linear-gradient(110deg,rgba(145,40,74,.58),rgba(78,32,82,.25),#14131b)}
+#world .poi-list>div:nth-child(7){background:linear-gradient(110deg,rgba(145,88,30,.48),rgba(98,38,38,.26),#14131b)}
+#world .placeholder-panel[data-panel="gas"]{background:linear-gradient(135deg,rgba(27,101,107,.35),rgba(18,28,34,.97))}
+#world .placeholder-panel[data-panel="food"]{background:linear-gradient(135deg,rgba(166,70,48,.34),rgba(53,24,34,.96))}
+#world .placeholder-panel[data-panel="landmarks"]{background:linear-gradient(135deg,rgba(87,55,145,.36),rgba(25,24,43,.96))}
+
+/* The still-unreleased complete vehicle roster card gets a clear unknown-state color instead of a dead dark box. */
+#vehicles .unknown-vehicle{background:radial-gradient(circle at 92% 8%,rgba(255,209,102,.18),transparent 34%),linear-gradient(145deg,rgba(83,57,24,.52),rgba(27,24,22,.98));border-color:rgba(255,209,102,.22)}
+
+/* Gameplay cards: official media for confirmed features; themed color blocks where details remain unreleased. */
+#gameplay .systems-grid article{background-size:cover;background-position:center;overflow:hidden;text-shadow:0 2px 15px rgba(0,0,0,.8)}
+#gameplay .systems-grid article p{color:#e5e0e8}
+#gameplay .systems-grid article:nth-child(1){background-image:linear-gradient(90deg,rgba(12,12,18,.96),rgba(12,12,18,.74),rgba(12,12,18,.36)),url('https://www.rockstargames.com/VI/_next/static/media/Official_Cover_Art_landscape.12.uu2irr.2_a.jpg?akim=1&imdensity=1&imwidth=3840')}
+#gameplay .systems-grid article:nth-child(2){background-image:linear-gradient(90deg,rgba(10,21,25,.96),rgba(12,31,36,.78),rgba(12,20,24,.42)),url('https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_RIDEOUT_CUSTOMS_01.065-ms8~k8vbq.jpg?akim=1&imdensity=1&imwidth=3840')}
+#gameplay .systems-grid article:nth-child(3){background-image:linear-gradient(90deg,rgba(35,14,28,.96),rgba(75,27,58,.76),rgba(35,14,28,.38)),url('https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SARAS_SALON_01.0gn7dwlvcgz17.jpg?akim=1&imdensity=1&imwidth=3840')}
+#gameplay .systems-grid article:nth-child(4){background-image:linear-gradient(90deg,rgba(30,18,18,.96),rgba(76,37,27,.76),rgba(31,20,18,.40)),url('https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_HAWK_AND_LITTLE_MORGAN_REVOLVERS_01.0~3pdc~~sing4.jpg?akim=1&imdensity=1&imwidth=3840')}
+#gameplay .systems-grid article:nth-child(5){background-image:linear-gradient(90deg,rgba(11,20,24,.96),rgba(25,48,51,.74),rgba(12,19,21,.40)),url('https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_01.0wv6pw3t-mky3.jpg?akim=1&imdensity=1&imwidth=3840')}
+#gameplay .systems-grid article:nth-child(6){background:linear-gradient(145deg,rgba(132,66,36,.50),rgba(42,28,30,.98));text-shadow:none}
+#gameplay .systems-grid article:nth-child(7){background:linear-gradient(145deg,rgba(39,63,91,.50),rgba(20,25,35,.98));text-shadow:none}
+#gameplay .systems-grid article:nth-child(8){background:linear-gradient(145deg,rgba(103,58,34,.46),rgba(45,25,28,.98));text-shadow:none}
+
+/* Release edition cards: all three have official Rockstar art. */
+#editions .edition-card{min-height:350px;background-size:cover;background-position:center;text-shadow:0 2px 17px rgba(0,0,0,.92);box-shadow:0 18px 48px rgba(0,0,0,.22)}
+#editions .edition-card p,#editions .edition-card li{color:#eee9f0}
+#editions .edition-card:nth-child(1){background-image:linear-gradient(180deg,rgba(10,10,15,.48),rgba(10,10,15,.88) 54%,rgba(10,10,15,.98)),url('https://www.rockstargames.com/VI/_next/static/media/Official_Cover_Art_landscape.12.uu2irr.2_a.jpg?akim=1&imdensity=1&imwidth=3840')}
+#editions .edition-card:nth-child(2){background-image:linear-gradient(180deg,rgba(18,10,25,.42),rgba(24,10,31,.86) 54%,rgba(15,10,21,.98)),url('https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_01.16qc1xq5nigg1.jpg?akim=1&imdensity=1&imwidth=3840')}
+#editions .edition-card:nth-child(3){background-image:linear-gradient(180deg,rgba(21,10,21,.42),rgba(38,17,31,.86) 54%,rgba(19,12,18,.98)),url('https://www.rockstargames.com/VI/_next/static/media/VINTAGE_VICE_CITY_PACK_01.05zaof7o1uz.3.jpg?akim=1&imdensity=1&imwidth=3840')}
+
+/* World Database is generated by app.js. Give every previously plain card an identity; use official related art only where it directly fits. */
+#database .systems-grid article{background-size:cover;background-position:center;overflow:hidden}
+#database .systems-grid article:nth-child(1){background-image:linear-gradient(90deg,rgba(27,16,18,.96),rgba(67,34,28,.72),rgba(27,16,18,.38)),url('https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_HAWK_AND_LITTLE_MORGAN_REVOLVERS_01.0~3pdc~~sing4.jpg?akim=1&imdensity=1&imwidth=3840')}
+#database .systems-grid article:nth-child(2){background-image:linear-gradient(90deg,rgba(9,25,24,.95),rgba(17,57,47,.70),rgba(8,23,21,.36)),url('https://www.rockstargames.com/VI/_next/static/media/Grassrivers_Postcard_landscape.15-10i39nhex2.jpg?akim=1&imdensity=1&imwidth=3840')}
+#database .systems-grid article:nth-child(3){background:linear-gradient(145deg,rgba(37,75,118,.54),rgba(19,27,42,.98))}
+#database .systems-grid article:nth-child(4){background:linear-gradient(145deg,rgba(122,39,53,.48),rgba(40,22,31,.98))}
+#database .systems-grid article:nth-child(5){background:linear-gradient(145deg,rgba(154,77,40,.46),rgba(45,29,31,.98))}
+#database .systems-grid article:nth-child(6){background-image:linear-gradient(90deg,rgba(10,21,25,.96),rgba(13,45,51,.72),rgba(11,21,24,.36)),url('https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_RIDEOUT_CUSTOMS_01.065-ms8~k8vbq.jpg?akim=1&imdensity=1&imwidth=3840')}
+#database .systems-grid article:nth-child(7){background-image:linear-gradient(90deg,rgba(10,20,24,.96),rgba(22,49,53,.72),rgba(10,18,21,.36)),url('https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_01.0wv6pw3t-mky3.jpg?akim=1&imdensity=1&imwidth=3840')}
+#database .systems-grid article:nth-child(8){background-image:linear-gradient(90deg,rgba(29,13,28,.96),rgba(74,34,73,.70),rgba(27,14,27,.36)),url('https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_STOCK_305_01.0vuq0m5_1j-17.jpg?akim=1&imdensity=1&imwidth=3840')}
+#database .systems-grid article:nth-child(9){background:linear-gradient(145deg,rgba(83,96,36,.44),rgba(31,38,26,.98))}
+#database .systems-grid article:nth-child(10){background:linear-gradient(145deg,rgba(128,39,102,.50),rgba(38,23,48,.98))}
+#database .systems-grid article:nth-child(11){background-image:linear-gradient(90deg,rgba(10,22,26,.95),rgba(29,61,67,.68),rgba(10,19,23,.36)),url('https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_Postcard_landscape.0c1cb4ocq16n3.jpg?akim=1&imdensity=1&imwidth=3840')}
+#database .systems-grid article:nth-child(12){background-image:linear-gradient(90deg,rgba(19,12,21,.96),rgba(66,34,51,.66),rgba(19,12,21,.34)),url('https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_GROTTI_CHEETAH_01.0a.wy3s_ogjey.jpg?akim=1&imdensity=1&imwidth=3840')}
+#database .systems-grid article:nth-child(13){background:linear-gradient(145deg,rgba(78,43,128,.48),rgba(25,25,45,.98))}
+#database .systems-grid article:nth-child(14){background:linear-gradient(145deg,rgba(48,68,90,.44),rgba(25,28,36,.98))}
+#database .systems-grid article:nth-child(15){background:linear-gradient(145deg,rgba(25,93,111,.48),rgba(17,28,38,.98))}
+#database .systems-grid article:nth-child(16){background-image:linear-gradient(90deg,rgba(25,13,30,.95),rgba(84,36,81,.66),rgba(25,13,30,.36)),url('https://www.rockstargames.com/VI/_next/static/media/Vice_City_Postcard_landscape.0v2njmlk2n-qm.jpg?akim=1&imdensity=1&imwidth=3840')}
+#database .systems-grid article[style*="background-image"],#database .systems-grid article:nth-child(1),#database .systems-grid article:nth-child(2),#database .systems-grid article:nth-child(6),#database .systems-grid article:nth-child(7),#database .systems-grid article:nth-child(8),#database .systems-grid article:nth-child(11),#database .systems-grid article:nth-child(12),#database .systems-grid article:nth-child(16){text-shadow:0 2px 15px rgba(0,0,0,.86)}
+#database .systems-grid article p{color:#ddd8e2}
