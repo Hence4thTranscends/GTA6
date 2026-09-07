@@ -6,6 +6,19 @@
   const qs = (selector, root = document) => root.querySelector(selector);
   const qsa = (selector, root = document) => [...root.querySelectorAll(selector)];
 
+  // Homepage hero artwork — Rockstar's official GTA VI landscape cover art.
+  const heroBg = qs('.hero-bg');
+  const heroOverlay = qs('.hero-overlay');
+  if (heroBg) {
+    heroBg.style.backgroundImage = 'url("https://www.rockstargames.com/VI/_next/static/media/Official_Cover_Art_landscape.12.uu2irr.2_a.jpg?akim=1&imdensity=1&imwidth=3840")';
+    heroBg.style.backgroundSize = 'cover';
+    heroBg.style.backgroundPosition = 'center center';
+    heroBg.style.backgroundRepeat = 'no-repeat';
+  }
+  if (heroOverlay) {
+    heroOverlay.style.background = 'linear-gradient(90deg, rgba(8,8,13,.94) 0%, rgba(8,8,13,.78) 34%, rgba(8,8,13,.55) 58%, rgba(8,8,13,.28) 100%)';
+  }
+
   // Add the broader Everything GTA VI database section.
   const onlineSection = qs('#online');
   if (onlineSection && !qs('#database')) {
