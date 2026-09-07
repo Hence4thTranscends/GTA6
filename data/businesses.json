@@ -1,0 +1,13 @@
+{
+  "lastReviewed": "2026-09-06",
+  "businesses": [
+    {"name":"Only Raw Records","category":"music / record label","status":"confirmed","source":"https://www.rockstargames.com/VI/only-in-leonida","coordinates":null},
+    {"name":"Rideout Customs Mod Shop","category":"vehicle customization","status":"confirmed-via-edition-content","source":"https://www.rockstargames.com/VI/editions","coordinates":null},
+    {"name":"One-Eyed Willie's Mod Shop","category":"vehicle customization","status":"confirmed-via-edition-content","source":"https://www.rockstargames.com/VI/editions","coordinates":null},
+    {"name":"Sara's Unisex Salon","category":"hair / style","status":"confirmed-via-edition-content","source":"https://www.rockstargames.com/VI/editions","coordinates":null},
+    {"name":"Stock 305 Clothing Store","category":"clothing","status":"confirmed-via-edition-content","source":"https://www.rockstargames.com/VI/editions","coordinates":null},
+    {"name":"Electric Fang Tattoo Parlor","category":"tattoo","status":"confirmed-via-edition-content","source":"https://www.rockstargames.com/VI/editions","coordinates":null},
+    {"name":"PTT Youngin$ Compound","category":"illegal goods","status":"confirmed-via-edition-content","source":"https://www.rockstargames.com/VI/editions","coordinates":null}
+  ],
+  "note":"Exact map coordinates are intentionally null until Rockstar publishes enough reliable geography to place them without guessing."
+}
