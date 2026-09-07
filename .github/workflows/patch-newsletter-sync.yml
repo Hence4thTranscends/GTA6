@@ -15,12 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Teach Make webhook payload shape
+      - name: Verify Make webhook and MailerLite sync
         run: |
           curl --fail --silent --show-error \
             -X POST 'https://hook.us2.make.com/at87994kk8ctq97bxfjh85jovzkeol7h' \
             -H 'Content-Type: application/json' \
-            --data '{"email":"make-schema-test@example.invalid","newsletter":true,"gamertag":"SchemaTest","platform":"PS5","website":""}'
+            --data '{"email":"4n0n87+gta6test@gmail.com","newsletter":true,"gamertag":"SchemaTest","platform":"PS5","website":""}'
 
       - name: Patch app.js
         run: |
