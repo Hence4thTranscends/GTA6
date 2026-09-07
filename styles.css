@@ -204,3 +204,10 @@ linear-gradient(145deg,#1b1322,#111119);box-shadow:0 35px 120px rgba(0,0,0,.6)}.
 .newsletter-modal label:not(.consent-line),.consent-line,.form-message{font-size:.875rem}
 .submission-honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 .newsletter-modal button:disabled{opacity:.6;cursor:wait}
+
+
+/* Requested homepage copy + speculation navigation refinements */
+.story-pitch{display:grid;gap:10px}
+.story-pitch span{display:block}
+.main-nav .speculation-nav-link{color:var(--pink);text-shadow:0 0 18px rgba(255,76,166,.28)}
+.main-nav .speculation-nav-link:hover{color:var(--orange);text-shadow:0 0 22px rgba(255,155,84,.42)}
