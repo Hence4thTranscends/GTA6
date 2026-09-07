@@ -28,6 +28,37 @@
     luciaArt.style.backgroundRepeat = 'no-repeat';
   }
 
+  // Supporting character cards — official Rockstar character artwork.
+  const supportingCharacterArt = {
+    'CAL HAMPTON': 'https://www.rockstargames.com/VI/_next/static/media/Cal_Hampton_landscape.17k7bnt3myg.2.jpg?akim=1&imdensity=1&imwidth=3840',
+    'BOOBIE IKE': 'https://www.rockstargames.com/VI/_next/static/media/Boobie_Ike_landscape.0ldnbn87k-8mq.jpg?akim=1&imdensity=1&imwidth=3840',
+    'DRE’QUAN PRIEST': 'https://www.rockstargames.com/VI/_next/static/media/DreQuan_Priest_landscape.0_b7hszyze6cy.jpg?akim=1&imdensity=1&imwidth=3840',
+    "DRE'QUAN PRIEST": 'https://www.rockstargames.com/VI/_next/static/media/DreQuan_Priest_landscape.0_b7hszyze6cy.jpg?akim=1&imdensity=1&imwidth=3840',
+    'REAL DIMEZ': 'https://www.rockstargames.com/VI/_next/static/media/Real_Dimez_landscape.0637akp_a5a_q.jpg?akim=1&imdensity=1&imwidth=3840',
+    'RAUL BAUTISTA': 'https://www.rockstargames.com/VI/_next/static/media/Raul_Bautista_landscape.11_3hd0fr69~j.jpg?akim=1&imdensity=1&imwidth=3840',
+    'BRIAN HEDER': 'https://www.rockstargames.com/VI/_next/static/media/Brian_Heder_landscape.0a-egj5b8yo1q.jpg?akim=1&imdensity=1&imwidth=3840'
+  };
+
+  qsa('.card-grid.characters .person-card:not(.hero-person)').forEach(card => {
+    const name = card.querySelector('h3')?.textContent?.trim().toUpperCase();
+    const imageUrl = supportingCharacterArt[name];
+    if (!imageUrl || card.querySelector('.supporting-character-art')) return;
+
+    const art = document.createElement('div');
+    art.className = 'supporting-character-art';
+    art.setAttribute('aria-hidden', 'true');
+    art.style.backgroundImage = `linear-gradient(0deg, rgba(15,14,22,.12), rgba(15,14,22,0)), url("${imageUrl}")`;
+    art.style.backgroundSize = 'cover';
+    art.style.backgroundPosition = 'center 28%';
+    art.style.backgroundRepeat = 'no-repeat';
+    art.style.minHeight = '190px';
+
+    card.style.display = 'grid';
+    card.style.gridTemplateRows = '190px 1fr';
+    card.style.minHeight = '410px';
+    card.prepend(art);
+  });
+
   // Official preorder shortcut beside Explore and Watch.
   const heroActions = qs('.hero-actions');
   if (heroActions && !qs('.hero-actions .preorder-btn')) {
