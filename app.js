@@ -9,6 +9,46 @@
   const qs = (selector, root = document) => root.querySelector(selector);
   const qsa = (selector, root = document) => [...root.querySelectorAll(selector)];
 
+  // Add the broader "everything GTA VI" tracker without making the base HTML harder to maintain.
+  const onlineSection = qs('#online');
+  if (onlineSection && !qs('#database')) {
+    onlineSection.insertAdjacentHTML('beforebegin', `
+      <section id="database" class="content-section section-pad">
+        <div class="section-heading">
+          <p class="kicker">EVERYTHING ELSE</p>
+          <h2>GTA VI World Database</h2>
+          <p>Every major GTA VI category gets a home here. Confirmed items are separated from things Rockstar has only shown visually and things it has not explained yet.</p>
+        </div>
+        <div class="systems-grid">
+          <article><span class="status confirmed">Confirmed via edition content</span><h3>Weapons</h3><p>Hawk & Little Morgan Revolvers and personalized weapon variants are named officially. A complete weapon catalog has not been released.</p></article>
+          <article><span class="status partial">Seen in Official Media</span><h3>Wildlife</h3><p>Leonida wildlife appears throughout Rockstar media. The site will track species individually as Rockstar makes reliable identifications possible; no full official wildlife roster exists yet.</p></article>
+          <article><span class="status partial">Seen in Official Media</span><h3>Police & Law Enforcement</h3><p>Law-enforcement activity is visible in official footage, while Cal Hampton’s profile references Coast Guard communications. A complete agency list is not published.</p></article>
+          <article><span class="status unknown">Not fully detailed</span><h3>Gangs & Criminal Networks</h3><p>Drug runners, smugglers, robbers, music-business figures, and criminal associates are confirmed, but Rockstar has not released a complete gang/faction roster.</p></article>
+          <article><span class="status unknown">Not fully detailed</span><h3>Activities</h3><p>This tracks side activities, recreation, minigames, hobbies, and world interactions as they become officially identifiable.</p></article>
+          <article><span class="status confirmed">Confirmed via edition content</span><h3>Customization</h3><p>Vehicle modification, clothing, hair, tattoo, and weapon-variant content all have official support through named GTA VI edition benefits.</p></article>
+          <article><span class="status unknown">Partial</span><h3>Properties & Safehouses</h3><p>Jason’s safehouse vehicles are officially referenced, but a complete property purchase/ownership system has not been announced.</p></article>
+          <article><span class="status confirmed">Confirmed via edition content</span><h3>Stores & Style</h3><p>Stock 305 Clothing Store, Sara’s Unisex Salon, and Electric Fang Tattoo Parlor are named official locations/content.</p></article>
+          <article><span class="status unknown">Not fully detailed</span><h3>Economy & Money</h3><p>The criminal economy is central to the story, but Rockstar has not published a complete money, pricing, business-ownership, or progression breakdown.</p></article>
+          <article><span class="status partial">Seen in Official Media</span><h3>Social Media</h3><p>Social-media-style posts and live-video culture are prominent in official GTA VI media. The extent of player interaction with those systems remains unannounced.</p></article>
+          <article><span class="status partial">Seen in Official Media</span><h3>Weather & Environment</h3><p>Tropical coastlines, wetlands, urban nights, beaches, waterways, and varied Leonida environments are official. A complete dynamic-weather feature list is not published.</p></article>
+          <article><span class="status partial">Seen in Official Media</span><h3>Transportation</h3><p>Cars, trucks, motorcycles, boats, aircraft, and emergency vehicles appear across official media. The complete transport roster is still unknown.</p></article>
+          <article><span class="status confirmed">Confirmed</span><h3>Businesses & Brands</h3><p>Only Raw Records and multiple Ultimate Edition businesses are named. They are cross-referenced in the Map & World section.</p></article>
+          <article><span class="status unknown">Not announced</span><h3>PC Requirements</h3><p>No PC version or official PC hardware requirements have been announced.</p></article>
+          <article><span class="status unknown">Not announced</span><h3>Online Systems</h3><p>Multiplayer, cross-play, online player count, online economy, and GTA VI Online launch timing remain unannounced.</p></article>
+          <article><span class="status partial">Growing</span><h3>Brands, Ads & Culture</h3><p>Leonida’s parody brands, signs, businesses, entertainment, and culture will be cataloged as official names become reliably readable and attributable.</p></article>
+        </div>
+      </section>
+    `);
+  }
+
+  const navForMore = qs('.main-nav');
+  if (navForMore && !qs('.main-nav a[href="#database"]')) {
+    const moreLink = document.createElement('a');
+    moreLink.href = '#database';
+    moreLink.textContent = 'More';
+    navForMore.appendChild(moreLink);
+  }
+
   // Mobile navigation
   const menuToggle = qs('.menu-toggle');
   const nav = qs('.main-nav');
