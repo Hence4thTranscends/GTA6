@@ -1,13 +1,100 @@
 {
-  "lastReviewed": "2026-09-06",
+  "lastReviewed": "2026-09-17",
+  "album": {
+    "title": "Grand Theft Auto VI: The Album",
+    "status": "confirmed",
+    "releaseDate": "2026-11-19",
+    "trackCount": 34,
+    "description": "Brand-new original tracks created for GTA VI.",
+    "labelPartner": "Atlantic Records",
+    "formats": [
+      "streaming",
+      "CD",
+      "vinyl",
+      "limited physical editions"
+    ],
+    "source": "https://www.rockstargames.com/newswire/article/7599a881942544/announcing-grand-theft-auto-vi-the-album-coming-november-19"
+  },
+  "releasedSingles": [
+    {
+      "title": "That's It",
+      "artist": "Yung Lean",
+      "featuredArtists": [
+        "Future",
+        "Metro Boomin"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "title": "RHYNO",
+      "artist": "Travis Scott",
+      "producer": "Guy-Manuel de Homem-Christo",
+      "status": "confirmed"
+    },
+    {
+      "title": "Sexy Magic",
+      "artists": [
+        "CA7RIEL & Paco Amoroso",
+        "PinkPantheress",
+        "Fred again..",
+        "Etienne de Crécy"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "title": "Last Thing You Need",
+      "artist": "Morgan Wallen",
+      "status": "confirmed"
+    },
+    {
+      "title": "Macacoa 2000",
+      "artist": "Rauw Alejandro",
+      "status": "confirmed"
+    },
+    {
+      "title": "Bright Lights, Big City",
+      "artist": "Keith Richards",
+      "status": "confirmed"
+    }
+  ],
   "trailerMusic": [
-    {"title":"Love Is a Long Road","artist":"Tom Petty","context":"Trailer 1","status":"confirmed"},
-    {"title":"Hot Together","artist":"The Pointer Sisters","context":"Trailer 2","status":"confirmed"}
+    {
+      "title": "Love Is a Long Road",
+      "artist": "Tom Petty",
+      "context": "Trailer 1",
+      "status": "confirmed"
+    },
+    {
+      "title": "Hot Together",
+      "artist": "The Pointer Sisters",
+      "context": "Trailer 2",
+      "status": "confirmed"
+    }
   ],
   "worldMusic": [
-    {"name":"Only Raw Records","type":"record label","status":"confirmed","people":["Boobie Ike","Dre'Quan Priest","Real Dimez"]}
+    {
+      "name": "Only Raw Records",
+      "type": "record label",
+      "status": "confirmed",
+      "people": [
+        "Boobie Ike",
+        "Dre'Quan Priest",
+        "Real Dimez"
+      ]
+    }
   ],
-  "radioStations": {"status":"not-announced","items":[]},
-  "completeInGameSoundtrack": {"status":"not-announced","items":[]},
-  "originalScoreCredits": {"status":"not-announced","items":[]}
+  "radioStations": {
+    "status": "partially-announced",
+    "items": [],
+    "note": "Rockstar confirms an evolution of in-game radio, but has not published the station roster."
+  },
+  "completeInGameSoundtrack": {
+    "status": "not-fully-announced",
+    "items": [],
+    "note": "The 34-track original album is confirmed; the complete licensed in-game soundtrack is not."
+  },
+  "dynamicScore": {
+    "status": "confirmed",
+    "credits": []
+  }
 }
