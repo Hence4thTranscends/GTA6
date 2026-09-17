@@ -1,13 +1,50 @@
 {
-  "lastReviewed": "2026-09-06",
+  "lastReviewed": "2026-09-17",
   "sources": [
-    {"name":"Grand Theft Auto VI — Official Site","url":"https://www.rockstargames.com/VI","use":"release, platforms, story premise"},
-    {"name":"Only in Leonida","url":"https://www.rockstargames.com/VI/only-in-leonida","use":"characters and named locations"},
-    {"name":"GTA VI Media","url":"https://www.rockstargames.com/VI/media","use":"official videos, screenshots, artwork and wallpapers"},
-    {"name":"GTA VI Screenshots","url":"https://www.rockstargames.com/VI/media/screenshots","use":"official screenshot gallery"},
-    {"name":"GTA VI Videos","url":"https://www.rockstargames.com/VI/media/videos","use":"official trailers, extended look and clips"},
-    {"name":"GTA VI Editions","url":"https://www.rockstargames.com/VI/editions","use":"edition-specific vehicles, businesses, style content and bonuses"},
-    {"name":"Rockstar Newswire — Pre-order GTA VI","url":"https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25","use":"launch framing and pre-order information"},
-    {"name":"Rockstar Newswire — An Extended Look","url":"https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing","use":"August 27, 2026 extended-look release"}
+    {
+      "name": "Grand Theft Auto VI — Official Site",
+      "url": "https://www.rockstargames.com/VI",
+      "use": "release, platforms, story premise"
+    },
+    {
+      "name": "Only in Leonida",
+      "url": "https://www.rockstargames.com/VI/only-in-leonida",
+      "use": "characters and named locations"
+    },
+    {
+      "name": "GTA VI Media",
+      "url": "https://www.rockstargames.com/VI/media",
+      "use": "official videos, screenshots, artwork and wallpapers"
+    },
+    {
+      "name": "GTA VI Screenshots",
+      "url": "https://www.rockstargames.com/VI/media/screenshots",
+      "use": "official screenshot gallery"
+    },
+    {
+      "name": "GTA VI Videos",
+      "url": "https://www.rockstargames.com/VI/media/videos",
+      "use": "official trailers, extended look and clips"
+    },
+    {
+      "name": "GTA VI Editions",
+      "url": "https://www.rockstargames.com/VI/editions",
+      "use": "edition-specific vehicles, businesses, style content and bonuses"
+    },
+    {
+      "name": "Rockstar Newswire — Pre-order GTA VI",
+      "url": "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25",
+      "use": "launch framing and pre-order information"
+    },
+    {
+      "name": "Rockstar Newswire — An Extended Look",
+      "url": "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing",
+      "use": "August 27, 2026 extended-look release"
+    },
+    {
+      "name": "Rockstar Newswire — Grand Theft Auto VI: The Album",
+      "url": "https://www.rockstargames.com/newswire/article/7599a881942544/announcing-grand-theft-auto-vi-the-album-coming-november-19",
+      "use": "34-track original album, first six singles, Atlantic Records partnership, release date, formats, radio and score announcement"
+    }
   ]
 }
