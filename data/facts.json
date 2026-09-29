@@ -1,16 +1,90 @@
 {
-  "lastReviewed": "2026-09-06",
+  "lastReviewed": "2026-09-29",
   "facts": [
-    {"topic":"Release date","status":"confirmed","value":"November 19, 2026"},
-    {"topic":"PlayStation 5","status":"confirmed","value":"Launch platform"},
-    {"topic":"Xbox Series X|S","status":"confirmed","value":"Launch platform"},
-    {"topic":"PC version","status":"not-announced","value":null},
-    {"topic":"Jason and Lucia","status":"confirmed","value":"Central protagonists"},
-    {"topic":"Vice City","status":"confirmed","value":"Major Leonida setting"},
-    {"topic":"Complete official map","status":"not-released","value":null},
-    {"topic":"Complete vehicle roster","status":"not-released","value":null},
-    {"topic":"Complete soundtrack","status":"not-released","value":null},
-    {"topic":"GTA VI Online / multiplayer","status":"not-announced","value":null},
-    {"topic":"Cross-play","status":"not-announced","value":null}
+    {
+      "topic": "Release date",
+      "status": "confirmed",
+      "value": "November 19, 2026"
+    },
+    {
+      "topic": "PlayStation 5",
+      "status": "confirmed",
+      "value": "Launch platform"
+    },
+    {
+      "topic": "Xbox Series X|S",
+      "status": "confirmed",
+      "value": "Launch platform"
+    },
+    {
+      "topic": "PC version",
+      "status": "not-announced",
+      "value": null
+    },
+    {
+      "topic": "Jason and Lucia",
+      "status": "confirmed",
+      "value": "Central protagonists"
+    },
+    {
+      "topic": "Vice City",
+      "status": "confirmed",
+      "value": "Major Leonida setting"
+    },
+    {
+      "topic": "Complete official map",
+      "status": "not-released",
+      "value": null
+    },
+    {
+      "topic": "Complete vehicle roster",
+      "status": "not-released",
+      "value": null
+    },
+    {
+      "topic": "Complete soundtrack",
+      "status": "not-released",
+      "value": null
+    },
+    {
+      "topic": "GTA VI Online / multiplayer",
+      "status": "not-announced",
+      "value": null
+    },
+    {
+      "topic": "Cross-play",
+      "status": "not-announced",
+      "value": null
+    },
+    {
+      "topic": "Localized weather",
+      "status": "confirmed",
+      "value": "Dynamic cloudscapes, localized storms, persistent puddles and rainbows"
+    },
+    {
+      "topic": "Tropical storms and hurricanes",
+      "status": "confirmed",
+      "value": "Present in Leonida; frequency and gameplay effects not fully detailed"
+    },
+    {
+      "topic": "Wildlife",
+      "status": "confirmed",
+      "value": "More than 170 species across land, air and sea"
+    },
+    {
+      "topic": "Trackable animals",
+      "status": "confirmed",
+      "value": "Rare, Discoverable and Legendary categories"
+    },
+    {
+      "topic": "Game Informer exclusive screenshots",
+      "status": "confirmed",
+      "value": "12 new screenshots in Issue 382"
+    },
+    {
+      "topic": "Goodtime State – Vice City Collection",
+      "status": "confirmed",
+      "value": "$399.99 merchandise set; game sold separately"
+    }
   ]
 }
