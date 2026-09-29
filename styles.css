@@ -211,3 +211,11 @@ linear-gradient(145deg,#1b1322,#111119);box-shadow:0 35px 120px rgba(0,0,0,.6)}.
 .story-pitch span{display:block}
 .main-nav .speculation-nav-link{color:var(--pink);text-shadow:0 0 18px rgba(255,76,166,.28)}
 .main-nav .speculation-nav-link:hover{color:var(--orange);text-shadow:0 0 22px rgba(255,155,84,.42)}
+
+
+/* September 29, 2026 confirmed environment and collectible updates */
+#gameplay .systems-grid article:nth-child(9){background:linear-gradient(145deg,rgba(27,76,111,.62),rgba(21,31,47,.98));text-shadow:none}
+#gameplay .systems-grid article:nth-child(10){background-image:linear-gradient(90deg,rgba(8,27,26,.96),rgba(18,65,50,.72),rgba(8,25,23,.38)),url('https://www.rockstargames.com/VI/_next/static/media/Grassrivers_Postcard_landscape.15-10i39nhex2.jpg?akim=1&imdensity=1&imwidth=3840')}
+#gameplay .systems-grid article:nth-child(10){background-size:cover;background-position:center;text-shadow:0 2px 15px rgba(0,0,0,.86)}
+#editions .edition-card:nth-child(4){background-image:radial-gradient(circle at 85% 15%,rgba(255,155,84,.22),transparent 34%),linear-gradient(155deg,rgba(70,35,70,.96),rgba(19,18,28,.99))}
+#editions .edition-card.collectible strong{color:#ffd166}
