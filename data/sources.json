@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-09-17",
+  "lastReviewed": "2026-09-29",
   "sources": [
     {
       "name": "Grand Theft Auto VI — Official Site",
@@ -45,6 +45,26 @@
       "name": "Rockstar Newswire — Grand Theft Auto VI: The Album",
       "url": "https://www.rockstargames.com/newswire/article/7599a881942544/announcing-grand-theft-auto-vi-the-album-coming-november-19",
       "use": "34-track original album, first six singles, Atlantic Records partnership, release date, formats, radio and score announcement"
+    },
+    {
+      "name": "Rockstar Newswire — Goodtime State – Vice City Collection",
+      "url": "https://www.rockstargames.com/newswire/article/9k2a49ook82o57/pre-order-the-goodtime-state-vice-city-collection-now-while-supplies-l",
+      "use": "collector merchandise, price, contents and game-sold-separately status"
+    },
+    {
+      "name": "Game Informer Issue 382 — GTA VI Digital Issue",
+      "url": "https://gameinformer.com/digital-issue/2026/09/29/the-grand-theft-auto-vi-digital-issue-is-now-live",
+      "use": "Rockstar developer interviews, 14-page cover story and 12 exclusive screenshots"
+    },
+    {
+      "name": "Game Informer — GTA VI Weather",
+      "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-features-tropical-storms-and-hurricanes",
+      "use": "localized storms, persistent wet surfaces, rainbows, tropical storms and hurricanes"
+    },
+    {
+      "name": "Game Informer — GTA VI Wildlife",
+      "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species",
+      "use": "170+ species, named wildlife, tracking categories and animal rendering systems"
     }
   ]
 }
