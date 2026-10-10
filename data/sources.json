@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-09-29",
+  "lastReviewed": "2026-10-10",
   "sources": [
     {
       "name": "Grand Theft Auto VI — Official Site",
@@ -65,6 +65,41 @@
       "name": "Game Informer — GTA VI Wildlife",
       "url": "https://gameinformer.com/exclusive/2026/09/29/exclusive-grand-theft-auto-vi-includes-over-170-animal-species",
       "use": "170+ species, named wildlife, tracking categories and animal rendering systems"
+    },
+    {
+      "name": "Rockstar Games — The Music of Grand Theft Auto VI",
+      "url": "https://www.rockstargames.com/VI/music/flash-fm",
+      "use": "radio station previews, hosts, portable listening, podcasts and eight available album singles"
+    },
+    {
+      "name": "ESRB — Grand Theft Auto VI",
+      "url": "https://www.esrb.org/ratings/41627/grand-theft-auto-vi/",
+      "use": "Mature 17+ rating, content descriptors and in-game purchases notice"
+    },
+    {
+      "name": "IGN — GTA 6: The Big Interview",
+      "url": "https://www.ign.com/articles/gta-6-the-big-interview",
+      "use": "business robberies, safes, vehicles, police evasion, relationship messages, dynamic encounters, choices and Ryde Me fast travel"
+    },
+    {
+      "name": "LOVE Magazine Issue 27 coverage",
+      "url": "https://www.watchpreviously.com/news/gta-vi-love-magazine-issue-27/",
+      "use": "four official screenshots and Rockstar developer comments on characters and world simulation"
+    },
+    {
+      "name": "Miami Heat — A Night in Vice City",
+      "url": "https://www.nba.com/heat/vicecity",
+      "use": "November 18 Vice City court, uniform and arena event"
+    },
+    {
+      "name": "Xbox cloud clarification coverage",
+      "url": "https://www.gamesradar.com/games/grand-theft-auto/no-gta-6-wont-be-playable-on-pc-via-xbox-cloud-gaming-and-microsoft-doesnt-have-exclusive-streaming-rights-either-exec-clarifies/",
+      "use": "no exclusive Xbox streaming rights and no PC streaming at launch"
+    },
+    {
+      "name": "Nintendo Switch 2 statement coverage",
+      "url": "https://mynintendonews.com/2026/10/09/nintendo-of-america-president-says-gta-vi-on-switch-2-is-down-to-rockstar-and-take-two/",
+      "use": "Nintendo has nothing to announce for a Switch 2 version"
     }
   ]
 }
