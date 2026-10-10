@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-09-29",
+  "lastReviewed": "2026-10-10",
   "facts": [
     {
       "topic": "Release date",
@@ -85,6 +85,81 @@
       "topic": "Goodtime State – Vice City Collection",
       "status": "confirmed",
       "value": "$399.99 merchandise set; game sold separately"
+    },
+    {
+      "topic": "Map scale",
+      "status": "confirmed",
+      "value": "Roughly twice GTA V's map; Rockstar's largest map by some degree, with greater density, interaction and interiors"
+    },
+    {
+      "topic": "Confirmed activities",
+      "status": "confirmed",
+      "value": "Scuba diving, kayaking, jet skiing, airboating, base jumping, mini-golf, billiards, gyms, fishing, racing and visiting a zoo"
+    },
+    {
+      "topic": "Business robberies and safes",
+      "status": "confirmed",
+      "value": "Many businesses can be robbed; safes use combinations or explosives, which can damage valuables"
+    },
+    {
+      "topic": "Personal vehicle weapon storage",
+      "status": "confirmed",
+      "value": "Purchased weapons are stored in summonable personal vehicles"
+    },
+    {
+      "topic": "Ryde Me rideshare",
+      "status": "confirmed",
+      "value": "Functions as fast travel"
+    },
+    {
+      "topic": "Relationship messaging",
+      "status": "confirmed",
+      "value": "Jason and Lucia call and text; ignoring messages can harm their relationship"
+    },
+    {
+      "topic": "ESRB rating",
+      "status": "confirmed",
+      "value": "Mature 17+; Blood and Gore, Intense Violence, Mature Humor, Nudity, Strong Language, Strong Sexual Content, Use of Drugs and Alcohol; In-Game Purchases"
+    },
+    {
+      "topic": "Radio station previews",
+      "status": "confirmed",
+      "value": "Flash FM, Cocoteo, Back Country, Afro Bank FM, The Chamber and Dirty South Classics"
+    },
+    {
+      "topic": "Portable radio and podcasts",
+      "status": "confirmed",
+      "value": "Available through the characters' phones while on foot as well as in vehicles"
+    },
+    {
+      "topic": "Xbox cloud streaming to PC at launch",
+      "status": "not-available",
+      "value": "Xbox says GTA VI will not stream to PC and has no exclusive streaming rights"
+    },
+    {
+      "topic": "Nintendo Switch 2 version",
+      "status": "not-announced",
+      "value": "Nintendo has nothing to announce; Rockstar's launch platforms remain PS5 and Xbox Series X|S"
+    },
+    {
+      "topic": "A Night in Vice City",
+      "status": "confirmed",
+      "value": "Miami Heat vs. Milwaukee Bucks at Kaseya Center on November 18, 2026"
+    },
+    {
+      "topic": "LOVE Magazine screenshots",
+      "status": "confirmed",
+      "value": "4 official images"
+    },
+    {
+      "topic": "October radio reveal screenshots",
+      "status": "confirmed",
+      "value": "3 official images"
+    },
+    {
+      "topic": "Grand Theft Auto VI: The Album singles available",
+      "status": "confirmed",
+      "value": "8 of 34"
     }
   ]
 }
