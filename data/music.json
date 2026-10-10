@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-09-17",
+  "lastReviewed": "2026-10-10",
   "album": {
     "title": "Grand Theft Auto VI: The Album",
     "status": "confirmed",
@@ -47,6 +47,16 @@
       "status": "confirmed"
     },
     {
+      "title": "Suzuki",
+      "artist": "Fuerza Regida",
+      "status": "confirmed"
+    },
+    {
+      "title": "Don't Chart",
+      "artist": "Cardi B",
+      "status": "confirmed"
+    },
+    {
       "title": "Macacoa 2000",
       "artist": "Rauw Alejandro",
       "status": "confirmed"
@@ -85,8 +95,58 @@
   ],
   "radioStations": {
     "status": "partially-announced",
-    "items": [],
-    "note": "Rockstar confirms an evolution of in-game radio, but has not published the station roster."
+    "source": "https://www.rockstargames.com/VI/music/flash-fm",
+    "items": [
+      {
+        "name": "Cocoteo",
+        "format": "Modern Latin",
+        "hosts": [
+          "El Martillo",
+          "La Gata"
+        ]
+      },
+      {
+        "name": "Back Country",
+        "format": "Renegade country",
+        "hosts": [
+          "MW",
+          "Delta Dawne"
+        ]
+      },
+      {
+        "name": "Afro Bank FM",
+        "format": "Amapiano, African classics and 3-step",
+        "hosts": [
+          "Burna",
+          "Palmsy"
+        ]
+      },
+      {
+        "name": "The Chamber",
+        "format": "Metal",
+        "hosts": [
+          "DJ Kerry",
+          "DJ Tom"
+        ]
+      },
+      {
+        "name": "Flash FM",
+        "format": "Pop",
+        "hosts": [
+          "Robyn",
+          "Alex"
+        ]
+      },
+      {
+        "name": "Dirty South Classics",
+        "format": "Southern rap and hip-hop classics",
+        "hosts": [
+          "Trick",
+          "Trina"
+        ]
+      }
+    ],
+    "note": "Six stations have been previewed; Rockstar says the full radio selection spans additional formats including classic rock and talk radio."
   },
   "completeInGameSoundtrack": {
     "status": "not-fully-announced",
@@ -96,5 +156,9 @@
   "dynamicScore": {
     "status": "confirmed",
     "credits": []
+  },
+  "portableListening": {
+    "status": "confirmed",
+    "value": "Radio and in-game podcasts are available through the characters' phones while on foot as well as in vehicles."
   }
 }
