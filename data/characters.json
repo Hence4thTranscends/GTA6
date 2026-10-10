@@ -1,14 +1,55 @@
 {
-  "lastReviewed": "2026-09-06",
+  "lastReviewed": "2026-10-10",
   "source": "https://www.rockstargames.com/VI/only-in-leonida",
   "characters": [
-    {"name":"Jason Duval","status":"confirmed","role":"Protagonist","summary":"Army veteran who ended up in the Leonida Keys working around local drug runners and criminals."},
-    {"name":"Lucia Caminos","status":"confirmed","role":"Protagonist","summary":"Recently held in Leonida Penitentiary and determined to make smarter moves for herself and her family."},
-    {"name":"Cal Hampton","status":"confirmed","role":"Supporting character","summary":"Jason's friend and a Brian associate who is drawn to conspiracies and Coast Guard communications."},
-    {"name":"Boobie Ike","status":"confirmed","role":"Supporting character","summary":"Vice City figure with interests in real estate, nightlife, a recording studio, and Only Raw Records."},
-    {"name":"Dre'Quan Priest","status":"confirmed","role":"Supporting character","summary":"Music-focused hustler building Only Raw Records and working with Real Dimez."},
-    {"name":"Real Dimez","status":"confirmed","role":"Music duo","summary":"Bae-Luxe and Roxy, longtime friends whose music and social-media presence connect to Only Raw Records."},
-    {"name":"Raul Bautista","status":"confirmed","role":"Supporting character","summary":"Experienced bank robber seeking capable people willing to take bigger risks."},
-    {"name":"Brian Heder","status":"confirmed","role":"Supporting character","summary":"Veteran Keys smuggler connected to Jason through property, boat-yard activity, and local criminal work."}
-  ]
+    {
+      "name": "Jason Duval",
+      "status": "confirmed",
+      "role": "Protagonist",
+      "summary": "Army veteran turned Keys-connected criminal. Rockstar's writers describe him as the more reactive of the two protagonists, with clear strengths, weaknesses and vulnerability."
+    },
+    {
+      "name": "Lucia Caminos",
+      "status": "confirmed",
+      "role": "Protagonist",
+      "summary": "Recently held in Leonida Penitentiary and determined to improve the odds for herself and her family. Rockstar's writers describe her as proactive, driven, fully realized and intentionally imperfect."
+    },
+    {
+      "name": "Cal Hampton",
+      "status": "confirmed",
+      "role": "Supporting character",
+      "summary": "Jason's friend and a Brian associate who is drawn to conspiracies and Coast Guard communications."
+    },
+    {
+      "name": "Boobie Ike",
+      "status": "confirmed",
+      "role": "Supporting character",
+      "summary": "Vice City figure with interests in real estate, nightlife, a recording studio, and Only Raw Records."
+    },
+    {
+      "name": "Dre'Quan Priest",
+      "status": "confirmed",
+      "role": "Supporting character",
+      "summary": "Music-focused hustler building Only Raw Records and working with Real Dimez."
+    },
+    {
+      "name": "Real Dimez",
+      "status": "confirmed",
+      "role": "Music duo",
+      "summary": "Bae-Luxe and Roxy, longtime friends whose music and social-media presence connect to Only Raw Records."
+    },
+    {
+      "name": "Raul Bautista",
+      "status": "confirmed",
+      "role": "Supporting character",
+      "summary": "Older, experienced bank robber and mentor with deep knowledge of Vice City and its criminal world, seeking capable people willing to take bigger risks."
+    },
+    {
+      "name": "Brian Heder",
+      "status": "confirmed",
+      "role": "Supporting character",
+      "summary": "Veteran Keys smuggler connected to Jason through property, boat-yard activity, and local criminal work."
+    }
+  ],
+  "interviewSource": "https://www.watchpreviously.com/news/gta-vi-love-magazine-issue-27/"
 }
