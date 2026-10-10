@@ -2,6 +2,8 @@
 
 A fan-made, source-conscious GTA VI knowledge hub built around confirmed Rockstar Games information.
 
+**Content reviewed through October 10, 2026.** The latest pass adds Rockstar’s radio and podcast reveal, eight album singles, Game Informer map/activity details, the full Rockstar gameplay interview, LOVE Magazine developer notes and screenshots, the ESRB rating, launch-event news, and current platform clarifications.
+
 ## Status labels
 - **Confirmed** — explicitly stated or named by Rockstar Games.
 - **Seen in Official Media** — visibly present in official Rockstar footage/screenshots, but not necessarily fully detailed by Rockstar.
