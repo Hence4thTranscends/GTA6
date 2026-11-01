@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-10-10",
+  "lastReviewed": "2026-11-01",
   "facts": [
     {
       "topic": "Release date",
@@ -160,6 +160,66 @@
       "topic": "Grand Theft Auto VI: The Album singles available",
       "status": "confirmed",
       "value": "8 of 34"
+    },
+    {
+      "topic": "Stockyard",
+      "status": "confirmed",
+      "value": "Vice City arts district inspired by Wynwood and confirmed through the Wynwood Walls partnership"
+    },
+    {
+      "topic": "Grand Theft Auto VI: Original Score",
+      "status": "confirmed",
+      "value": "Justice; 30-track adaptive-score album releases December 11, 2026"
+    },
+    {
+      "topic": "Criminal Profile",
+      "status": "confirmed",
+      "value": "Professional-to-Irredeemable scale can influence story"
+    },
+    {
+      "topic": "Jason and Lucia relationship levels",
+      "status": "confirmed",
+      "value": "Four levels shaped through shared activities and player behavior"
+    },
+    {
+      "topic": "Evidence-based police heat",
+      "status": "confirmed",
+      "value": "Witness descriptions can include appearance, clothing, partner, weapon and CCTV"
+    },
+    {
+      "topic": "Working public transit",
+      "status": "confirmed",
+      "value": "Buses and trains operate across Leonida"
+    },
+    {
+      "topic": "Vehicle fuel and engine health",
+      "status": "confirmed",
+      "value": "Vehicles use fuel and can suffer engine damage"
+    },
+    {
+      "topic": "PS5 download size",
+      "status": "reported",
+      "value": "210 GB; not officially confirmed by Rockstar"
+    },
+    {
+      "topic": "PC release window",
+      "status": "reported-unconfirmed",
+      "value": "GamesBeat reports Q1 2027 based on four industry sources"
+    },
+    {
+      "topic": "GTA VI Online timing",
+      "status": "reported-unconfirmed",
+      "value": "Bloomberg expects 2027; Rockstar declined to discuss it"
+    },
+    {
+      "topic": "Review embargo",
+      "status": "reported-unconfirmed",
+      "value": "November 18, 2026"
+    },
+    {
+      "topic": "Nike / Cactus Jack / Rockstar Air Force 1 collaboration",
+      "status": "rumor",
+      "value": "Three $130 colorways reportedly listed for November 19; partners have not confirmed the GTA VI connection"
     }
   ]
 }
