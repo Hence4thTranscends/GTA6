@@ -2,7 +2,7 @@
 
 A fan-made, source-conscious GTA VI knowledge hub built around confirmed Rockstar Games information.
 
-**Content reviewed through October 10, 2026.** The latest pass adds Rockstar’s radio and podcast reveal, eight album singles, Game Informer map/activity details, the full Rockstar gameplay interview, LOVE Magazine developer notes and screenshots, the ESRB rating, launch-event news, and current platform clarifications.
+**Content reviewed through November 1, 2026.** The latest pass adds the launch trailer, Justice’s original-score album, Stockyard, the Bloomberg and Edge gameplay-system reporting, recent official screenshots, Miami campaign activity, labeled PC/Online/storage/review reports, merchandise developments, and an updated Creator Watch launch-trailer breakdown.
 
 ## Status labels
 - **Confirmed** — explicitly stated or named by Rockstar Games.
