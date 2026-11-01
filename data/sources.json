@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-10-10",
+  "lastReviewed": "2026-11-01",
   "sources": [
     {
       "name": "Grand Theft Auto VI — Official Site",
@@ -100,6 +100,41 @@
       "name": "Nintendo Switch 2 statement coverage",
       "url": "https://mynintendonews.com/2026/10/09/nintendo-of-america-president-says-gta-vi-on-switch-2-is-down-to-rockstar-and-take-two/",
       "use": "Nintendo has nothing to announce for a Switch 2 version"
+    },
+    {
+      "name": "Rockstar Newswire — GTA VI Launch Trailer",
+      "url": "https://www.rockstargames.com/newswire/article/517572321a549a/watch-the-grand-theft-auto-vi-launch-trailer",
+      "use": "launch trailer, Jason story context, Justice and Flower in a Hurricane"
+    },
+    {
+      "name": "Rockstar Newswire — Original Score by Justice",
+      "url": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice",
+      "use": "adaptive score, 30-track album, Pusher and December 11 release"
+    },
+    {
+      "name": "Edge — GTA VI Rockstar North cover feature",
+      "url": "https://www.gamesradar.com/edge/gtavi-cover/",
+      "use": "Rockstar North demonstration, gameplay systems, map scale, NPCs, police, vehicles and relationship system"
+    },
+    {
+      "name": "Miami-Dade County — GTA VI campaign",
+      "url": "https://www.miamidade.gov/global/release.page?Mduid_release=rel1793224106473569",
+      "use": "official $3.9 million regional marketing campaign"
+    },
+    {
+      "name": "GamesBeat — reported PC window",
+      "url": "https://gamesbeat.com/grand-theft-auto-vis-pc-release-is-slated-for-q1-2027/",
+      "use": "four-source report of a Q1 2027 PC target; unconfirmed by Rockstar"
+    },
+    {
+      "name": "Insider Gaming — South Park gameplay",
+      "url": "https://insider-gaming.com/new-grand-theft-auto-6-gameplay-revealed-during-south-park/",
+      "use": "Rockstar-credited gameplay footage aired in South Park"
+    },
+    {
+      "name": "TGG — Launch Trailer Breakdown",
+      "url": "https://www.youtube.com/watch?v=FV93IVwJP_4",
+      "use": "creator analysis kept on the speculation side"
     }
   ]
 }
