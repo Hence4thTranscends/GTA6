@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-10-10",
+  "lastReviewed": "2026-11-01",
   "album": {
     "title": "Grand Theft Auto VI: The Album",
     "status": "confirmed",
@@ -79,6 +79,17 @@
       "artist": "The Pointer Sisters",
       "context": "Trailer 2",
       "status": "confirmed"
+    },
+    {
+      "title": "Flower in a Hurricane",
+      "artist": "Justice",
+      "featuredArtists": [
+        "Tame Impala",
+        "SZA",
+        "King Gizzard & The Lizard Wizard"
+      ],
+      "context": "Launch Trailer",
+      "status": "confirmed"
     }
   ],
   "worldMusic": [
@@ -155,7 +166,24 @@
   },
   "dynamicScore": {
     "status": "confirmed",
-    "credits": []
+    "composer": "Justice",
+    "adaptive": true,
+    "album": {
+      "title": "Grand Theft Auto VI: Original Score",
+      "releaseDate": "2026-12-11",
+      "trackCount": 30,
+      "formats": [
+        "streaming",
+        "double CD",
+        "triple vinyl",
+        "limited Triple Crystal Clear vinyl"
+      ],
+      "single": {
+        "title": "Pusher",
+        "featuredArtist": "Gesaffelstein"
+      }
+    },
+    "source": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice"
   },
   "portableListening": {
     "status": "confirmed",
