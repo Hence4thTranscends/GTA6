@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-11-01",
+  "lastReviewed": "2026-11-08",
   "sources": [
     {
       "name": "Grand Theft Auto VI — Official Site",
@@ -135,6 +135,26 @@
       "name": "TGG — Launch Trailer Breakdown",
       "url": "https://www.youtube.com/watch?v=FV93IVwJP_4",
       "use": "creator analysis kept on the speculation side"
+    },
+    {
+      "name": "Rockstar Newswire — GTA VI preload",
+      "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
+      "use": "official preload date, storage requirement, and printable map/poster details"
+    },
+    {
+      "name": "Rockstar Support — GTA VI preload FAQ",
+      "url": "https://support.rockstargames.com/articles/7nPqOA2uCbpEQHXx7KVrYd/grand-theft-auto-vi-pre-load-faq",
+      "use": "official preload and storage guidance"
+    },
+    {
+      "name": "Rockstar Newswire — GTA VI Launch Gallery",
+      "url": "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery",
+      "use": "official November 5 Launch Gallery announcement"
+    },
+    {
+      "name": "Rockstar Games — GTA VI Launch Gallery",
+      "url": "https://www.rockstargames.com/VI/launch-gallery",
+      "use": "official launch screenshots"
     }
   ]
 }
