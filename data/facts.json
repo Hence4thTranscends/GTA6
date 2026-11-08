@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-11-01",
+  "lastReviewed": "2026-11-08",
   "facts": [
     {
       "topic": "Release date",
@@ -197,9 +197,9 @@
       "value": "Vehicles use fuel and can suffer engine damage"
     },
     {
-      "topic": "PS5 download size",
-      "status": "reported",
-      "value": "210 GB; not officially confirmed by Rockstar"
+      "topic": "Console preload storage",
+      "status": "confirmed",
+      "value": "Up to 212 GB depending on device"
     },
     {
       "topic": "PC release window",
@@ -220,6 +220,21 @@
       "topic": "Nike / Cactus Jack / Rockstar Air Force 1 collaboration",
       "status": "rumor",
       "value": "Three $130 colorways reportedly listed for November 19; partners have not confirmed the GTA VI connection"
+    },
+    {
+      "topic": "Digital preload",
+      "status": "confirmed",
+      "value": "November 10, 2026 — PS5 at midnight local time; Xbox globally at 12 a.m. GMT"
+    },
+    {
+      "topic": "Launch Gallery",
+      "status": "confirmed",
+      "value": "Dozens of new official images published November 5, 2026"
+    },
+    {
+      "topic": "Free printable cover art and Leonida map",
+      "status": "confirmed",
+      "value": "Coming November 19, 2026"
     }
   ]
 }
