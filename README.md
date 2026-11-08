@@ -2,7 +2,7 @@
 
 A fan-made, source-conscious GTA VI knowledge hub built around confirmed Rockstar Games information.
 
-**Content reviewed through November 1, 2026.** The latest pass adds the launch trailer, Justice’s original-score album, Stockyard, the Bloomberg and Edge gameplay-system reporting, recent official screenshots, Miami campaign activity, labeled PC/Online/storage/review reports, merchandise developments, and an updated Creator Watch launch-trailer breakdown.
+**Content reviewed through November 8, 2026.** The latest pass adds Rockstar-confirmed preload timing and storage guidance, the free printable cover-art poster and Leonida map, and the official GTA VI Launch Gallery. PC and Online timing remain clearly labeled as unconfirmed.
 
 ## Status labels
 - **Confirmed** — explicitly stated or named by Rockstar Games.
