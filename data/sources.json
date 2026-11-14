@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-11-08",
+  "lastReviewed": "2026-11-14",
   "sources": [
     {
       "name": "Grand Theft Auto VI — Official Site",
@@ -155,6 +155,46 @@
       "name": "Rockstar Games — GTA VI Launch Gallery",
       "url": "https://www.rockstargames.com/VI/launch-gallery",
       "use": "official launch screenshots"
+    },
+    {
+      "name": "Rockstar Newswire — GTA VI: The Festival",
+      "url": "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival",
+      "use": "official November 21 Miami festival announcement"
+    },
+    {
+      "name": "Rockstar Games — GTA VI: The Festival",
+      "url": "https://www.rockstargames.com/VI/gtavi-thefestival",
+      "use": "official festival details"
+    },
+    {
+      "name": "Rockstar Newswire — Pre-load GTA VI Now",
+      "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+      "use": "official performance, platform and promotional-video details"
+    },
+    {
+      "name": "PlayStation Blog — Pre-load GTA VI on PS5",
+      "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
+      "use": "official PS5 features and preorder record"
+    },
+    {
+      "name": "Xbox Wire — GTA VI Cloud Gaming",
+      "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+      "use": "official Xbox cloud details and preorder record"
+    },
+    {
+      "name": "YouTube Blog — GTA VI Launch",
+      "url": "https://blog.youtube/news-and-events/youtube-rockstar-games-gta-vi-launch/",
+      "use": "official 24-hour launch stream details"
+    },
+    {
+      "name": "Selfridges Corner Shop — GTA VI",
+      "url": "https://www.selfridges.com/US/en/inspiration/corner-shop/",
+      "use": "official London pop-up and merchandise details"
+    },
+    {
+      "name": "VGC — GTA VI map report",
+      "url": "https://www.videogameschronicle.com/news/gta-6-map-seemingly-leaks-at-selfridges-merch-drop/",
+      "use": "reporting on the Selfridges map display and circulating unverified image"
     }
   ]
 }
