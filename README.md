@@ -2,7 +2,7 @@
 
 A fan-made, source-conscious GTA VI knowledge hub built around confirmed Rockstar Games information.
 
-**Content reviewed through November 8, 2026.** The latest pass adds Rockstar-confirmed preload timing and storage guidance, the free printable cover-art poster and Leonida map, and the official GTA VI Launch Gallery. PC and Online timing remain clearly labeled as unconfirmed.
+**Content reviewed through November 14, 2026.** The latest pass adds Rockstar-confirmed console performance and platform features, preorder records, GTA VI: The Festival, YouTube’s launch broadcast, the Selfridges pop-up, and a carefully labeled report about the circulating map image. PC and Online timing remain clearly labeled as unconfirmed.
 
 ## Status labels
 - **Confirmed** — explicitly stated or named by Rockstar Games.
