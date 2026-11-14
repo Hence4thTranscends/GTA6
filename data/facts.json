@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-11-08",
+  "lastReviewed": "2026-11-14",
   "facts": [
     {
       "topic": "Release date",
@@ -235,6 +235,61 @@
       "topic": "Free printable cover art and Leonida map",
       "status": "confirmed",
       "value": "Coming November 19, 2026"
+    },
+    {
+      "topic": "Console performance target",
+      "status": "confirmed",
+      "value": "Targets 30 FPS on PS5 and Xbox Series X|S"
+    },
+    {
+      "topic": "PS5 Pro enhancements",
+      "status": "confirmed",
+      "value": "PSSR-enhanced image clarity and ray-traced shadows"
+    },
+    {
+      "topic": "PlayStation 5 features",
+      "status": "confirmed",
+      "value": "DualSense speakers, haptics and adaptive triggers; Tempest 3D Audio; faster loading"
+    },
+    {
+      "topic": "Xbox Cloud Gaming",
+      "status": "confirmed",
+      "value": "Owned copies can stream on Xbox One and Xbox Series consoles from November 19 using Series S settings; availability varies"
+    },
+    {
+      "topic": "Remote Play",
+      "status": "confirmed",
+      "value": "Supported on PlayStation and Xbox"
+    },
+    {
+      "topic": "Grand Theft Auto VI: The Festival",
+      "status": "confirmed",
+      "value": "November 21, 2026 at Mana Wynwood in Miami with two stages of game and soundtrack artists"
+    },
+    {
+      "topic": "YouTube launch livestream",
+      "status": "confirmed",
+      "value": "24-hour launch broadcast; pre-show November 18 at 11 p.m. ET and launch coverage at midnight"
+    },
+    {
+      "topic": "Platform preorder records",
+      "status": "confirmed",
+      "value": "Most preordered title in PlayStation Store and Microsoft Store history"
+    },
+    {
+      "topic": "Blood in Your Eyes promo",
+      "status": "confirmed",
+      "value": "Official video featuring Tove Lo's track from her GTA VI album"
+    },
+    {
+      "topic": "Selfridges GTA VI pop-up",
+      "status": "confirmed",
+      "value": "November 9–28, 2026 at the London Corner Shop with limited merchandise and collaborations"
+    },
+    {
+      "topic": "Circulating Leonida map",
+      "status": "reported-unconfirmed",
+      "value": "A folded physical map was visible at Selfridges, but the claimed full unfolded image has not been authenticated by Rockstar"
     }
   ]
 }
