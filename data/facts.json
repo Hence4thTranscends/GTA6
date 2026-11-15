@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-11-14",
+  "lastReviewed": "2026-11-15",
   "facts": [
     {
       "topic": "Release date",
@@ -290,6 +290,61 @@
       "topic": "Circulating Leonida map",
       "status": "reported-unconfirmed",
       "value": "A folded physical map was visible at Selfridges, but the claimed full unfolded image has not been authenticated by Rockstar"
+    },
+    {
+      "topic": "Character switching",
+      "status": "confirmed",
+      "value": "Usually free switching between Jason and Lucia; certain story acts lock the player to one perspective"
+    },
+    {
+      "topic": "Jason and Lucia relationship outcome",
+      "status": "confirmed",
+      "value": "Player attention and choices have consequences and can affect whether the relationship remains romantic"
+    },
+    {
+      "topic": "Early vehicle and lock progression",
+      "status": "confirmed",
+      "value": "The game begins with low-end vehicle hotwiring and basic lock-picking before higher-level opportunities become available"
+    },
+    {
+      "topic": "Planned robberies",
+      "status": "confirmed",
+      "value": "Targets can be scoped for cameras, surveillance footage, back entrances and safe codes"
+    },
+    {
+      "topic": "Interactive pedestrians and objects",
+      "status": "confirmed",
+      "value": "Players can interrupt conversations, ask to pet dogs, carry food and drinks, and examine readable magazines"
+    },
+    {
+      "topic": "Wildlife logbook",
+      "status": "confirmed",
+      "value": "Binocular observations record wildlife; Rockstar confirmed 62 bird types to spot"
+    },
+    {
+      "topic": "Macca & Friends",
+      "status": "confirmed",
+      "value": "Animated Weazel program following Macca the Gator and his wetland friends across Leonida"
+    },
+    {
+      "topic": "Standard boxed edition contents",
+      "status": "confirmed",
+      "value": "Download code, empty disc spindle and double-sided A3 artwork poster; no traditional physical map in the standard box"
+    },
+    {
+      "topic": "GTA VI: The Album full track list",
+      "status": "reported-unconfirmed",
+      "value": "A retail-vinyl video reportedly shows 34 tracks, but Rockstar has officially revealed only part of the list"
+    },
+    {
+      "topic": "Development scale",
+      "status": "reported",
+      "value": "The Guardian reports a worldwide team of nearly 5,000 and development in some form since 2015"
+    },
+    {
+      "topic": "Project Americas early scope",
+      "status": "reported",
+      "value": "The Guardian reports the codename reflected an abandoned plan to span two continents"
     }
   ]
 }
