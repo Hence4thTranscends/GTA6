@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-11-14",
+  "lastReviewed": "2026-11-15",
   "sources": [
     {
       "name": "Grand Theft Auto VI — Official Site",
@@ -195,6 +195,26 @@
       "name": "VGC — GTA VI map report",
       "url": "https://www.videogameschronicle.com/news/gta-6-map-seemingly-leaks-at-selfridges-merch-drop/",
       "use": "reporting on the Selfridges map display and circulating unverified image"
+    },
+    {
+      "name": "The Guardian — Inside GTA VI at Rockstar North",
+      "url": "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
+      "use": "hands-on demonstration, developer interviews, relationship systems, crime progression, NPC interaction and wildlife details"
+    },
+    {
+      "name": "Gematsu — Macca & Friends teaser",
+      "url": "https://www.gematsu.com/2026/11/grand-theft-auto-vi-in-game-animated-series-macca-friends-teaser-trailer",
+      "use": "Rockstar-supplied teaser and Weazel animated-series details"
+    },
+    {
+      "name": "The Independent — GTA VI boxed edition contents",
+      "url": "https://www.independent.co.uk/bulletin/culture/gta-6-physical-copies-cost-b3084600.html",
+      "use": "observed standard boxed-edition contents and download-code format"
+    },
+    {
+      "name": "RockstarINTEL — Reported GTA VI album track list",
+      "url": "https://rockstarintel.com/full-gta-vi-the-album-track-list-leaked/",
+      "use": "clearly labeled reporting about the unconfirmed 34-track retail-vinyl list"
     }
   ]
 }
