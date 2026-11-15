@@ -2,7 +2,7 @@
 
 A fan-made, source-conscious GTA VI knowledge hub built around confirmed Rockstar Games information.
 
-**Content reviewed through November 14, 2026.** The latest pass adds Rockstar-confirmed console performance and platform features, preorder records, GTA VI: The Festival, YouTube’s launch broadcast, the Selfridges pop-up, and a carefully labeled report about the circulating map image. PC and Online timing remain clearly labeled as unconfirmed.
+**Content reviewed through November 15, 2026.** The latest pass adds The Guardian’s Rockstar North gameplay demonstration, player-influenced relationship outcomes, early crime progression, interactive NPC and wildlife systems, Macca & Friends, observed boxed-edition contents, and a clearly labeled report about the leaked album track list. PC and Online timing remain clearly labeled as unconfirmed.
 
 ## Status labels
 - **Confirmed** — explicitly stated or named by Rockstar Games.
