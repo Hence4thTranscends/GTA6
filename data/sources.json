@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-11-15",
+  "lastReviewed": "2026-11-18",
   "sources": [
     {
       "name": "Grand Theft Auto VI — Official Site",
@@ -215,6 +215,26 @@
       "name": "RockstarINTEL — Reported GTA VI album track list",
       "url": "https://rockstarintel.com/full-gta-vi-the-album-track-list-leaked/",
       "use": "clearly labeled reporting about the unconfirmed 34-track retail-vinyl list"
+    },
+    {
+      "name": "The Verge — Grand Theft Auto VI review",
+      "url": "https://www.theverge.com/games/1035801/grand-theft-auto-6-review",
+      "use": "finished-game review; map access, protagonists, criminal income and exploration"
+    },
+    {
+      "name": "Game Informer — Grand Theft Auto VI review",
+      "url": "https://gameinformer.com/review/grand-theft-auto-vi/outrageous-fortune",
+      "use": "finished-game review; activities, world events, visuals and simulation details"
+    },
+    {
+      "name": "Ars Technica — Grand Theft Auto VI review",
+      "url": "https://arstechnica.com/gaming/2026/11/grand-theft-auto-vi-the-ars-technica-review/",
+      "use": "finished-game review; Jason and Lucia relationship and ordinary-life activities"
+    },
+    {
+      "name": "The Guardian — Grand Theft Auto VI review",
+      "url": "https://www.theguardian.com/games/2026/nov/18/grand-theft-auto-vi-gta-6-review-playstation-rockstar",
+      "use": "finished-game review; locations, activities, characters and reactive-world observations"
     }
   ]
 }
