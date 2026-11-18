@@ -2,7 +2,7 @@
 
 A fan-made, source-conscious GTA VI knowledge hub built around confirmed Rockstar Games information.
 
-**Content reviewed through November 15, 2026.** The latest pass adds The Guardian’s Rockstar North gameplay demonstration, player-influenced relationship outcomes, early crime progression, interactive NPC and wildlife systems, Macca & Friends, observed boxed-edition contents, and a clearly labeled report about the leaked album track list. PC and Online timing remain clearly labeled as unconfirmed.
+**Content reviewed through November 18, 2026.** The latest pass adds the first finished-game reviews, including clearly attributed reviewer findings about full-map access, criminal income, protagonist switching, Jason and Lucia’s relationship, everyday activities, and Leonida’s reactive world. Review-derived details remain separate from Rockstar-confirmed information. PC and Online timing remain clearly labeled as unconfirmed.
 
 ## Status labels
 - **Confirmed** — explicitly stated or named by Rockstar Games.
