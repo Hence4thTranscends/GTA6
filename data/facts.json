@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-11-15",
+  "lastReviewed": "2026-11-18",
   "facts": [
     {
       "topic": "Release date",
@@ -213,8 +213,8 @@
     },
     {
       "topic": "Review embargo",
-      "status": "reported-unconfirmed",
-      "value": "November 18, 2026"
+      "status": "confirmed",
+      "value": "Lifted November 18, 2026; independent reviews are now public"
     },
     {
       "topic": "Nike / Cactus Jack / Rockstar Air Force 1 collaboration",
@@ -345,6 +345,21 @@
       "topic": "Project Americas early scope",
       "status": "reported",
       "value": "The Guardian reports the codename reflected an abandoned plan to span two continents"
+    },
+    {
+      "topic": "Whole-map access at start",
+      "status": "reported",
+      "value": "Multiple launch reviewers say Leonida is accessible from the beginning"
+    },
+    {
+      "topic": "Review-reported criminal income",
+      "status": "reported",
+      "value": "Vehicle theft and resale, store robberies, drug-den raids, underwater treasure and criminal fences"
+    },
+    {
+      "topic": "Review-reported everyday activities",
+      "status": "reported",
+      "value": "Hunting, kayaking, crop dusting, motocross, basketball, shooting ranges, dancing, shopping, home improvement and more"
     }
   ]
 }
