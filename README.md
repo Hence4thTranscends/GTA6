@@ -2,7 +2,7 @@
 
 A fan-made, source-conscious GTA VI knowledge hub built around confirmed Rockstar Games information.
 
-**Content reviewed through November 18, 2026.** The latest pass adds the first finished-game reviews, including clearly attributed reviewer findings about full-map access, criminal income, protagonist switching, Jason and Lucia’s relationship, everyday activities, and Leonida’s reactive world. Review-derived details remain separate from Rockstar-confirmed information. PC and Online timing remain clearly labeled as unconfirmed.
+**Content reviewed through November 19, 2026.** The launch-day pass changes GTA VI from pre-release to available now, updates purchase and edition wording, adds the official launch announcement and Rockstar support hub, publishes the complete official 34-track album list, and preserves the separation between Rockstar-confirmed information and independent reporting. PC and GTA VI Online timing remain clearly labeled as unconfirmed.
 
 ## Status labels
 - **Confirmed** — explicitly stated or named by Rockstar Games.
