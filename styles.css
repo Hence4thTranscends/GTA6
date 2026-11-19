@@ -219,3 +219,11 @@ linear-gradient(145deg,#1b1322,#111119);box-shadow:0 35px 120px rgba(0,0,0,.6)}.
 #gameplay .systems-grid article:nth-child(10){background-size:cover;background-position:center;text-shadow:0 2px 15px rgba(0,0,0,.86)}
 #editions .edition-card:nth-child(4){background-image:radial-gradient(circle at 85% 15%,rgba(255,155,84,.22),transparent 34%),linear-gradient(155deg,rgba(70,35,70,.96),rgba(19,18,28,.99))}
 #editions .edition-card.collectible strong{color:#ffd166}
+
+/* Launch-day album track list */
+.album-tracklist-panel{margin-top:22px;padding:18px 20px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.035)}
+.album-tracklist-panel summary{cursor:pointer;font-family:Oswald,sans-serif;font-size:1.15rem;font-weight:700;text-transform:uppercase;color:var(--cyan)}
+.album-tracklist{columns:2;column-gap:34px;margin:18px 0;padding-left:24px}
+.album-tracklist li{break-inside:avoid;margin:0 0 10px;color:var(--muted)}
+.album-tracklist b{color:var(--text)}
+@media(max-width:700px){.album-tracklist{columns:1}}
