@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Everything GTA VI creator walkthroughs, guides, mission videos, and verified public-data dashboard.">
+  <title>Creators & Walkthroughs | Everything GTA VI</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root{--creator-pink:#ff4f9a;--creator-cyan:#4ee8ff;--creator-gold:#ffb35c;--creator-panel:rgba(19,17,28,.93)}
+    body{background:#09080d;color:#fff}
+    .creator-page{min-height:100vh;background:radial-gradient(circle at 85% 5%,rgba(255,79,154,.16),transparent 32%),radial-gradient(circle at 5% 25%,rgba(78,232,255,.11),transparent 30%)}
+    .creator-hero{padding:132px 6vw 70px;max-width:1380px;margin:auto}.creator-hero h1{font-size:clamp(3.4rem,9vw,8rem);line-height:.85;margin:.2em 0;text-transform:uppercase}.creator-hero h1 span{color:var(--creator-pink)}.creator-hero>p{max-width:780px;color:#c9c4d0;font-size:1.08rem;line-height:1.7}.hero-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+    .page-nav{position:fixed;z-index:20;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:14px 5vw;background:rgba(9,8,13,.9);border-bottom:1px solid rgba(255,255,255,.1);backdrop-filter:blur(14px)}.page-nav a{color:#fff;text-decoration:none;font-weight:800}.page-nav .brand-main b{color:var(--creator-pink)}.page-nav-links{display:flex;gap:20px}
+    .creator-wrap{max-width:1380px;margin:auto;padding:0 6vw 80px}.section-title{margin:0 0 25px}.section-title .kicker{color:var(--creator-cyan)}.section-title h2{font-size:clamp(2.2rem,5vw,4.5rem);line-height:.95;margin:.15em 0;text-transform:uppercase}.section-title p{max-width:760px;color:#bdb7c7;line-height:1.65}
+    .mission-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(330px,.85fr);gap:28px;align-items:start}.video-panel,.mission-column,.dash-card,.guide-card{border:1px solid rgba(255,255,255,.11);border-radius:22px;background:var(--creator-panel);box-shadow:0 20px 65px rgba(0,0,0,.28)}.video-panel{overflow:hidden;position:sticky;top:90px}.video-frame{aspect-ratio:16/9;background:#000}.video-frame iframe{width:100%;height:100%;border:0}.video-copy{padding:24px}.video-copy h3{font-size:1.6rem;margin:0 0 10px}.video-copy p{color:#bdb7c7;line-height:1.6}.spoiler{display:inline-flex;padding:7px 10px;border-radius:999px;background:rgba(255,179,92,.12);border:1px solid rgba(255,179,92,.35);color:#ffd19a;font-size:.82rem;font-weight:900}
+    .mission-column{padding:15px}.mission-column h3{margin:8px 10px 15px}.mission-list{list-style:none;padding:0;margin:0;display:grid;gap:8px}.mission-item a{display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;padding:14px;border-radius:14px;color:#fff;text-decoration:none;background:rgba(255,255,255,.035);border:1px solid transparent}.mission-item a:hover{background:rgba(255,79,154,.1);border-color:rgba(255,79,154,.3)}.mission-no{font-weight:900;color:var(--creator-cyan)}.mission-item strong,.mission-item small{display:block}.mission-item small{color:#9f98a8;margin-top:4px}.play{font-weight:900;color:#ff92bd}
+    .dashboard{padding-top:95px}.dash-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.dash-card{padding:22px}.dash-label{font-size:.78rem;text-transform:uppercase;letter-spacing:.09em;color:#aaa3b1;font-weight:900}.dash-value{display:block;font-size:1.55rem;line-height:1.1;margin:14px 0 9px}.dash-card p{font-size:.92rem;color:#bdb7c7;line-height:1.55;margin:0}.dash-card.available .dash-value{color:#72f0a8}.dash-card.unavailable .dash-value{color:#ffb35c}.dashboard-note{margin-top:18px;padding:18px 20px;border-left:4px solid var(--creator-cyan);background:rgba(78,232,255,.06);color:#c8c1ce;line-height:1.65}
+    .guide-section{padding-top:95px}.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.guide-card{padding:23px}.guide-card .tag{color:var(--creator-cyan);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.guide-card h3{font-size:1.45rem;margin:10px 0}.guide-card p{color:#bdb7c7;line-height:1.6}.guide-card a{color:#ff92bd;font-weight:900;text-decoration:none}
+    .source-list{margin-top:70px;padding:24px;border-top:1px solid rgba(255,255,255,.1);color:#aaa3b1}.source-list a{color:#9eefff}
+    @media(max-width:1000px){.mission-layout{grid-template-columns:1fr}.video-panel{position:relative;top:auto}.dash-grid{grid-template-columns:repeat(2,1fr)}.guide-grid{grid-template-columns:1fr}.page-nav-links{display:none}}
+    @media(max-width:620px){.creator-hero,.creator-wrap{padding-left:20px;padding-right:20px}.dash-grid{grid-template-columns:1fr}.mission-item a{grid-template-columns:36px 1fr}.play{display:none}}
+  </style>
+</head>
+<body>
+<div class="creator-page">
+  <nav class="page-nav" aria-label="Creators page navigation">
+    <a class="brand" href="index.html"><span class="brand-small">EVERYTHING</span><span class="brand-main">GTA <b>VI</b></span></a>
+    <div class="page-nav-links"><a href="#missions">Missions</a><a href="#dashboard">Dashboard</a><a href="#guides">Creators</a><a href="index.html">Main Site</a></div>
+  </nav>
+  <header class="creator-hero">
+    <p class="kicker">CREATOR HUB · WALKTHROUGHS · GUIDES</p>
+    <h1>Watch It<br><span>In Order</span></h1>
+    <p>The former speculation page has been replaced with a practical creator hub: chronological story walkthroughs, useful guide sources, and a dashboard that distinguishes real public Rockstar data from statistics that are not available.</p>
+    <div class="hero-links"><a class="btn primary" href="#missions">Start with the prologue</a><a class="btn ghost" href="#dashboard">Check public stats</a></div>
+  </header>
+  <main class="creator-wrap">
+    <section id="missions" aria-labelledby="missionsTitle">
+      <div class="section-title"><p class="kicker">CHRONOLOGICAL VIDEO COLUMN</p><h2 id="missionsTitle">Mission Walkthroughs</h2><p>These videos are organized from the opening onward. The list will grow as GTA Series Videos publishes additional mission walkthroughs.</p></div>
+      <div class="mission-layout">
+        <article class="video-panel"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/Zh6VrJuW_i8" title="GTA VI Prologue walkthrough by GTA Series Videos" loading="lazy" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div><div class="video-copy"><span class="spoiler">Story spoilers after opening</span><h3>Start: GTA VI Prologue</h3><p>GTA Series Videos has covered Rockstar titles since 2003. This column uses its focused PS5 4K mission uploads so each entry is easy to find and watch in order.</p><a class="source-link" href="https://www.gtaseriesvideos.com/" target="_blank" rel="noopener">Visit GTA Series Videos</a></div></article>
+        <aside class="mission-column"><h3>Current mission sequence</h3><ol class="mission-list"><li class="mission-item"><a href="https://youtu.be/Zh6VrJuW_i8" target="_blank" rel="noopener"><span class="mission-no">01</span><span><strong>Prologue</strong><small>Opening · GTA Series Videos · PS5 4K</small></span><span class="play">Play</span></a></li>
+<li class="mission-item"><a href="https://youtu.be/ejIdp8axfhY" target="_blank" rel="noopener"><span class="mission-no">02</span><span><strong>Gone Fishing</strong><small>Chapter 1 · GTA Series Videos · PS5 4K</small></span><span class="play">Play</span></a></li>
+<li class="mission-item"><a href="https://youtu.be/Lb6JyzX5gho" target="_blank" rel="noopener"><span class="mission-no">03</span><span><strong>Gear Up</strong><small>Chapter 1 · GTA Series Videos · PS5 4K</small></span><span class="play">Play</span></a></li>
+<li class="mission-item"><a href="https://youtu.be/IcmQT-rZoIw" target="_blank" rel="noopener"><span class="mission-no">04</span><span><strong>Lab Fees</strong><small>Chapter 1 · GTA Series Videos · PS5 4K</small></span><span class="play">Play</span></a></li>
+<li class="mission-item"><a href="https://youtu.be/A_UeksX3Is0" target="_blank" rel="noopener"><span class="mission-no">05</span><span><strong>Just a Scratch</strong><small>Chapter 1 · GTA Series Videos · PS5 4K</small></span><span class="play">Play</span></a></li>
+<li class="mission-item"><a href="https://youtu.be/m2APlrqUlqY" target="_blank" rel="noopener"><span class="mission-no">06</span><span><strong>Unwanted Attention</strong><small>Chapter 1 · GTA Series Videos · PS5 4K</small></span><span class="play">Play</span></a></li>
+<li class="mission-item"><a href="https://youtu.be/gyGEkYIcpYY" target="_blank" rel="noopener"><span class="mission-no">07</span><span><strong>Pipework</strong><small>Chapter 1 · GTA Series Videos · PS5 4K</small></span><span class="play">Play</span></a></li>
+<li class="mission-item"><a href="https://youtu.be/eFMv_LH_k8M" target="_blank" rel="noopener"><span class="mission-no">08</span><span><strong>Hey Arnold!</strong><small>Chapter 1 · GTA Series Videos · PS5 4K</small></span><span class="play">Play</span></a></li>
+<li class="mission-item"><a href="https://youtu.be/Sv1_DptbiYE" target="_blank" rel="noopener"><span class="mission-no">09</span><span><strong>Island Dreams</strong><small>Chapter 1 · GTA Series Videos · PS5 4K</small></span><span class="play">Play</span></a></li></ol></aside>
+      </div>
+    </section>
+    <section id="dashboard" class="dashboard" aria-labelledby="dashboardTitle">
+      <div class="section-title"><p class="kicker">VERIFIED DATA ONLY</p><h2 id="dashboardTitle">GTA VI Dashboard</h2><p>Rockstar has not exposed a public GTA VI leaderboard or live high-score API. This dashboard makes that absence clear while collecting the official public milestones that can be verified.</p></div>
+      <div class="dash-grid">
+        <article class="dash-card available"><span class="dash-label">Game status</span><strong class="dash-value">Available Now</strong><p>Worldwide on PlayStation 5 and Xbox Series X|S since November 19, 2026.</p></article>
+        <article class="dash-card unavailable"><span class="dash-label">Rockstar leaderboard</span><strong class="dash-value">Not Published</strong><p>No official public GTA VI global high-score or story leaderboard feed is currently available.</p></article>
+        <article class="dash-card unavailable"><span class="dash-label">GTA VI Online stats</span><strong class="dash-value">Not Available</strong><p>Rockstar has not announced GTA VI Online, so there are no official online rankings to display.</p></article>
+        <article class="dash-card available"><span class="dash-label">Launch record</span><strong class="dash-value">Highest Rated</strong><p>Take-Two describes GTA VI as the highest-rated game at launch on PS5 and Xbox Series X|S.</p></article>
+        <article class="dash-card available"><span class="dash-label">Store preorders</span><strong class="dash-value">Platform Records</strong><p>Rockstar reported record preorder performance on the PlayStation and Microsoft stores.</p></article>
+        <article class="dash-card unavailable"><span class="dash-label">Mission medals</span><strong class="dash-value">No Public Board</strong><p>No Rockstar-hosted public mission-time or mission-score ranking has been identified.</p></article>
+        <article class="dash-card available"><span class="dash-label">Walkthrough index</span><strong class="dash-value">9 Videos</strong><p>Chronological creator walkthroughs currently indexed here, beginning with the prologue.</p></article>
+        <article class="dash-card available"><span class="dash-label">Official media</span><strong class="dash-value">138 Screenshots</strong><p>Rockstar’s official GTA VI media gallery currently lists 138 screenshots.</p></article>
+      </div>
+      <div class="dashboard-note"><strong>Why there are no made-up scores:</strong> a changing view count from YouTube is not a Rockstar gameplay score, and community claims are not an official leaderboard. If Rockstar releases a stats page or supported data feed later, this dashboard can be upgraded to live figures.</div>
+    </section>
+    <section id="guides" class="guide-section" aria-labelledby="guidesTitle">
+      <div class="section-title"><p class="kicker">CREATOR PICKS</p><h2 id="guidesTitle">Guides & Analysis</h2><p>Walkthroughs stay separate from commentary, so it is always clear whether you are opening a mission guide, an official partner guide, or creator analysis.</p></div>
+      <div class="guide-grid">
+        <article class="guide-card"><span class="tag">Mission walkthroughs</span><h3>GTA Series Videos</h3><p>Focused, chronological story missions in PS5 4K, plus a continuing 100% playthrough.</p><a href="https://www.gtaseriesvideos.com/" target="_blank" rel="noopener">Open creator site</a></article>
+        <article class="guide-card"><span class="tag">Rockstar-linked guide</span><h3>IGN GTA VI Guide</h3><p>Rockstar’s launch announcement directly points to IGN’s guide, first two chapter walkthroughs, and interactive Leonida map.</p><a href="https://www.ign.com/wikis/grand-theft-auto-6/" target="_blank" rel="noopener">Open IGN guide</a></article>
+        <article class="guide-card"><span class="tag">Launch analysis</span><h3>TGG Trailer Breakdown</h3><p>The launch-trailer breakdown from the former creator-watch area remains preserved here as analysis—not confirmed game data.</p><a href="https://www.youtube.com/watch?v=FV93IVwJP_4" target="_blank" rel="noopener">Watch breakdown</a></article>
+      </div>
+    </section>
+    <footer class="source-list"><strong>Data sources:</strong> <a href="https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available" target="_blank" rel="noopener">Rockstar launch announcement</a> · <a href="https://support.rockstargames.com/VI" target="_blank" rel="noopener">Rockstar support</a> · <a href="https://taketwointeractivesoftwareinc.gcs-web.com/news-releases/news-release-details/rockstar-games-announces-grand-theft-auto-vi-now-available" target="_blank" rel="noopener">Take-Two launch release</a> · <a href="https://www.rockstargames.com/VI/media" target="_blank" rel="noopener">Rockstar media gallery</a><p>Everything GTA VI is a fan-made reference site and is not affiliated with Rockstar Games or Take-Two Interactive.</p></footer>
+  </main>
+</div>
+</body>
+</html>
