@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-11-18",
+  "lastReviewed": "2026-11-19",
   "sources": [
     {
       "name": "Grand Theft Auto VI — Official Site",
@@ -235,6 +235,26 @@
       "name": "The Guardian — Grand Theft Auto VI review",
       "url": "https://www.theguardian.com/games/2026/nov/18/grand-theft-auto-vi-gta-6-review-playstation-rockstar",
       "use": "finished-game review; locations, activities, characters and reactive-world observations"
+    },
+    {
+      "name": "Take-Two — GTA VI Now Available",
+      "url": "https://taketwointeractivesoftwareinc.gcs-web.com/news-releases/news-release-details/rockstar-games-announces-grand-theft-auto-vi-now-available",
+      "use": "official November 19 launch availability, platforms, stores and album release"
+    },
+    {
+      "name": "Rockstar Support — Grand Theft Auto VI",
+      "url": "https://support.rockstargames.com/VI",
+      "use": "official purchase, activation, installation, Story Mode and error support"
+    },
+    {
+      "name": "Grand Theft Auto VI: The Album — Official Store",
+      "url": "https://www.gtavi-thealbum.com/",
+      "use": "official 34-track album availability, formats and products"
+    },
+    {
+      "name": "Grand Theft Auto VI: The Album — Full Track List",
+      "url": "https://www.gtavi-thealbum.com/products/grand-theft-auto-vi-the-album-marble-pink-blue-vinyl-indie-exclusive",
+      "use": "official complete 34-track album listing"
     }
   ]
 }
