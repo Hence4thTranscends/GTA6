@@ -1,10 +1,10 @@
 {
-  "lastReviewed": "2026-11-18",
+  "lastReviewed": "2026-11-19",
   "facts": [
     {
-      "topic": "Release date",
+      "topic": "Launch status",
       "status": "confirmed",
-      "value": "November 19, 2026"
+      "value": "Available now on PS5 and Xbox Series X|S as of November 19, 2026"
     },
     {
       "topic": "PlayStation 5",
@@ -333,8 +333,8 @@
     },
     {
       "topic": "GTA VI: The Album full track list",
-      "status": "reported-unconfirmed",
-      "value": "A retail-vinyl video reportedly shows 34 tracks, but Rockstar has officially revealed only part of the list"
+      "status": "confirmed",
+      "value": "The official 34-track album and complete album track list released November 19, 2026"
     },
     {
       "topic": "Development scale",
@@ -360,6 +360,16 @@
       "topic": "Review-reported everyday activities",
       "status": "reported",
       "value": "Hunting, kayaking, crop dusting, motocross, basketball, shooting ranges, dancing, shopping, home improvement and more"
+    },
+    {
+      "topic": "GTA VI availability",
+      "status": "confirmed",
+      "value": "Available from PlayStation Store, Microsoft Store, Rockstar Games Store and global retailers"
+    },
+    {
+      "topic": "GTA VI support hub",
+      "status": "confirmed",
+      "value": "Rockstar support covers purchase, activation, installation, Story Mode play and error troubleshooting"
     }
   ]
 }
