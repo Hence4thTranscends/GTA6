@@ -1,8 +1,8 @@
 {
-  "lastReviewed": "2026-11-01",
+  "lastReviewed": "2026-11-19",
   "album": {
     "title": "Grand Theft Auto VI: The Album",
-    "status": "confirmed",
+    "status": "released",
     "releaseDate": "2026-11-19",
     "trackCount": 34,
     "description": "Brand-new original tracks created for GTA VI.",
@@ -13,7 +13,181 @@
       "vinyl",
       "limited physical editions"
     ],
-    "source": "https://www.rockstargames.com/newswire/article/7599a881942544/announcing-grand-theft-auto-vi-the-album-coming-november-19"
+    "source": "https://www.rockstargames.com/newswire/article/7599a881942544/announcing-grand-theft-auto-vi-the-album-coming-november-19",
+    "availability": "Available on major streaming services and in CD, vinyl and limited physical editions",
+    "officialStore": "https://www.gtavi-thealbum.com/",
+    "fullTracklist": [
+      {
+        "track": 1,
+        "title": "Starting From Zero",
+        "artist": "Justice feat. Michael McDonald"
+      },
+      {
+        "track": 2,
+        "title": "That's It",
+        "artist": "Yung Lean feat. Future & Metro Boomin"
+      },
+      {
+        "track": 3,
+        "title": "AHH YEA",
+        "artist": "Playboi Carti"
+      },
+      {
+        "track": 4,
+        "title": "RHYNO",
+        "artist": "Travis Scott"
+      },
+      {
+        "track": 5,
+        "title": "Sexy Magic",
+        "artist": "CA7RIEL & Paco Amoroso, PinkPantheress, Fred again.. & Etienne de Crécy"
+      },
+      {
+        "track": 6,
+        "title": "Flower In A Hurricane",
+        "artist": "Justice feat. Tame Impala, SZA & King Gizzard & The Lizard Wizard"
+      },
+      {
+        "track": 7,
+        "title": "Go Easy",
+        "artist": "Dua Lipa"
+      },
+      {
+        "track": 8,
+        "title": "Last Thing You Need",
+        "artist": "Morgan Wallen"
+      },
+      {
+        "track": 9,
+        "title": "X",
+        "artist": "JHAYCO"
+      },
+      {
+        "track": 10,
+        "title": "Suzuki",
+        "artist": "Fuerza Regida"
+      },
+      {
+        "track": 11,
+        "title": "Macacoa 2000",
+        "artist": "Rauw Alejandro"
+      },
+      {
+        "track": 12,
+        "title": "Dance With Me",
+        "artist": "A Boogie wit da Hoodie feat. elkan"
+      },
+      {
+        "track": 13,
+        "title": "Bigger",
+        "artist": "Burna Boy"
+      },
+      {
+        "track": 14,
+        "title": "Count Up",
+        "artist": "Gunna"
+      },
+      {
+        "track": 15,
+        "title": "Let's Rock",
+        "artist": "Kodak Black & Don Toliver"
+      },
+      {
+        "track": 16,
+        "title": "WAKIN UP FLEX",
+        "artist": "Young Thug"
+      },
+      {
+        "track": 17,
+        "title": "IKYFL",
+        "artist": "Tee Grizzley"
+      },
+      {
+        "track": 18,
+        "title": "TF?",
+        "artist": "Don Toliver"
+      },
+      {
+        "track": 19,
+        "title": "Don't Chart",
+        "artist": "Cardi B"
+      },
+      {
+        "track": 20,
+        "title": "GMA",
+        "artist": "JT"
+      },
+      {
+        "track": 21,
+        "title": "Power Trip",
+        "artist": "JENNIE"
+      },
+      {
+        "track": 22,
+        "title": "Blood In Your Eyes",
+        "artist": "Tove Lo"
+      },
+      {
+        "track": 23,
+        "title": "Fast Emotion",
+        "artist": "Zara Larsson"
+      },
+      {
+        "track": 24,
+        "title": "Sweet Like Candy",
+        "artist": "Camila Cabello"
+      },
+      {
+        "track": 25,
+        "title": "Only One",
+        "artist": "Fcukers"
+      },
+      {
+        "track": 26,
+        "title": "Sandunguea",
+        "artist": "Arca"
+      },
+      {
+        "track": 27,
+        "title": "TRDWFE",
+        "artist": "Rina Sawayama"
+      },
+      {
+        "track": 28,
+        "title": "All Again",
+        "artist": "Rose Gray"
+      },
+      {
+        "track": 29,
+        "title": "Crazy For You",
+        "artist": "Lana Del Rey"
+      },
+      {
+        "track": 30,
+        "title": "Largate",
+        "artist": "Kali Uchis & Helado Negro"
+      },
+      {
+        "track": 31,
+        "title": "NO ME BUSQUES",
+        "artist": "Omar Apollo"
+      },
+      {
+        "track": 32,
+        "title": "Bright Lights, Big City",
+        "artist": "Keith Richards"
+      },
+      {
+        "track": 33,
+        "title": "Stone Kold Krazy Luuv",
+        "artist": "Jesse Johnson & DāM-FunK"
+      },
+      {
+        "track": 34,
+        "title": "Overtown Lights",
+        "artist": "Stanley Clarke, Yussef Dayes & Robert Glasper"
+      }
+    ]
   },
   "releasedSingles": [
     {
