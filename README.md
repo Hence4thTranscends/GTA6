@@ -23,3 +23,5 @@ Deployment dependency: the collection service must allow public submissions befo
 
 ## Disclaimer
 Unofficial fan project. Grand Theft Auto, GTA VI, Rockstar Games, and related marks/assets belong to their respective owners. This project is not affiliated with or endorsed by Rockstar Games or Take-Two Interactive.
+
+- `creators.html` — chronological mission walkthroughs, creator guides, and the verified-data dashboard
