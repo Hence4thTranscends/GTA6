@@ -116,8 +116,8 @@
     countdownSection.innerHTML = `
       <div class="release-countdown-inner">
         <p class="kicker">THE CLOCK IS TICKING</p>
-        <h2>Countdown to <span>GTA VI Release Day</span></h2>
-        <p class="countdown-subcopy">Grand Theft Auto VI launches November 19, 2026 on PlayStation 5 and Xbox Series X|S.</p>
+        <h2>GTA VI Is <span>Available Now</span></h2>
+        <p class="countdown-subcopy">Grand Theft Auto VI launched November 19, 2026 on PlayStation 5 and Xbox Series X|S.</p>
         <div class="countdown-grid" aria-live="polite">
           <div class="countdown-unit"><span class="countdown-value" data-countdown="days">--</span><span class="countdown-label">Days</span></div>
           <div class="countdown-unit"><span class="countdown-value" data-countdown="hours">--</span><span class="countdown-label">Hours</span></div>
@@ -140,7 +140,7 @@
       if (remaining <= 0) {
         if (intervalId) clearInterval(intervalId);
         const grid = qs('.countdown-grid', countdownSection);
-        if (grid) grid.innerHTML = '<div class="countdown-live-message" style="grid-column:1/-1">GTA VI RELEASE DAY IS HERE</div>';
+        if (grid) grid.innerHTML = '<div class="countdown-live-message" style="grid-column:1/-1">GTA VI IS AVAILABLE NOW</div>';
         return;
       }
       const totalSeconds = Math.floor(remaining / 1000);
@@ -197,7 +197,7 @@
     preorderLink.target = '_blank';
     preorderLink.rel = 'noopener';
     preorderLink.className = 'btn ghost preorder-btn';
-    preorderLink.textContent = 'Pre-Order GTA VI';
+    preorderLink.textContent = 'Buy GTA VI';
     heroActions.appendChild(preorderLink);
   }
 
