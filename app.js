@@ -233,7 +233,7 @@
     `);
   }
 
-  // Add navigation links for the extended database and the separate speculation page.
+  // Add navigation links for the extended database and the Creators page.
   const nav = qs('.main-nav');
   if (nav) {
     if (!qs('.main-nav a[href="#database"]')) {
@@ -242,13 +242,13 @@
       moreLink.textContent = 'More';
       nav.appendChild(moreLink);
     }
-    if (!qs('.main-nav a[href="speculation.html"]')) {
-      const specLink = document.createElement('a');
-      specLink.href = 'speculation.html';
-      specLink.textContent = 'Speculation';
-      specLink.className = 'speculation-nav-link';
-      specLink.title = 'Creator theories, reactions, rumors, and community hype';
-      nav.appendChild(specLink);
+    if (!qs('.main-nav a[href="creators.html"]')) {
+      const creatorsLink = document.createElement('a');
+      creatorsLink.href = 'creators.html';
+      creatorsLink.textContent = 'Creators';
+      creatorsLink.className = 'creators-nav-link';
+      creatorsLink.title = 'Mission walkthroughs, creator guides, and verified GTA VI data';
+      nav.appendChild(creatorsLink);
     }
   }
 
