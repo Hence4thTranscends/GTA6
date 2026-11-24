@@ -2,7 +2,7 @@
 
 A fan-made, source-conscious GTA VI knowledge hub built around confirmed Rockstar Games information.
 
-**Content reviewed through November 19, 2026.** The launch-day pass changes GTA VI from pre-release to available now, updates purchase and edition wording, adds the official launch announcement and Rockstar support hub, publishes the complete official 34-track album list, and preserves the separation between Rockstar-confirmed information and independent reporting. PC and GTA VI Online timing remain clearly labeled as unconfirmed.
+**Content reviewed through November 24, 2026.** The latest pass adds Rockstar’s first post-launch patch notes, the 57-track Grand Theft Auto VI: The Album (Deluxe Edition), and the Vintage Vice City Pack’s transition to a separately purchasable digital add-on. Rockstar-confirmed details remain separated from independently reported patch version and download-size information. PC and GTA VI Online timing remain clearly labeled as unconfirmed.
 
 ## Status labels
 - **Confirmed** — explicitly stated or named by Rockstar Games.
