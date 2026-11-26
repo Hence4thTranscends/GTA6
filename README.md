@@ -2,7 +2,7 @@
 
 A fan-made, source-conscious GTA VI knowledge hub built around confirmed Rockstar Games information.
 
-**Content reviewed through November 24, 2026.** The latest pass adds Rockstar’s first post-launch patch notes, the 57-track Grand Theft Auto VI: The Album (Deluxe Edition), and the Vintage Vice City Pack’s transition to a separately purchasable digital add-on. Rockstar-confirmed details remain separated from independently reported patch version and download-size information. PC and GTA VI Online timing remain clearly labeled as unconfirmed.
+**Content reviewed through November 26, 2026.** The latest pass adds Sony’s official PlayStation launch records and cloud-streaming listing, the Panini GTA VI Sports Trading Card Collection, and developer explanations of Criminal Profile, mission replay, and features removed during development. Earlier launch-patch, Deluxe Album, and Vintage Vice City Pack updates remain included. Rockstar-confirmed statements remain separated from independent reporting, while PC and GTA VI Online timing remain clearly labeled as unconfirmed.
 
 ## Status labels
 - **Confirmed** — explicitly stated or named by Rockstar Games.
